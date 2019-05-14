@@ -98,7 +98,6 @@ img {
 html,
 body {
   font-family: 'Montserrat', sans-serif;
-  font-family: 'Raleway', sans-serif;
   background: #ffffff;
 }
 div,
@@ -159,9 +158,6 @@ button:focus {
 }
 .justify-content-center {
   justify-content: center;
-}
-header {
-  font-family: 'Montserrat', sans-serif;
 }
 .top {
   padding-top: 17px;
