@@ -1,0 +1,229 @@
+@import "smart-grid";
+
+@montserrat: 'Montserrat', sans-serif;
+@raleway: 'Raleway', sans-serif;
+
+.reset();
+
+html, body {
+    font-family: @montserrat;
+    font-family: @raleway;
+    background: #ffffff;
+}
+
+div, p, input, form, button, span, a {
+    box-sizing: border-box;
+}
+
+button, 
+button:active, 
+button:focus {
+    outline: 0;
+}
+
+.container {
+    .wrapper();
+}
+
+.row {
+    .row-flex();
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+header {
+    font-family: @montserrat;
+}
+
+.top {
+    padding-top: 17px;
+    padding-bottom: 27px;
+    color: #666666;
+    border-bottom: 2px solid #FDF5F5;
+
+    .top_line {
+        font-size: 16px;
+        justify-content: space-between;
+
+        a {
+            color: #666666;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: all ease-in-out 0.2s;
+
+            &:hover {
+                border-color: #666666;
+            }
+        }
+
+        ul {
+            margin: 0;
+
+            li {
+                display: inline;
+            }
+        }
+
+        .top_menu {
+            li {
+                margin-right: 65px;
+            }
+        }
+
+        .top_contacts {
+            li {
+                margin-left: 65px;
+            }
+        }
+    }
+}
+
+.middle {
+    padding-top: 25px;
+
+    .middle_line {
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            height: 78px;
+            width: 169px;
+        }
+
+        form {
+            display: flex;
+            padding-left: 15%;
+
+            input {
+                display: block;
+                background: transparent;
+                width: 580px;
+                height: 35px;
+                border: 0;
+                border-bottom: 1px solid #BD4F50;
+
+                &::placeholder {
+                    color:#A7A7A7;
+                    font-size: 16px;
+                }
+            }
+
+            button {
+                margin-left: 15px;
+                padding: 0;
+                border: none;
+                background: transparent;
+                height: 32px;
+                width: 32px;
+                cursor: pointer;
+                display: block;
+            }
+        }
+
+        ul {
+            margin: 0;
+
+            li {
+                display: inline;
+            }
+        }
+
+        .my_cart {
+            a {
+                color: #ffffff;
+                text-decoration: none;
+            }
+
+            .heart {
+                height: 37px;
+                width: 37px;
+            }
+
+            .cart {
+                height: 39px;
+                width: 39px;
+            }
+
+            .badge {
+                position: relative;
+                font-size: 16px;
+                background: #BD4F50;
+                padding: 4px 9px;
+                border-radius: 50%;
+                top: -22px;
+                left: -17px;
+            }
+        }
+
+        .my_cabinet {
+            color: #232323;
+            font-size: 16px;
+            font-weight: 400;
+            border: 1px solid #232323;
+            border-radius: 20px;
+            padding: 10px 30px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .hamburger {
+            button {
+                width: 52px;
+                cursor: pointer;
+                background: transparent;
+                border: none;
+            }
+        }
+
+        .sidepanel {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: #000000eb;
+            overflow-x: hidden;
+            padding-top: 60px;
+            transition: 0.5s;
+            text-align: left;
+            color: #ffffff;
+        
+            a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 18px;
+                color: #fff;
+                display: block;
+                transition: all 0.3s;
+        
+                &:hover {
+                    color: #f1f1f1;
+                }
+            }
+
+            .msp_menu {
+                text-align: center;
+                font-size: 20px;
+                border-bottom: 1px solid #fff5f470;
+                padding-top: 30px;
+            }
+        
+            .the_menu {
+                border-bottom: 1px solid #fff5f470;
+                margin-left: 25px;
+            }
+        
+            .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+        }
+    }
+}
+
