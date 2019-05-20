@@ -159,6 +159,7 @@ button:focus {
 .justify-content-center {
   justify-content: center;
 }
+/* Top-Line Header */
 .top {
   padding-top: 17px;
   padding-bottom: 27px;
@@ -190,8 +191,11 @@ button:focus {
 .top .top_line .top_contacts li {
   margin-left: 65px;
 }
+/* Logo, Search, Cart, Menu Header */
 .middle {
   padding-top: 25px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #FDF5F5;
 }
 .middle .middle_line {
   justify-content: space-between;
@@ -208,7 +212,7 @@ button:focus {
 .middle .middle_line form input {
   display: block;
   background: transparent;
-  width: 580px;
+  width: 27vw;
   height: 35px;
   border: 0;
   border-bottom: 1px solid #BD4F50;
@@ -229,6 +233,7 @@ button:focus {
 }
 .middle .middle_line ul {
   margin: 0;
+  margin-left: 25px;
 }
 .middle .middle_line ul li {
   display: inline;
@@ -312,3 +317,232 @@ button:focus {
   font-size: 36px;
   margin-left: 50px;
 }
+/* SubMenu & MainSlider */
+.mainslider {
+  height: 816px;
+}
+.mainslider .sub_menu {
+  padding-top: 20px;
+}
+.mainslider .sub_menu .categories {
+  position: relative;
+  padding-top: 10px;
+}
+.mainslider .sub_menu .categories:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 3px solid #BD4F50;
+  content: "";
+  width: 98px;
+}
+.mainslider .sub_menu ul {
+  margin: 0;
+}
+.mainslider .sub_menu ul li {
+  display: inline;
+}
+.mainslider .sub_menu a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  color: #232323;
+  transition: all 0.3s;
+  margin-right: 25px;
+}
+.mainslider .sub_menu a:hover {
+  color: #f1f1f1;
+}
+.mainslider .fullscreen {
+  max-width: 1920px;
+  width: 100%;
+  padding-left: 140px;
+  padding-right: 0;
+  padding-bottom: 20px;
+}
+.mainslider .fullscreen .fs_row {
+  justify-content: space-between;
+}
+.mainslider .fullscreen .main_info {
+  width: 610px;
+  padding-top: 120px;
+}
+.mainslider .fullscreen .main_info h1 {
+  color: #232323;
+  font-size: 30px;
+  font-weight: 500;
+  white-space: pre-wrap;
+}
+.mainslider .fullscreen .main_info h1 span {
+  color: #BD4F50;
+  font-size: 72px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+}
+.mainslider .fullscreen .main_info h2 {
+  font-size: 18px;
+  margin-bottom: 155px;
+}
+.mainslider .fullscreen .main_info .goto {
+  color: #ffffff;
+  font-size: 24px;
+  background: #BD4F50;
+  padding: 15px 30px 20px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+.title_block h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #232323;
+  padding-bottom: 70px;
+  padding-left: 10px;
+  padding-top: 140px;
+}
+/* Recomendation */
+.recomendation .title_block {
+  justify-content: space-between;
+}
+.recomendation ul {
+  margin: 0;
+}
+.recomendation ul li {
+  display: inline;
+}
+.recomendation ul a {
+  font-size: 14px;
+  color: #CCCCCC;
+}
+.recomendation .owl-controls {
+  font-size: 20px;
+  padding-top: 140px;
+  margin-right: 10px;
+}
+.recomendation .owl-controls .seeall {
+  margin-right: 15px;
+}
+.recomendation .owl-controls .prevBtn,
+.recomendation .owl-controls .nextBtn {
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.5s;
+  background: #D0D0D0;
+  height: 75px;
+  width: 75px;
+  padding: 5px 12px;
+  border-radius: 100%;
+}
+.recomendation .owl-controls .prevBtn:hover,
+.recomendation .owl-controls .nextBtn:hover {
+  background: #BD4F50;
+}
+.recomendation .owl-dots {
+  display: none;
+}
+.recomendation .owl-item {
+  padding: 5px;
+}
+.recomendation .item {
+  padding: 5px;
+  transition: all 0.5s;
+  height: 525px;
+  box-shadow: 0 0 0 1px #FDF5F5;
+  border-radius: 5px;
+}
+.recomendation .item .labels {
+  position: absolute;
+  right: 0;
+  margin-top: 25px;
+  margin-right: 25px;
+}
+.recomendation .item .labels .new,
+.recomendation .item .labels .sale,
+.recomendation .item .labels .hit {
+  text-align: center;
+  padding: 5px 15px;
+  color: #ffffff;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.recomendation .item .labels .new {
+  background: #2AE101;
+}
+.recomendation .item .labels .sale {
+  background: #FE3152;
+}
+.recomendation .item .labels .hit {
+  background: #FEA800;
+}
+.recomendation .item .item_btns {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5px;
+  margin-top: -60px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+.recomendation .item .item_btns button {
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 10px;
+  z-index: 1000;
+  transition: all 0.5s;
+}
+.recomendation .item .item_btns button:hover {
+  box-shadow: 0 0 0 2px #BD4F50;
+}
+.recomendation .item .item_btns .like {
+  background: #D0D0D0;
+}
+.recomendation .item .item_btns .like img {
+  height: 21px;
+  width: 23px;
+  padding: 15px 11px;
+}
+.recomendation .item .item_btns .add {
+  background: #2AE101;
+}
+.recomendation .item .item_btns .add img {
+  height: 24px;
+  width: 22px;
+  padding: 15px 11px;
+}
+.recomendation .item .item_desc {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 45px;
+}
+.recomendation .item .item_desc a {
+  color: #666666;
+  text-decoration: none;
+}
+.recomendation .item .price {
+  position: absolute;
+  bottom: 0;
+  font-size: 22px;
+  color: #232323;
+  padding-bottom: 35px;
+  padding-left: 20px;
+}
+.recomendation .item .price strike {
+  color: #666666;
+}
+.recomendation .item .price .price_desc {
+  color: #CCCCCC;
+  font-size: 16px;
+  margin-left: 35px;
+}
+.recomendation .item:hover {
+  box-shadow: 0 0 0 1px #BD4F50;
+  border-radius: 5px;
+}
+.recomendation .item:hover .item_btns {
+  visibility: visible;
+  opacity: 1;
+}
+/* Sale Slider */
