@@ -237,6 +237,7 @@ button:focus {
         .categories {
             position: relative;
             padding-top: 10px;
+            z-index: 100;
 
             &:before {
                 position: absolute;
@@ -274,7 +275,7 @@ button:focus {
         max-width: 1920px;
         width: 100%;
         padding-left: 140px;
-        padding-right: 0;
+        padding-right: 140px;
         padding-bottom: 20px;
 
         .fs_row {
@@ -312,6 +313,45 @@ button:focus {
                 padding: 15px 30px 20px 30px;
                 border-radius: 25px;
                 text-decoration: none;
+            }
+        }
+
+        .mainSliderDots {
+            display: flex;
+            flex-direction: column-reverse;
+            margin-bottom: 60px;
+            margin-left: 130px;
+            text-align: right;
+
+            .owl-dot {
+                font-size: 24px;
+                color: #262626;
+                cursor: pointer;
+
+                &.active {
+                    color: #BD4F50;
+
+                    &::after {
+                        content: "";
+                        display: inline-block;
+                        height: 0.35em;
+                        width: 35px;
+                        margin-left: 10px;
+                        border-top: 2px solid #BD4F50;
+                    }
+                }
+            }
+        }
+
+        .main_slider {
+            width: 50%;
+            margin-top: -51px;
+
+            .item {
+                img {
+                    width: auto;
+                    z-index: 90;
+                }
             }
         }
     }
@@ -371,10 +411,6 @@ button:focus {
                 background: #BD4F50;
             }
         }
-    }
-
-    .owl-dots {
-        display: none;
     }
 
     .owl-item {
@@ -504,5 +540,43 @@ button:focus {
 }
 
 /* Sale Slider */
+.sale_slider {
+    margin-top: 110px;
 
+    .ss_row {
+        justify-content: flex-end;
+    }
 
+    .saleSliderDots {
+        margin-top: 20px;
+        text-align: right;
+
+        .owl-dot {
+            font-size: 24px;
+            color: #262626;
+            cursor: pointer;
+
+            &.active {
+                color: #BD4F50;
+
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    height: 0.35em;
+                    width: 35px;
+                    margin-left: 10px;
+                    border-top: 2px solid #BD4F50;
+                }
+            }
+        }
+
+        ul {
+            margin: 0;
+
+            li {
+                display: inline;
+                margin-left: 25px;
+            }
+        }
+    }
+}

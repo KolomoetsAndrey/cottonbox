@@ -327,6 +327,7 @@ button:focus {
 .mainslider .sub_menu .categories {
   position: relative;
   padding-top: 10px;
+  z-index: 100;
 }
 .mainslider .sub_menu .categories:before {
   position: absolute;
@@ -357,7 +358,7 @@ button:focus {
   max-width: 1920px;
   width: 100%;
   padding-left: 140px;
-  padding-right: 0;
+  padding-right: 140px;
   padding-bottom: 20px;
 }
 .mainslider .fullscreen .fs_row {
@@ -391,6 +392,37 @@ button:focus {
   padding: 15px 30px 20px 30px;
   border-radius: 25px;
   text-decoration: none;
+}
+.mainslider .fullscreen .mainSliderDots {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 60px;
+  margin-left: 130px;
+  text-align: right;
+}
+.mainslider .fullscreen .mainSliderDots .owl-dot {
+  font-size: 24px;
+  color: #262626;
+  cursor: pointer;
+}
+.mainslider .fullscreen .mainSliderDots .owl-dot.active {
+  color: #BD4F50;
+}
+.mainslider .fullscreen .mainSliderDots .owl-dot.active::after {
+  content: "";
+  display: inline-block;
+  height: 0.35em;
+  width: 35px;
+  margin-left: 10px;
+  border-top: 2px solid #BD4F50;
+}
+.mainslider .fullscreen .main_slider {
+  width: 50%;
+  margin-top: -51px;
+}
+.mainslider .fullscreen .main_slider .item img {
+  width: auto;
+  z-index: 90;
 }
 .title_block h2 {
   font-size: 30px;
@@ -436,9 +468,6 @@ button:focus {
 .recomendation .owl-controls .prevBtn:hover,
 .recomendation .owl-controls .nextBtn:hover {
   background: #BD4F50;
-}
-.recomendation .owl-dots {
-  display: none;
 }
 .recomendation .owl-item {
   padding: 5px;
@@ -546,3 +575,36 @@ button:focus {
   opacity: 1;
 }
 /* Sale Slider */
+.sale_slider {
+  margin-top: 110px;
+}
+.sale_slider .ss_row {
+  justify-content: flex-end;
+}
+.sale_slider .saleSliderDots {
+  margin-top: 20px;
+  text-align: right;
+}
+.sale_slider .saleSliderDots .owl-dot {
+  font-size: 24px;
+  color: #262626;
+  cursor: pointer;
+}
+.sale_slider .saleSliderDots .owl-dot.active {
+  color: #BD4F50;
+}
+.sale_slider .saleSliderDots .owl-dot.active::after {
+  content: "";
+  display: inline-block;
+  height: 0.35em;
+  width: 35px;
+  margin-left: 10px;
+  border-top: 2px solid #BD4F50;
+}
+.sale_slider .saleSliderDots ul {
+  margin: 0;
+}
+.sale_slider .saleSliderDots ul li {
+  display: inline;
+  margin-left: 25px;
+}

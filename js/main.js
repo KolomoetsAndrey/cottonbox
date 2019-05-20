@@ -13,36 +13,107 @@ function closeNav() {
 };
 
 $(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
-         loop: true,
-         margin: 10,
-         responsive:{
-             0:{
-                 items:1
-             },
-             500:{
-                 items:2
-             },
-             900:{
-                 items:4
-             },
-             1200:{
-                 items:4
-             },
-             1920:{
-                 items:4
-             }
-         }
-     });
+    $('.mainSlider').owlCarousel({
+        loop: true,
+        dotsContainer: '.mainSliderCustomDots',
+        autoplay: true,
+        center: true,
+        margin: 10,
+        dots: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            500:{
+                items:1
+            },
+            900:{
+                items:1
+            },
+            1200:{
+                items:1
+            },
+            1920:{
+                items:1
+            }
+        }
+    });
 
-     var owl = $('.recomendationSlider');
-        owl.owlCarousel();
+    var mainSliderDots = $('.mainSlider');
+        mainSliderDots.owlCarousel();
+
+        $('.owl-dot').click(function () {
+            mainSliderDots.trigger('to.owl.carousel', [$(this).index(), 300]);
+        });
+});
+
+$(document).ready(function(){
+    $('.recomendationSlider').owlCarousel({
+        loop: true,
+        margin: 10,
+        dots: false,
+        responsive:{
+            0:{
+                items:1
+            },
+            500:{
+                items:2
+            },
+            900:{
+                items:4
+            },
+            1200:{
+                items:4
+            },
+            1920:{
+                items:4
+            }
+        }
+    });
+
+    var recomendationSlider = $('.recomendationSlider');
+        recomendationSlider.owlCarousel();
 
         $('.nextBtn').click(function() {
-            owl.trigger('next.owl.carousel');
+            recomendationSlider.trigger('next.owl.carousel');
         })
 
         $('.prevBtn').click(function() {
-            owl.trigger('prev.owl.carousel', [300]);
-    })
- });
+            recomendationSlider.trigger('prev.owl.carousel', [300]);
+        });
+});
+
+$(document).ready(function(){
+    $('.saleSlider').owlCarousel({
+        loop: true,
+        dotsContainer: '.saleSliderCustomDots',
+        autoplay: true,
+        center: true,
+        margin: 10,
+        dots: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            500:{
+                items:1
+            },
+            900:{
+                items:1
+            },
+            1200:{
+                items:1
+            },
+            1920:{
+                items:1
+            }
+        }
+    });
+
+    var saleSliderDots = $('.saleSlider');
+        saleSliderDots.owlCarousel();
+
+        $('.owl-dot').click(function () {
+            saleSliderDots.trigger('to.owl.carousel', [$(this).index(), 300]);
+        });
+});
