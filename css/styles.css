@@ -173,11 +173,10 @@ button:focus {
 .top .top_line a {
   color: #666666;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: all ease-in-out 0.2s;
+  transition: all 0.2s;
 }
 .top .top_line a:hover {
-  border-color: #666666;
+  color: #BD4F50;
 }
 .top .top_line ul {
   margin: 0;
@@ -268,6 +267,12 @@ button:focus {
   padding: 10px 30px;
   text-align: center;
   text-decoration: none;
+  transition: all 0.2s;
+}
+.middle .middle_line .my_cabinet:hover {
+  color: #ffffff;
+  border: 1px solid #BD4F50;
+  background: #BD4F50;
 }
 .middle .middle_line .hamburger button {
   width: 52px;
@@ -279,7 +284,7 @@ button:focus {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   top: 0;
   right: 0;
   background-color: #000000eb;
@@ -348,11 +353,11 @@ button:focus {
   font-weight: 500;
   font-size: 18px;
   color: #232323;
-  transition: all 0.3s;
   margin-right: 25px;
+  transition: all 0.2s;
 }
 .mainslider .sub_menu a:hover {
-  color: #f1f1f1;
+  color: #BD4F50;
 }
 .mainslider .fullscreen {
   max-width: 1920px;
@@ -385,14 +390,6 @@ button:focus {
   font-size: 18px;
   margin-bottom: 155px;
 }
-.mainslider .fullscreen .main_info .goto {
-  color: #ffffff;
-  font-size: 24px;
-  background: #BD4F50;
-  padding: 15px 30px 20px 30px;
-  border-radius: 25px;
-  text-decoration: none;
-}
 .mainslider .fullscreen .mainSliderDots {
   display: flex;
   flex-direction: column-reverse;
@@ -416,13 +413,31 @@ button:focus {
   margin-left: 10px;
   border-top: 2px solid #BD4F50;
 }
-.mainslider .fullscreen .main_slider {
+.mainslider .main_slider {
   width: 50%;
   margin-top: -51px;
 }
-.mainslider .fullscreen .main_slider .item img {
+.mainslider .main_slider .item img {
   width: auto;
   z-index: 90;
+}
+.mainslider .goto {
+  color: #ffffff;
+  font-size: 24px;
+  background: #BD4F50;
+  padding: 15px 30px;
+  border: 1px solid #BD4F50;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.mainslider .goto:hover {
+  color: #232323;
+  border: 1px solid #232323;
+  background: transparent;
+}
+.title_block {
+  justify-content: space-between;
 }
 .title_block h2 {
   font-size: 30px;
@@ -433,9 +448,6 @@ button:focus {
   padding-top: 140px;
 }
 /* Recomendation */
-.recomendation .title_block {
-  justify-content: space-between;
-}
 .recomendation ul {
   margin: 0;
 }
@@ -445,6 +457,10 @@ button:focus {
 .recomendation ul a {
   font-size: 14px;
   color: #CCCCCC;
+  transition: all 0.2s;
+}
+.recomendation ul a:hover {
+  color: #BD4F50;
 }
 .recomendation .owl-controls {
   font-size: 20px;
@@ -474,7 +490,7 @@ button:focus {
 }
 .recomendation .item {
   padding: 5px;
-  transition: all 0.5s;
+  transition: all 0.2s;
   height: 525px;
   box-shadow: 0 0 0 1px #FDF5F5;
   border-radius: 5px;
@@ -494,6 +510,7 @@ button:focus {
   border-radius: 15px;
   margin-bottom: 5px;
   font-size: 14px;
+  width: 100px;
 }
 .recomendation .item .labels .new {
   background: #2AE101;
@@ -511,7 +528,7 @@ button:focus {
   margin-top: -60px;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s, opacity 0.5s ease-in-out;
+  transition: visibility 0s, opacity 0.2s ease-in-out;
 }
 .recomendation .item .item_btns button {
   border: none;
@@ -519,7 +536,7 @@ button:focus {
   cursor: pointer;
   margin-left: 10px;
   z-index: 1000;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 .recomendation .item .item_btns button:hover {
   box-shadow: 0 0 0 2px #BD4F50;
@@ -528,17 +545,17 @@ button:focus {
   background: #D0D0D0;
 }
 .recomendation .item .item_btns .like img {
-  height: 21px;
-  width: 23px;
-  padding: 15px 11px;
+  height: 24px;
+  width: 24px;
+  padding: 15px 8px;
 }
 .recomendation .item .item_btns .add {
   background: #2AE101;
 }
 .recomendation .item .item_btns .add img {
   height: 24px;
-  width: 22px;
-  padding: 15px 11px;
+  width: 24px;
+  padding: 15px 8px;
 }
 .recomendation .item .item_desc {
   font-size: 20px;
@@ -607,4 +624,208 @@ button:focus {
 .sale_slider .saleSliderDots ul li {
   display: inline;
   margin-left: 25px;
+}
+/* Tabs Slider */
+.tabs_slider ul {
+  margin: 0;
+}
+.tabs_slider ul li {
+  display: inline;
+}
+.tabs_slider ul a {
+  font-size: 14px;
+  color: #CCCCCC;
+}
+.tabs_slider ul a:hover {
+  color: #BD4F50;
+  transition: all 0.2s;
+}
+.tabs_slider .tab-slider--nav {
+  width: 100%;
+  float: left;
+  margin-bottom: -25px;
+  margin-left: -25px;
+}
+.tabs_slider .tab-slider--tabs {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  background: #ffffff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.tabs_slider .tab-slider--tabs:after {
+  content: "";
+  width: 33%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 250ms ease-in-out;
+  border-radius: 35px;
+}
+.tabs_slider .tab-slider--tabs.slide:after {
+  left: 33%;
+}
+.tabs_slider .tab-slider--trigger {
+  width: 235px;
+  margin-right: 25px;
+  font-size: 24px;
+  line-height: 1;
+  color: #CCCCCC;
+  border: 1px solid #CCCCCC;
+  border-radius: 25px;
+  text-align: center;
+  padding: 13px 0;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  display: inline-block;
+  transition: color 250ms ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.tabs_slider .tab-slider--trigger.active {
+  color: #BD4F50;
+  border: 1px solid #BD4F50;
+  border-radius: 25px;
+}
+.tabs_slider .tab-slider--body {
+  margin-bottom: 20px;
+}
+.tabs_slider .owl-controls {
+  font-size: 20px;
+  text-align: right;
+  margin-bottom: 50px;
+}
+.tabs_slider .owl-controls .seeall {
+  margin-right: 15px;
+}
+.tabs_slider .owl-controls .prevBtn,
+.tabs_slider .owl-controls .nextBtn {
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.5s;
+  background: #D0D0D0;
+  height: 75px;
+  width: 75px;
+  padding: 5px 12px;
+  border-radius: 100%;
+}
+.tabs_slider .owl-controls .prevBtn:hover,
+.tabs_slider .owl-controls .nextBtn:hover {
+  background: #BD4F50;
+}
+.tabs_slider .owl-item {
+  padding: 5px;
+}
+.tabs_slider .item {
+  padding: 5px;
+  transition: all 0.2s;
+  height: 525px;
+  box-shadow: 0 0 0 1px #FDF5F5;
+  border-radius: 5px;
+}
+.tabs_slider .item .labels {
+  width: 100px;
+  position: absolute;
+  right: 0;
+  margin-top: 25px;
+  margin-right: 25px;
+}
+.tabs_slider .item .labels .new,
+.tabs_slider .item .labels .sale,
+.tabs_slider .item .labels .hit {
+  text-align: center;
+  padding: 5px 15px;
+  color: #ffffff;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.tabs_slider .item .labels .new {
+  background: #2AE101;
+}
+.tabs_slider .item .labels .sale {
+  background: #FE3152;
+}
+.tabs_slider .item .labels .hit {
+  background: #FEA800;
+}
+.tabs_slider .item .item_btns {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5px;
+  margin-top: -60px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.2s ease-in-out;
+}
+.tabs_slider .item .item_btns button {
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 10px;
+  z-index: 1000;
+  transition: all 0.2s;
+}
+.tabs_slider .item .item_btns button:hover {
+  box-shadow: 0 0 0 2px #BD4F50;
+}
+.tabs_slider .item .item_btns .like {
+  background: #D0D0D0;
+}
+.tabs_slider .item .item_btns .like img {
+  height: 24px;
+  width: 24px;
+  padding: 15px 8px;
+}
+.tabs_slider .item .item_btns .add {
+  background: #2AE101;
+}
+.tabs_slider .item .item_btns .add img {
+  height: 24px;
+  width: 24px;
+  padding: 15px 8px;
+}
+.tabs_slider .item .item_desc {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 45px;
+}
+.tabs_slider .item .item_desc a {
+  color: #666666;
+  text-decoration: none;
+}
+.tabs_slider .item .price {
+  position: absolute;
+  bottom: 0;
+  font-size: 22px;
+  color: #232323;
+  padding-bottom: 35px;
+  padding-left: 20px;
+}
+.tabs_slider .item .price strike {
+  color: #666666;
+}
+.tabs_slider .item .price .price_desc {
+  color: #CCCCCC;
+  font-size: 16px;
+  margin-left: 35px;
+}
+.tabs_slider .item:hover {
+  box-shadow: 0 0 0 1px #BD4F50;
+  border-radius: 5px;
+}
+.tabs_slider .item:hover .item_btns {
+  visibility: visible;
+  opacity: 1;
 }
