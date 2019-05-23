@@ -322,6 +322,10 @@ button:focus {
   font-size: 36px;
   margin-left: 50px;
 }
+.fs_row {
+  justify-content: space-between;
+  flex-wrap: inherit;
+}
 /* SubMenu & MainSlider */
 .mainslider {
   height: 816px;
@@ -359,53 +363,50 @@ button:focus {
 .mainslider .sub_menu a:hover {
   color: #BD4F50;
 }
-.mainslider .fullscreen {
+.mainslider .mySlider_fullscreen {
   max-width: 1920px;
   width: 100%;
   padding-left: 140px;
-  padding-right: 140px;
+  padding-right: 0;
   padding-bottom: 20px;
 }
-.mainslider .fullscreen .fs_row {
-  justify-content: space-between;
-}
-.mainslider .fullscreen .main_info {
+.mainslider .mySlider_fullscreen .main_info {
   width: 610px;
   padding-top: 120px;
 }
-.mainslider .fullscreen .main_info h1 {
+.mainslider .mySlider_fullscreen .main_info h1 {
   color: #232323;
   font-size: 30px;
   font-weight: 500;
   white-space: pre-wrap;
 }
-.mainslider .fullscreen .main_info h1 span {
+.mainslider .mySlider_fullscreen .main_info h1 span {
   color: #BD4F50;
   font-size: 72px;
   font-weight: 600;
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
 }
-.mainslider .fullscreen .main_info h2 {
+.mainslider .mySlider_fullscreen .main_info h2 {
   font-size: 18px;
   margin-bottom: 155px;
 }
-.mainslider .fullscreen .mainSliderDots {
+.mainslider .mySlider_fullscreen .mainSliderDots {
   display: flex;
   flex-direction: column-reverse;
   margin-bottom: 60px;
   margin-left: 130px;
   text-align: right;
 }
-.mainslider .fullscreen .mainSliderDots .owl-dot {
+.mainslider .mySlider_fullscreen .mainSliderDots .owl-dot {
   font-size: 24px;
   color: #262626;
   cursor: pointer;
 }
-.mainslider .fullscreen .mainSliderDots .owl-dot.active {
+.mainslider .mySlider_fullscreen .mainSliderDots .owl-dot.active {
   color: #BD4F50;
 }
-.mainslider .fullscreen .mainSliderDots .owl-dot.active::after {
+.mainslider .mySlider_fullscreen .mainSliderDots .owl-dot.active::after {
   content: "";
   display: inline-block;
   height: 0.35em;
@@ -828,4 +829,37 @@ button:focus {
 .tabs_slider .item:hover .item_btns {
   visibility: visible;
   opacity: 1;
+}
+.about_us .title_block h2 {
+  padding-bottom: 20px;
+}
+.about_us .title_block a {
+  padding-bottom: 40px;
+  padding-right: 10px;
+  padding-top: 140px;
+  font-size: 14px;
+  color: #CCCCCC;
+}
+.about_us .title_block a:hover {
+  color: #BD4F50;
+}
+.about_us .aboutUs_fullscreen {
+  max-width: 1920px;
+  padding-left: 0;
+  padding-right: 140px;
+  width: 100%;
+}
+.about_us .aboutUs_fullscreen img {
+  width: 55%;
+  height: 100%;
+}
+.about_us .aboutUs_fullscreen .about_us_desc {
+  padding-top: 40px;
+  font-size: 19px;
+  line-height: 30px;
+}
+.about_us .aboutUs_fullscreen .about_us_desc p {
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }

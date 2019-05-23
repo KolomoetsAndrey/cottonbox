@@ -233,6 +233,11 @@ button:focus {
     }
 }
 
+.fs_row {
+    justify-content: space-between;
+    flex-wrap: inherit;
+}
+
 /* SubMenu & MainSlider */
 .mainslider {
     height: 816px;
@@ -277,16 +282,12 @@ button:focus {
         }
     }
 
-    .fullscreen {
+    .mySlider_fullscreen {
         max-width: 1920px;
         width: 100%;
         padding-left: 140px;
-        padding-right: 140px;
+        padding-right: 0;
         padding-bottom: 20px;
-
-        .fs_row {
-            justify-content: space-between;
-        }
 
         .main_info {
             width: 610px;
@@ -832,6 +833,50 @@ button:focus {
             .item_btns {
                 visibility: visible;
                 opacity: 1;
+            }
+        }
+    }
+}
+
+.about_us {
+    .title_block {
+        h2 {
+            padding-bottom: 20px;
+        }
+
+        a {
+            padding-bottom: 40px;
+            padding-right: 10px;
+            padding-top: 140px;
+            font-size: 14px;
+            color: #CCCCCC;
+
+            &:hover {
+                color: #BD4F50;
+            }
+        }
+    }
+
+    .aboutUs_fullscreen {
+        max-width: 1920px;
+        padding-left: 0;
+        padding-right: 140px;
+        width: 100%;
+
+        img {
+            width: 55%;
+            height: 100%;
+        }
+
+        .about_us_desc {
+            padding-top: 40px;
+            font-size: 19px;
+            line-height: 30px;
+
+            p {
+                padding-bottom: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
             }
         }
     }
