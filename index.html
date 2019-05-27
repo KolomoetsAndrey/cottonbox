@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 <body>
+    <!--ToTop-->
+    <button class="toTop" onclick="topFunction()" id="toTop"><i class="fas fa-chevron-up"></i></button>
+    <!--End ToTop-->
+
     <!--Header-->
     <header class="top">
         <div class="container">
@@ -1182,12 +1186,12 @@
     </section>
     <!--End TabsSlider-->
 
-    <!--Abiut Us-->
+    <!--About Us-->
     <section class="about_us">
         <div class="container">
             <div class="row title_block">
                 <h2>О нашем магазине</h2>
-                <a href="#" class="more">Узнать бльше</a>
+                <a href="about-us.html" class="more">Узнать бльше</a>
             </div>
         </div>
         <div class="container aboutUs_fullscreen">
@@ -1207,7 +1211,95 @@
             </div>
         </div>
     </section>
-    <!--End Abiut Us-->
+    <!--End About Us-->
+
+    <!--FAQ-->
+    <section class="faq">
+        <div class="container faq_fullscreen">
+            <div class="row fs-row">
+                <div class="faq_form">
+                    <h2>У Вас остались вопросы?</h2>
+                    <p>Получите ответ от наших специалистов за несколько минут</p>
+                    <form>
+                        <input type="text" class="question" minlength="2" maxlength="5000" required="required" placeholder="Что Вас интересует?">
+                        <input type="email" class="email" minlength="2" maxlength="50" required="required" placeholder="Введите Ваш e-mail">
+                        <input type="button" class="button" value="Отправить">
+                    </form>
+                </div>
+                <div class="man_img">
+                    <img src="images/man-bg.png" alt="">
+                </div>
+                <div class="rounds">
+                    <img src="images/ellipse_big.png" class="round_one">
+                    <img src="images/ellipse_small.png" class="round_two">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End FAQ-->
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row between">
+                <div class="column">
+                    <img src="images/logo.png" alt="" class="footer_logo">
+                    <form>
+                        <input type="email" class="email" minlength="2" maxlength="50" required="required" placeholder="Введите Ваш e-mail">
+                        <input type="button" class="button subscribe" value="Подпишитесь на наши обновления">
+                    </form>
+                </div>
+                <div class="column">
+                    <h3>
+                        График работы
+                    </h3>
+                    <ul class="works">
+                        <li class="daus">
+                            Понедельник - пятница
+                        </li>
+                        <li class="time">
+                            с 10:00 до 19:00
+                        </li>
+                        <li>
+                            <ul class="socials">
+                                <li>
+                                    <a href="#">Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="#">Instagram</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul class="footer_menu">
+                        <li>
+                            <a href="#">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="#">Личный кабинет</a>
+                        </li>
+                        <li>
+                            <a href="#">Сотрудничество</a>
+                        </li>
+                        <li>
+                            <a href="#">Политика конфиденциальности</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Свяжитесь с нами</h3>
+                    <ul class="footer_contacts">
+                        <li>+38 (098) 065 18 36</li>
+                        <li>+38 (066) 837 50 36</li>
+                        <li>cottonboxua@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
 
 
 

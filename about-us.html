@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+    <!--ToTop-->
+    <button class="toTop" onclick="topFunction()" id="toTop"><i class="fas fa-chevron-up"></i></button>
+    <!--End ToTop-->
+
+    <!--Header-->
+    <header class="top">
+        <div class="container">
+            <div class="row top_line">
+                <ul class="top_menu">
+                    <li>
+                        <a href="#">Доставка</a>
+                    </li>
+                    <li>
+                        <a href="#">Гарантии</a>
+                    </li>
+                    <li>
+                        <a href="#">Возврат</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="top_contacts">
+                    <li>
+                        Пн - Пт с 10.00-19.00
+                    </li>
+                    <li>
+                        +38 012 345 67 89
+                    </li>
+                    <li>
+                        +38 012 345 67 89
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header> 
+    <header class="middle">
+        <div class="container">
+            <div class="row middle_line">
+                <a href="index.html">
+                    <img class="logo" src="images/logo.png" alt="">
+                </a>
+                <form action="#" class="search justify-content-center">
+                    <input type="text" placeholder="Поиск">
+                    <button type="submit">
+                        <img src="images/search_btn.png" alt="" class="search_btn">
+                    </button>
+                </form>
+                <ul class="my_cart">
+                    <li>
+                        <a href="#">
+                            <img class="heart" src="images/heart.png" alt="">
+                            <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="cart" src="images/cart.png" alt="">
+                            <span class="badge">5</span>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="my_cabinet">
+                    Личный кабинет
+                </a>
+                <div class="hamburger">
+                    <button class="openbtn" onclick="openNav()">
+                        <img src="images/hamburger.png" alt="">
+                    </button> 
+                </div>
+                <div id="mySidepanel" class="sidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="msp_menu">
+                        <p>Меню</p>
+                    </div>
+                    <a class="the_menu" href="#">Главная</a>
+                    <a class="the_menu" href="#">О Нас</a>
+                    <a class="the_menu" href="#">Каталог</a>
+                    <a class="the_menu" href="#">Возврат товара</a>
+                    <a class="the_menu" href="#">Оплата</a>
+                    <a class="the_menu" href="#">Доставка</a>
+                    <a class="the_menu" href="#">Гарантии</a>
+                    <a class="the_menu" href="#">Сотрудничество</a>
+                    <a class="the_menu" href="#">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--End Header-->
+
+    <!--SubMenu & MainSlider-->
+    <section class="mainslider">
+        <div class="container">
+            <div class="row sub_menu">
+                <ul class="categories">
+                    <li>
+                        <a href="#">Постели</a>
+                    </li>
+                    <li>
+                        <a href="#">Одеяла</a>
+                    </li>
+                    <li>
+                        <a href="#">Подушки</a>
+                    </li>
+                    <li>
+                        <a href="#">Покрывала</a>
+                    </li>
+                    <li>
+                        <a href="#">Скатерти</a>
+                    </li>
+                    <li>
+                        <a href="#">Коврики</a>
+                    </li>
+                    <li>
+                        <a href="#">Халаты</a>
+                    </li>
+                    <li>
+                        <a href="#">Полотенца</a>
+                    </li>
+                    <li>
+                        <a href="#">Наматрасники</a>
+                    </li>
+                    <li>
+                        <a href="#">Сотрудничество</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--End SubMenu & MainSlider-->
+
+    <!--Breadcrumbs-->
+    <section class="breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <ul>
+                    <li>
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li><i class="fas fa-chevron-right"></i></li>
+                    <li class="last">
+                        О нас
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>    
+    <!--End Breadcrumbs-->
+
+    <!--About Us-->
+    <section class="about_us">
+        <div class="container aboutUs_fullscreen">
+            <div class="row fs_row">
+                <img src="images/index-aboutus.png" alt="" class="about_us_img">
+                <div class="about_us_desc">
+                    <p>
+                        Как известно, здоровый сон является неизменным залогом бодрости и здоровья. Нет ничего лучше, чем сладко поспать в любимой уютной кровати после плодотворного трудового дня, восполняя энергию для следующих свершений. И такой сон просто невозможен без комфортного, натурального и приятного во всех отношениях постельного белья. Хотите превратить еженощный отход ко сну в праздник – тогда Интернет-магазин постельного белья Cotton Box к вашим услугам!
+                    </p>
+                    <p>
+                        Именно здесь, в каталоге постельного белья от ведущего производителя, вы сможете найти именно тот комплект, который не только подарит вам комфортный сон, но и, несомненно, порадует глаз и украсит интерьер вашей спальни. Неизменно высокое качество товаров, широкая гамма расцветок, разные фактуры и размеры – будьте уверены, что у нас вы найдете именно то, что вам нужно!
+                    </p>
+                    <p>
+                        Просмотрев каталог, вы легко можете купить постельное белье, просто нажав на кнопку «Купить», и выбранный постельный комплект будет доставлен вам в ближайшее время. Магазин постельного белья CottonBox.com.ua поможет выбрать отличный подарок родным и близким. Без сомнения, вашим знакомым молодоженам будет очень приятно получить в день свадьбы в качестве подарка шикарный постельный комплект из ранфорса или сатина, а молодым родителям придется по душе набор для кроватки новорожденного. Кроме того, постельное белье с изображением любимого мультипликационного героя станет отличным подарком для ребенка, а так же добавит колорита детской комнате. Естественно, покупка хорошего постельного белья – это отличный способ побаловать себя, ведь сон в уютной постели – это так приятно!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="about_us_more">
+                    <p>
+                        Приобретая постельное белье для своего ребенка в нашем магазине, можете не беспокоиться о том, не нанесет ли оно вред вашему ребенку. Все постельные комплекты, представленные в нашем каталоге, сделаны из экологически чистых тканей. Ваш любимый маленький соня оценит богатую палитру расцветки белья, а вы, несомненно, оцените то, что краски, которые были использованы при производстве белья, безопасны для здоровья, стойкие и натуральные. Благодаря этому, цвет постельного белья не пострадает во время стирки, и красители не вызовут аллергическую реакцию у вас или вашего ребенка.
+                    </p>
+                    <p>
+                        Мы позаботились о том, чтобы вы могли приобрести постельное белье в Киеве без проблем и не тратили свое время на прогулки по магазинам. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End About Us-->
+
+    <!--Our Partners-->
+    <section class="our_partners">
+        <div class="container">
+            <div class="row title_block">
+                <h2>Наши партнеры</h2>
+            </div>
+            <div class="row brands">
+                <div class="brand_name">
+                    <a href="#">
+                        <img src="images/brands/valtery.png" alt="">
+                    </a>
+                </div>
+                <div class="brand_name">
+                    <a href="#">
+                        <img src="images/brands/irya.png" alt="">
+                    </a>
+                </div>
+                <div class="brand_name">
+                    <a href="#">
+                        <img src="images/brands/anatolia.png" alt="">
+                    </a>
+                </div>
+                <div class="brand_name">
+                    <a href="#">
+                        <img src="images/brands/bahar.png" alt="">
+                    </a>
+                </div>
+                <div class="brand_name">
+                    <a href="#">
+                        <img src="images/brands/auera.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <span id="dots"></span>
+            <div class="row brands" id="more">
+                <div class="brand_name">
+                    <a href="#">
+                        <img src="images/brands/valtery.png" alt="">
+                    </a>
+                </div>
+                <div class="brand_name">
+                    <a href="#">
+                        <img src="images/brands/irya.png" alt="">
+                    </a>
+                </div>
+                <div class="brand_name">
+                    <a href="#">
+                        <img src="images/brands/anatolia.png" alt="">
+                    </a>
+                </div>
+                <div class="brand_name">
+                    <a href="#">
+                        <img src="images/brands/bahar.png" alt="">
+                    </a>
+                </div>
+                <div class="brand_name">
+                    <a href="#">
+                        <img src="images/brands/auera.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="more_btn">
+                <i class="fas fa-redo"></i><button onclick="myFunction()" id="myBtn">Показать все</button>
+            </div>
+        </div>
+    </section>
+    <!--End Our Partners-->
+
+    <!--FAQ-->
+    <section class="faq">
+        <div class="container faq_fullscreen">
+            <div class="row fs-row">
+                <div class="faq_form">
+                    <h2>У Вас остались вопросы?</h2>
+                    <p>Получите ответ от наших специалистов за несколько минут</p>
+                    <form>
+                        <input type="text" class="question" minlength="2" maxlength="5000" required="required" placeholder="Что Вас интересует?">
+                        <input type="email" class="email" minlength="2" maxlength="50" required="required" placeholder="Введите Ваш e-mail">
+                        <input type="button" class="button" value="Отправить">
+                    </form>
+                </div>
+                <div class="man_img">
+                    <img src="images/man-bg.png" alt="">
+                </div>
+                <div class="rounds">
+                    <img src="images/ellipse_big.png" class="round_one">
+                    <img src="images/ellipse_small.png" class="round_two">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End FAQ-->
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row between">
+                <div class="column">
+                    <img src="images/logo.png" alt="" class="footer_logo">
+                    <form>
+                        <input type="email" class="email" minlength="2" maxlength="50" required="required" placeholder="Введите Ваш e-mail">
+                        <input type="button" class="button subscribe" value="Подпишитесь на наши обновления">
+                    </form>
+                </div>
+                <div class="column">
+                    <h3>
+                        График работы
+                    </h3>
+                    <ul class="works">
+                        <li class="daus">
+                            Понедельник - пятница
+                        </li>
+                        <li class="time">
+                            с 10:00 до 19:00
+                        </li>
+                        <li>
+                            <ul class="socials">
+                                <li>
+                                    <a href="#">Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="#">Instagram</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul class="footer_menu">
+                        <li>
+                            <a href="#">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="#">Личный кабинет</a>
+                        </li>
+                        <li>
+                            <a href="#">Сотрудничество</a>
+                        </li>
+                        <li>
+                            <a href="#">Политика конфиденциальности</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Свяжитесь с нами</h3>
+                    <ul class="footer_contacts">
+                        <li>+38 (098) 065 18 36</li>
+                        <li>+38 (066) 837 50 36</li>
+                        <li>cottonboxua@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+
+
+
+
+
+    <!--Scripts-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
