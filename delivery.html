@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+    <!--ToTop-->
+    <button class="toTop" onclick="topFunction()" id="toTop"><i class="fas fa-chevron-up"></i></button>
+    <!--End ToTop-->
+
+    <!--Header-->
+    <header class="top">
+        <div class="container">
+            <div class="row top_line">
+                <ul class="top_menu">
+                    <li>
+                        <a href="#">Доставка</a>
+                    </li>
+                    <li>
+                        <a href="#">Гарантии</a>
+                    </li>
+                    <li>
+                        <a href="#">Возврат</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="top_contacts">
+                    <li>
+                        Пн - Пт с 10.00-19.00
+                    </li>
+                    <li>
+                        +38 012 345 67 89
+                    </li>
+                    <li>
+                        +38 012 345 67 89
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header> 
+    <header class="middle">
+        <div class="container">
+            <div class="row middle_line">
+                <a href="index.html">
+                    <img class="logo" src="images/logo.png" alt="">
+                </a>
+                <form action="#" class="search justify-content-center">
+                    <input type="text" placeholder="Поиск">
+                    <button type="submit">
+                        <img src="images/search_btn.png" alt="" class="search_btn">
+                    </button>
+                </form>
+                <ul class="my_cart">
+                    <li>
+                        <a href="#">
+                            <img class="heart" src="images/heart.png" alt="">
+                            <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="cart" src="images/cart.png" alt="">
+                            <span class="badge">5</span>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="my_cabinet">
+                    Личный кабинет
+                </a>
+                <div class="hamburger">
+                    <button class="openbtn" onclick="openNav()">
+                        <img src="images/hamburger.png" alt="">
+                    </button> 
+                </div>
+                <div id="mySidepanel" class="sidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="msp_menu">
+                        <p>Меню</p>
+                    </div>
+                    <a class="the_menu" href="#">Главная</a>
+                    <a class="the_menu" href="#">О Нас</a>
+                    <a class="the_menu" href="#">Каталог</a>
+                    <a class="the_menu" href="#">Возврат товара</a>
+                    <a class="the_menu" href="#">Оплата</a>
+                    <a class="the_menu" href="#">Доставка</a>
+                    <a class="the_menu" href="#">Гарантии</a>
+                    <a class="the_menu" href="#">Сотрудничество</a>
+                    <a class="the_menu" href="#">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--End Header-->
+
+    <!--SubMenu & MainSlider-->
+    <section class="mainslider">
+        <div class="container">
+            <div class="row sub_menu">
+                <ul class="categories">
+                    <li>
+                        <a href="#">Постели</a>
+                    </li>
+                    <li>
+                        <a href="#">Одеяла</a>
+                    </li>
+                    <li>
+                        <a href="#">Подушки</a>
+                    </li>
+                    <li>
+                        <a href="#">Покрывала</a>
+                    </li>
+                    <li>
+                        <a href="#">Скатерти</a>
+                    </li>
+                    <li>
+                        <a href="#">Коврики</a>
+                    </li>
+                    <li>
+                        <a href="#">Халаты</a>
+                    </li>
+                    <li>
+                        <a href="#">Полотенца</a>
+                    </li>
+                    <li>
+                        <a href="#">Наматрасники</a>
+                    </li>
+                    <li>
+                        <a href="#">Сотрудничество</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--End SubMenu & MainSlider-->
+
+    <!--Breadcrumbs-->
+    <section class="breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <ul>
+                    <li>
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li><i class="fas fa-chevron-right"></i></li>
+                    <li class="last">
+                        Доставка
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>    
+    <!--End Breadcrumbs-->
+
+    <!--Delivery-->
+    <section class="delivery_info">
+        <div class="container">
+            <div class="row">
+                <div class="delivery">
+                    <div class="info">
+                        <h2>Доставка</h2>
+                        <h3>Доставка курьером по Киеву</h3>
+                        <p>
+                            Доставка курьером по Киеву на сумму от 1000 осуществляется бесплатно (оплачивается только сумма покупки) с 10 до 18 с понедельника по пятницу.
+                            <br>При заказе на сумму меньше 1000 стоимость доставки составляет 50 гривен.
+                            <br>Время и сроки доставки обговариваются индивидуально при заказе.
+                            <br>Доставка осуществляется до подъезда.                            
+                        </p>
+                        <h3>Доставка по Украине</h3>
+                        <p>
+                            Доставка по Украине осуществляется Новой почтой. При заказе на сумму от 1000 гривен стоимость доставки до отделения Новой Почты бесплатная.
+                            <br>При заказе товара наложенным платежом услуги по пересылке средств оплачивает покупатель.
+                            <br>Время и сроки отправки обговариваются индивидуально при заказе.
+                        </p>
+                    </div>
+                </div>
+                <div class="warranty">
+                    <div class="info">
+                        <h2>Гарантии</h2>
+                        <p>
+                            В случае выявления заводского брака мы производим обмен товара или возврат денежных средств.
+                        </p>
+                        <p>
+                            Возврат и обмен товаров надлежащего качества производится в течение 14 дней со дня продажи в магазине компании, если указанный товар не был в употреблении, сохранен его товарный вид, потребительские свойства, упаковка и фабричные ярлыки не повреждены.
+                        </p>
+                        <p>
+                            Часть товаров надлежащего качества не подлежит возврату, так как является предметом личной гигиены (см. Закон о Защите прав Потребителей <a href="zakon2.rada.gov.ua/laws/show/1023-12">zakon2.rada.gov.ua/laws/show/1023-12</a>).
+                        </p>
+                    </div>
+                </div>
+                <div class="return">
+                    <div class="info">
+                        <h2>Возврат</h2>
+                        <p>
+                            Уважаемые покупатели, внимательно осматривайте привезенный Вам заказ. Проверка комплектности, соответствие заказанному и отсутствие дефектов производится при передаче товара покупателю. Учитывайте, что фотографии на сайте сделаны при студийном освещении и оттенки цветов могут отличатся в зависимости от освещения в Вашем доме.
+                            <br>Возврат и обмен товаров надлежащего качества производится в течение 14 дней со дня продажи в магазине компании, если указанный товар не был в употреблении, сохранен его товарный вид, потребительские свойства, упаковка, и фабричные ярлыки не повреждены.
+                            <br>Согласно Закона о Защите прав потребителей, с потребителя удерживается стоимость курьерских услуг при доставке в пределах г. Киева - 50 грн, при возврате из других регионов Украины - согласно тарифам службы доставки. Обратите внимание, что не все товары надлежащего качества подлежат обмену или возврату согласно закону "О защите прав потребителей".
+                            <br>Ознакомиться с текстом закона можно по ссылке - <a href="zakon2.rada.gov.ua/laws/show/1023-12">zakon2.rada.gov.ua/laws/show/1023-12</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="payment">
+                    <div class="info">
+                        <h2>Оплата</h2>
+                        <h3>Наличная</h3>
+                        <p>
+                            Вы оплачиваете заказ курьеру при получении.
+                        </p>
+                        <h3>Наложенным платежом</h3>
+                        <p>
+                            Оплата заказа при получении на складе Новой Почты
+                        </p>
+                        <h3>Безналичная</h3>
+                        <p>
+                            Вы можете оплатить заказ на наш расчетный счет. Обращаем внимание, что доставка товара возможна только после подтверждения платежа. 
+                        </p>
+                        <h3>Оплата LiqPay через Инвойс</h3>
+                        <p>
+                            Вы можете оплатить заказ с помощью инвойса LiqPay
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Delivery-->
+
+    <!--FAQ-->
+    <section class="faq">
+        <div class="container faq_fullscreen">
+            <div class="row fs-row">
+                <div class="faq_form">
+                    <h2>У Вас остались вопросы?</h2>
+                    <p>Получите ответ от наших специалистов за несколько минут</p>
+                    <form>
+                        <input type="text" class="question" minlength="2" maxlength="5000" required="required" placeholder="Что Вас интересует?">
+                        <input type="email" class="email" minlength="2" maxlength="50" required="required" placeholder="Введите Ваш e-mail">
+                        <input type="button" class="button" value="Отправить">
+                    </form>
+                </div>
+                <div class="man_img">
+                    <img src="images/man-bg.png" alt="">
+                </div>
+                <div class="rounds">
+                    <img src="images/ellipse_big.png" class="round_one">
+                    <img src="images/ellipse_small.png" class="round_two">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End FAQ-->
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row between">
+                <div class="column">
+                    <img src="images/logo.png" alt="" class="footer_logo">
+                    <form>
+                        <input type="email" class="email" minlength="2" maxlength="50" required="required" placeholder="Введите Ваш e-mail">
+                        <input type="button" class="button subscribe" value="Подпишитесь на наши обновления">
+                    </form>
+                </div>
+                <div class="column">
+                    <h3>
+                        График работы
+                    </h3>
+                    <ul class="works">
+                        <li class="daus">
+                            Понедельник - пятница
+                        </li>
+                        <li class="time">
+                            с 10:00 до 19:00
+                        </li>
+                        <li>
+                            <ul class="socials">
+                                <li>
+                                    <a href="#">Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="#">Instagram</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul class="footer_menu">
+                        <li>
+                            <a href="#">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="#">Личный кабинет</a>
+                        </li>
+                        <li>
+                            <a href="#">Сотрудничество</a>
+                        </li>
+                        <li>
+                            <a href="#">Политика конфиденциальности</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Свяжитесь с нами</h3>
+                    <ul class="footer_contacts">
+                        <li>+38 (098) 065 18 36</li>
+                        <li>+38 (066) 837 50 36</li>
+                        <li>cottonboxua@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+
+
+
+
+
+    <!--Scripts-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
