@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+    <!--ToTop-->
+    <button class="toTop" onclick="topFunction()" id="toTop"><i class="fas fa-chevron-up"></i></button>
+    <!--End ToTop-->
+
+    <!--Header-->
+    <header class="top">
+        <div class="container">
+            <div class="row top_line">
+                <ul class="top_menu">
+                    <li>
+                        <a href="#">Доставка</a>
+                    </li>
+                    <li>
+                        <a href="#">Гарантии</a>
+                    </li>
+                    <li>
+                        <a href="#">Возврат</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="top_contacts">
+                    <li>
+                        Пн - Пт с 10.00-19.00
+                    </li>
+                    <li>
+                        +38 012 345 67 89
+                    </li>
+                    <li>
+                        +38 012 345 67 89
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header> 
+    <header class="middle">
+        <div class="container">
+            <div class="row middle_line">
+                <a href="index.html">
+                    <img class="logo" src="images/logo.png" alt="">
+                </a>
+                <form action="#" class="search justify-content-center">
+                    <input type="text" placeholder="Поиск">
+                    <button type="submit">
+                        <img src="images/search_btn.png" alt="" class="search_btn">
+                    </button>
+                </form>
+                <ul class="my_cart">
+                    <li>
+                        <a href="#">
+                            <img class="heart" src="images/heart.png" alt="">
+                            <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="cart" src="images/cart.png" alt="">
+                            <span class="badge">5</span>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="my_cabinet">
+                    Личный кабинет
+                </a>
+                <div class="hamburger">
+                    <button class="openbtn" onclick="openNav()">
+                        <img src="images/hamburger.png" alt="">
+                    </button> 
+                </div>
+                <div id="mySidepanel" class="sidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="msp_menu">
+                        <p>Меню</p>
+                    </div>
+                    <a class="the_menu" href="#">Главная</a>
+                    <a class="the_menu" href="#">О Нас</a>
+                    <a class="the_menu" href="#">Каталог</a>
+                    <a class="the_menu" href="#">Возврат товара</a>
+                    <a class="the_menu" href="#">Оплата</a>
+                    <a class="the_menu" href="#">Доставка</a>
+                    <a class="the_menu" href="#">Гарантии</a>
+                    <a class="the_menu" href="#">Сотрудничество</a>
+                    <a class="the_menu" href="#">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--End Header-->
+
+    <!--SubMenu & MainSlider-->
+    <section class="mainslider">
+        <div class="container">
+            <div class="row sub_menu">
+                <ul class="categories">
+                    <li>
+                        <a href="#">Постели</a>
+                    </li>
+                    <li>
+                        <a href="#">Одеяла</a>
+                    </li>
+                    <li>
+                        <a href="#">Подушки</a>
+                    </li>
+                    <li>
+                        <a href="#">Покрывала</a>
+                    </li>
+                    <li>
+                        <a href="#">Скатерти</a>
+                    </li>
+                    <li>
+                        <a href="#">Коврики</a>
+                    </li>
+                    <li>
+                        <a href="#">Халаты</a>
+                    </li>
+                    <li>
+                        <a href="#">Полотенца</a>
+                    </li>
+                    <li>
+                        <a href="#">Наматрасники</a>
+                    </li>
+                    <li>
+                        <a href="#">Сотрудничество</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--End SubMenu & MainSlider-->
+
+    <!--Breadcrumbs-->
+    <section class="breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <ul>
+                    <li>
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li><i class="fas fa-chevron-right"></i></li>
+                    <li class="last">
+                        Корзина
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>    
+    <!--End Breadcrumbs-->
+
+    <!--Cart-->
+    <section class="cart">
+        <div class="container">
+            <div class="row">
+                <div class="items_in_cart">
+                    <div class="product">
+                        <div class="product_img">
+                            <img src="images/item5.png" alt="">
+                        </div>
+                        <div class="product_name">
+                            <h2>
+                                Комплект постельного белья Halley Home Prenses
+                            </h2>
+                            <p class="sku">Артикул <span class="sku_numb">010077181</span></p>
+                            <p class="availability_plus">Есть в наличии</p>
+                        </div>
+                        <div class="quantity">
+                            <div class="input-group plus-minus-input">
+                                <div class="input-group-button">
+                                    <button type="button" class="circle" data-quantity="minus" data-field="quantity">
+                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <input class="input-group-field" type="number" name="quantity" value="1">
+                                <div class="input-group-button">
+                                    <button type="button" class="circle" data-quantity="plus" data-field="quantity">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_price">
+                            <p class="price">2236,00 грн</p>
+                            <button class="delete">Удалить</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_img">
+                            <img src="images/item5.png" alt="">
+                        </div>
+                        <div class="product_name">
+                            <h2>
+                                Комплект постельного белья Halley Home Prenses
+                            </h2>
+                            <p class="sku">Артикул <span class="sku_numb">010077181</span></p>
+                            <p class="availability_minus">Нет в наличии</p>
+                        </div>
+                        <div class="quantity">
+                            <div class="input-group plus-minus-input">
+                                <div class="input-group-button">
+                                    <button type="button" class="circle" data-quantity="minus" data-field="quantity">
+                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <input class="input-group-field" type="number" name="quantity" value="1">
+                                <div class="input-group-button">
+                                    <button type="button" class="circle" data-quantity="plus" data-field="quantity">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_price">
+                            <p class="price">2236,00 грн</p>
+                            <button class="delete">Удалить</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_img">
+                            <img src="images/item5.png" alt="">
+                        </div>
+                        <div class="product_name">
+                            <h2>
+                                Комплект постельного белья Halley Home Prenses
+                            </h2>
+                            <p class="sku">Артикул <span class="sku_numb">010077181</span></p>
+                            <p class="availability_plus">Есть в наличии</p>
+                        </div>
+                        <div class="quantity">
+                            <div class="input-group plus-minus-input">
+                                <div class="input-group-button">
+                                    <button type="button" class="circle" data-quantity="minus" data-field="quantity">
+                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <input class="input-group-field" type="number" name="quantity" value="1">
+                                <div class="input-group-button">
+                                    <button type="button" class="circle" data-quantity="plus" data-field="quantity">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_price">
+                            <p class="price">2236,00 грн</p>
+                            <button class="delete">Удалить</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_img">
+                            <img src="images/item5.png" alt="">
+                        </div>
+                        <div class="product_name">
+                            <h2>
+                                Комплект постельного белья Halley Home Prenses
+                            </h2>
+                            <p class="sku">Артикул <span class="sku_numb">010077181</span></p>
+                            <p class="availability_plus">Есть в наличии</p>
+                        </div>
+                        <div class="quantity">
+                            <div class="input-group plus-minus-input">
+                                <div class="input-group-button">
+                                    <button type="button" class="circle" data-quantity="minus" data-field="quantity">
+                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <input class="input-group-field" type="number" name="quantity" value="1">
+                                <div class="input-group-button">
+                                    <button type="button" class="circle" data-quantity="plus" data-field="quantity">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_price">
+                            <p class="price">2236,00 грн</p>
+                            <button class="delete">Удалить</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_img">
+                            <img src="images/item5.png" alt="">
+                        </div>
+                        <div class="product_name">
+                            <h2>
+                                Комплект постельного белья Halley Home Prenses
+                            </h2>
+                            <p class="sku">Артикул <span class="sku_numb">010077181</span></p>
+                            <p class="availability_plus">Есть в наличии</p>
+                        </div>
+                        <div class="quantity">
+                            <div class="input-group plus-minus-input">
+                                <div class="input-group-button">
+                                    <button type="button" class="circle" data-quantity="minus" data-field="quantity">
+                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <input class="input-group-field" type="number" name="quantity" value="1">
+                                <div class="input-group-button">
+                                    <button type="button" class="circle" data-quantity="plus" data-field="quantity">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_price">
+                            <p class="price">2236,00 грн</p>
+                            <button class="delete">Удалить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items_sum">
+                    <p class="sum_header">Всего</p>
+                    <div class="row sum_products">
+                        <p class="quantity"><span>6 шт</span> на сумму</p>
+                        <p class="summ">13 416,00 грн</p>
+                    </div>
+                    <div class="row sum_discount">
+                        <p class="disc_text">скидка</p>
+                        <p class="discount">500,00 грн</p>
+                    </div>
+                    <div class="hr">
+                        <hr>
+                    </div>
+                    <div class="amount">
+                        <p>12 916,00 грн</p>
+                    </div>
+                    <p class="sum_footer">У Вас есть промокод?</p>
+                    <div class="promo_btns">
+                        <input type="text" class="promocode" placeholder="Введите промокод">
+                        <button class="submit_promo">Применить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row shop_manage">
+                <button class="more_shopping">Продолжить покупки</button>
+                <button class="issue">Перейти к оформлению</button>
+            </div>
+        </div>
+    </section>
+    <!--End Cart-->
+
+    <!--Recomendation-->
+    <section class="recomendation">
+        <div class="container">
+            <div class="row title_block">
+                <h2>Мы рекомендуем</h2>
+                <div class="owl-controls">
+                    <ul class="owl-nav">
+                        <li><a class="seeall"href="#">Посмотреть все товары</a></li>
+                        <li class="prevBtn"><</li>
+                        <li class="nextBtn">></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="owl-carousel owl-theme recomendationSlider">
+                    <div class="item">
+                        <div class="image">
+                            <div class="labels">
+                                <div class="new">
+                                    <b>Новинка</b>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <img src="images/item1.png" alt="" class="item_img">
+                            </a>
+                            <div class="item_btns">
+                                <button class="like">
+                                    <img src="images/heart-white.png" alt="">
+                                </button>
+                                <button class="add">
+                                    <img src="images/cart-white.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="item_desc">
+                            <a href="#">
+                                Пике Irya Weekend Pudra
+                            </a>
+                        </h3>
+                        <p class="price">
+                            2226,00 грн <span class="price_desc">/ двухспальное</span>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <div class="labels">
+                                <div class="sale">
+                                    <b>Скидка</b>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <img src="images/item2.png" alt="" class="item_img">
+                            </a>
+                            <div class="item_btns">
+                                <button class="like">
+                                    <img src="images/heart-white.png" alt="">
+                                </button>
+                                <button class="add">
+                                    <img src="images/cart-white.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="item_desc">
+                            <a href="#">
+                                Комплект постельного белья Cotton box Kelebek Pembe
+                            </a>
+                        </h3>
+                        <p class="price">
+                            928,00 грн <span class="price_desc">/ для новорожденных</span>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <div class="labels">
+                                <div class="hit">
+                                    <b>Хит</b>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <img src="images/item3.png" alt="" class="item_img">
+                            </a>
+                            <div class="item_btns">
+                                <button class="like">
+                                    <img src="images/heart-white.png" alt="">
+                                </button>
+                                <button class="add">
+                                    <img src="images/cart-white.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="item_desc">
+                            <a href="#">
+                                Коврик для ванной Confetti Polka Grey (Gri)
+                            </a>
+                        </h3>
+                        <p class="price">
+                            446,00 грн <span class="price_desc">/ 55х57</span>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <div class="labels">
+                                <div class="new">
+                                    <b>Новинка</b>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <img src="images/item4.png" alt="" class="item_img">
+                            </a>
+                            <div class="item_btns">
+                                <button class="like">
+                                    <img src="images/heart-white.png" alt="">
+                                </button>
+                                <button class="add">
+                                    <img src="images/cart-white.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="item_desc">
+                            <a href="#">
+                                Комплект постельного белья Halley Home Prenses
+                            </a>
+                        </h3>
+                        <p class="price">
+                            <strike>1200 грн<br></strike>
+                            2226,00 грн <span class="price_desc">/ двухспальное</span>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <div class="labels">
+                                <div class="sale">
+                                    <b>Скидка</b>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <img src="images/item1.png" alt="" class="item_img">
+                            </a>
+                                                        <div class="item_btns">
+                                <button class="like">
+                                    <img src="images/heart-white.png" alt="">
+                                </button>
+                                <button class="add">
+                                    <img src="images/cart-white.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="item_desc">
+                            <a href="#">
+                                Пике Irya Weekend Pudra
+                            </a>
+                        </h3>
+                        <p class="price">
+                            2226,00 грн <span class="price_desc">/ двухспальное</span>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <div class="labels">
+                                <div class="hit">
+                                    <b>Хит</b>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <img src="images/item2.png" alt="" class="item_img">
+                            </a>
+                            <div class="item_btns">
+                                <button class="like">
+                                    <img src="images/heart-white.png" alt="">
+                                </button>
+                                <button class="add">
+                                    <img src="images/cart-white.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="item_desc">
+                            <a href="#">
+                                Комплект постельного белья Cotton box Kelebek Pembe
+                            </a>
+                        </h3>
+                        <p class="price">
+                            928,00 грн <span class="price_desc">/ для новорожденных</span>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <div class="labels">
+                                <div class="new">
+                                    <b>Новинка</b>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <img src="images/item3.png" alt="" class="item_img">
+                            </a>
+                            <div class="item_btns">
+                                <button class="like">
+                                    <img src="images/heart-white.png" alt="">
+                                </button>
+                                <button class="add">
+                                    <img src="images/cart-white.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="item_desc">
+                            <a href="#">
+                                Коврик для ванной Confetti Polka Grey (Gri)
+                            </a>
+                        </h3>
+                        <p class="price">
+                            446,00 грн <span class="price_desc">/ 55х57</span>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <div class="labels">
+                                <div class="sale">
+                                    <b>Скидка</b>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <img src="images/item4.png" alt="" class="item_img">
+                            </a>
+                            <div class="item_btns">
+                                <button class="like">
+                                    <img src="images/heart-white.png" alt="">
+                                </button>
+                                <button class="add">
+                                    <img src="images/cart-white.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="item_desc">
+                            <a href="#">
+                                Комплект постельного белья Halley Home Prenses
+                            </a>
+                        </h3>
+                        <p class="price">
+                            <strike>1200 грн<br></strike>
+                            2226,00 грн <span class="price_desc">/ двухспальное</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Recomendation-->
+
+    <!--FAQ-->
+    <section class="faq">
+        <div class="container faq_fullscreen">
+            <div class="row fs-row">
+                <div class="faq_form">
+                    <h2>У Вас остались вопросы?</h2>
+                    <p>Получите ответ от наших специалистов за несколько минут</p>
+                    <form>
+                        <input type="text" class="question" minlength="2" maxlength="5000" required="required" placeholder="Что Вас интересует?">
+                        <input type="email" class="email" minlength="2" maxlength="50" required="required" placeholder="Введите Ваш e-mail">
+                        <input type="button" class="button" value="Отправить">
+                    </form>
+                </div>
+                <div class="man_img">
+                    <img src="images/man-bg.png" alt="">
+                </div>
+                <div class="rounds">
+                    <img src="images/ellipse_big.png" class="round_one">
+                    <img src="images/ellipse_small.png" class="round_two">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End FAQ-->
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row between">
+                <div class="column">
+                    <img src="images/logo.png" alt="" class="footer_logo">
+                    <form>
+                        <input type="email" class="email" minlength="2" maxlength="50" required="required" placeholder="Введите Ваш e-mail">
+                        <input type="button" class="button subscribe" value="Подпишитесь на наши обновления">
+                    </form>
+                </div>
+                <div class="column">
+                    <h3>
+                        График работы
+                    </h3>
+                    <ul class="works">
+                        <li class="daus">
+                            Понедельник - пятница
+                        </li>
+                        <li class="time">
+                            с 10:00 до 19:00
+                        </li>
+                        <li>
+                            <ul class="socials">
+                                <li>
+                                    <a href="#">Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="#">Instagram</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul class="footer_menu">
+                        <li>
+                            <a href="#">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="#">Личный кабинет</a>
+                        </li>
+                        <li>
+                            <a href="#">Сотрудничество</a>
+                        </li>
+                        <li>
+                            <a href="#">Политика конфиденциальности</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Свяжитесь с нами</h3>
+                    <ul class="footer_contacts">
+                        <li>+38 (098) 065 18 36</li>
+                        <li>+38 (066) 837 50 36</li>
+                        <li>cottonboxua@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+
+
+
+
+
+    <!--Scripts-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
