@@ -3208,8 +3208,54 @@ button:focus {
     }
 }
 
-/* Order Page */
+/* Contact Information Page */
+.contact_information {
+    .contact_btns {
+        .col();
+        .size(4);
 
+        display: flex;
+        flex-direction: column;
+            
+        a {
+            font-family: @montserrat;
+            background: transparent;
+            font-size: 22px;
+            border: 1px solid transparent;
+            border-radius: 20px;
+            color: #232323;
+            width: 100%;
+            text-align: left;
+            box-shadow: 0px 0px 6px #00000029;
+            padding: 15px 30px;
+            margin-bottom: 40px;
+            text-decoration: none;
+        }
+
+        .active {
+            border: 1px solid #BD4F50;
+            color: #BD4F50;
+        }
+    }
+
+    .personal_data {
+        .col();
+        .size(12);
+
+        h2 {
+            text-align: center;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+
+            li {
+                display: inline;
+            }
+        }
+    }
+}
 
 /* FAQ */
 .faq {
