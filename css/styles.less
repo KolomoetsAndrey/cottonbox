@@ -2856,6 +2856,181 @@ button:focus {
 
     }
 
+    .order_data {
+        .col();
+        .size(12);
+
+        h2 {
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        form {
+            margin-top: 35px;
+
+            h3 {
+                font-size: 30px;
+                font-weight: 500;
+                margin-top: 70px;
+            }
+
+            ul {
+                margin-top: 30px;
+                font-size: 22px;
+
+                li {
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    width: 32%;
+                }
+            }
+
+            .name {
+                width: 47%;
+                border: 1px solid #707070;
+                border-radius: 46px;
+                padding: 15px;
+                margin-bottom: 20px;
+                margin-right: 15px;
+            }
+
+            .lastname {
+                width: 47%;
+                border: 1px solid #707070;
+                border-radius: 46px;
+                padding: 15px;
+                margin-bottom: 20px;
+                margin-right: 15px;
+            }
+
+            .phone {
+                width: 47%;
+                border: 1px solid #707070;
+                border-radius: 46px;
+                padding: 15px;
+                margin-bottom: 20px;
+                margin-right: 15px;
+            }
+
+            .email {
+                width: 47%;
+                border: 1px solid #707070;
+                border-radius: 46px;
+                padding: 15px;
+                margin-bottom: 20px;
+                margin-right: 15px;
+            }
+
+            .message {
+                width: 93%;
+                border: 1px solid #707070;
+                border-radius: 34px;
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+
+            .subscribe {
+                font-size: 20px;
+                color: #ffffff;
+                border: 1px solid #BD4F50;
+                border-radius: 25px;
+                box-shadow: 0px 5px 20px #CCCCCC;
+                background: #BD4F50;
+                cursor: pointer;
+                margin-top: 40px;
+                padding: 15px 60px;
+                font-family: @montserrat;
+            }
+
+            .checkbox input[type="checkbox"] {
+                opacity: 0;
+            }
+
+            .checkbox label {
+                position: relative;
+                display: inline-block;
+                padding-left: 30px;
+                padding-top: 2px;
+            }
+
+            .checkbox label::before, .checkbox label::after {
+                position: absolute;
+                content: "";
+                display: inline-block;
+            }
+
+            .checkbox label::before{
+                height: 16px;
+                width: 16px;
+                border: 1px solid #BD4F50;
+                border-radius: 5px;
+                left: 0px;
+                top: 3px;
+            }
+
+            .checkbox label::after {
+                height: 5px;
+                width: 9px;
+                border-left: 2px solid;
+                border-bottom: 2px solid;
+                transform: rotate(-45deg);
+                left: 4px;
+                top: 7px;
+            }
+
+            .checkbox input[type="checkbox"] + label::after {
+                content: none;
+            }
+            
+            .checkbox input[type="checkbox"]:checked + label::after {
+                content: "";
+            }
+
+            .region, .city, .post_num {
+                width: 50%;
+                margin-top: 40px;
+
+                .selectdiv {
+                    position: relative;
+                }
+                  
+                select::-ms-expand {
+                  display: none;
+                }
+                  
+                .selectdiv:after {
+                    font-family: "Font Awesome 5 Free";
+                    content: "\f078";
+                    font-weight: 600;
+                    color: #CCCCCC;
+                    right: 30px;
+                    top: 14px;
+                    padding: 0 0 2px;                
+                    position: absolute;
+                    pointer-events: none;
+                }
+                  
+                .selectdiv select {
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    display: block;
+                    width: 100%;
+                    height: 40px;
+                    margin: 5px 0px;
+                    padding: 0px 40px;
+                    color: #CCCCCC;
+                    background: transparent;
+                    border: none;
+                    border-radius: 20px;
+                    box-shadow: 0px 0px 6px #0000002b;
+                    -ms-word-break: normal;
+                    word-break: normal;
+                }
+            }
+        }
+    }
+
     .items_sum {
         .col();
         .size(4);
@@ -2976,6 +3151,26 @@ button:focus {
             }
         }
 
+        .order_edit {
+            text-align: center;
+            margin-top: 70px;
+
+            .edit {
+                color: #A7A7A7;
+                font-size: 20px;
+                font-weight: 200;
+                border: none;
+                text-decoration: underline;
+                background: transparent;
+                font-family: @montserrat;
+                cursor: pointer;
+                transition: all 0.2s;
+
+                &:hover {
+                    color: #BD4F50;
+                }
+            }
+        }
     }
 
     .shop_manage {
@@ -3012,6 +3207,9 @@ button:focus {
         }
     }
 }
+
+/* Order Page */
+
 
 /* FAQ */
 .faq {
@@ -3150,6 +3348,7 @@ button:focus {
         .col();
         .size-sm(4);
         .size-xs(8);
+
         font-size: 18px;
         color: #232323;
         line-height: 40px;

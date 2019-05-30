@@ -2671,6 +2671,171 @@ button:focus {
   color: #BD4F50;
   background: transparent;
 }
+.cart .order_data {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: calc(75% - 16px);
+}
+.cart .order_data h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.cart .order_data form {
+  margin-top: 35px;
+}
+.cart .order_data form h3 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 70px;
+}
+.cart .order_data form ul {
+  margin-top: 30px;
+  font-size: 22px;
+}
+.cart .order_data form ul li {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 32%;
+}
+.cart .order_data form .name {
+  width: 47%;
+  border: 1px solid #707070;
+  border-radius: 46px;
+  padding: 15px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+.cart .order_data form .lastname {
+  width: 47%;
+  border: 1px solid #707070;
+  border-radius: 46px;
+  padding: 15px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+.cart .order_data form .phone {
+  width: 47%;
+  border: 1px solid #707070;
+  border-radius: 46px;
+  padding: 15px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+.cart .order_data form .email {
+  width: 47%;
+  border: 1px solid #707070;
+  border-radius: 46px;
+  padding: 15px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+.cart .order_data form .message {
+  width: 93%;
+  border: 1px solid #707070;
+  border-radius: 34px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.cart .order_data form .subscribe {
+  font-size: 20px;
+  color: #ffffff;
+  border: 1px solid #BD4F50;
+  border-radius: 25px;
+  box-shadow: 0px 5px 20px #CCCCCC;
+  background: #BD4F50;
+  cursor: pointer;
+  margin-top: 40px;
+  padding: 15px 60px;
+  font-family: 'Montserrat', sans-serif;
+}
+.cart .order_data form .checkbox input[type="checkbox"] {
+  opacity: 0;
+}
+.cart .order_data form .checkbox label {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px;
+  padding-top: 2px;
+}
+.cart .order_data form .checkbox label::before,
+.cart .order_data form .checkbox label::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+}
+.cart .order_data form .checkbox label::before {
+  height: 16px;
+  width: 16px;
+  border: 1px solid #BD4F50;
+  border-radius: 5px;
+  left: 0px;
+  top: 3px;
+}
+.cart .order_data form .checkbox label::after {
+  height: 5px;
+  width: 9px;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  transform: rotate(-45deg);
+  left: 4px;
+  top: 7px;
+}
+.cart .order_data form .checkbox input[type="checkbox"] + label::after {
+  content: none;
+}
+.cart .order_data form .checkbox input[type="checkbox"]:checked + label::after {
+  content: "";
+}
+.cart .order_data form .region,
+.cart .order_data form .city,
+.cart .order_data form .post_num {
+  width: 50%;
+  margin-top: 40px;
+}
+.cart .order_data form .region .selectdiv,
+.cart .order_data form .city .selectdiv,
+.cart .order_data form .post_num .selectdiv {
+  position: relative;
+}
+.cart .order_data form .region select::-ms-expand,
+.cart .order_data form .city select::-ms-expand,
+.cart .order_data form .post_num select::-ms-expand {
+  display: none;
+}
+.cart .order_data form .region .selectdiv:after,
+.cart .order_data form .city .selectdiv:after,
+.cart .order_data form .post_num .selectdiv:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f078";
+  font-weight: 600;
+  color: #CCCCCC;
+  right: 30px;
+  top: 14px;
+  padding: 0 0 2px;
+  position: absolute;
+  pointer-events: none;
+}
+.cart .order_data form .region .selectdiv select,
+.cart .order_data form .city .selectdiv select,
+.cart .order_data form .post_num .selectdiv select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin: 5px 0px;
+  padding: 0px 40px;
+  color: #CCCCCC;
+  background: transparent;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 0px 6px #0000002b;
+  -ms-word-break: normal;
+  word-break: normal;
+}
 .cart .items_sum {
   box-sizing: border-box;
   word-wrap: break-word;
@@ -2786,6 +2951,24 @@ button:focus {
   font-size: 20px;
   cursor: pointer;
 }
+.cart .items_sum .order_edit {
+  text-align: center;
+  margin-top: 70px;
+}
+.cart .items_sum .order_edit .edit {
+  color: #A7A7A7;
+  font-size: 20px;
+  font-weight: 200;
+  border: none;
+  text-decoration: underline;
+  background: transparent;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.cart .items_sum .order_edit .edit:hover {
+  color: #BD4F50;
+}
 .cart .shop_manage {
   display: flex;
   align-items: center;
@@ -2817,6 +3000,7 @@ button:focus {
   box-shadow: 0px 5px 20px #CCCCCC;
   cursor: pointer;
 }
+/* Order Page */
 /* FAQ */
 .faq {
   margin-top: 175px;
