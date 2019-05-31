@@ -156,7 +156,7 @@
                     </li>
                     <li><i class="fas fa-chevron-right"></i></li>
                     <li class="last">
-                        Контактная информация
+                        Мои заказы
                     </li>
                 </ul>
             </div>
@@ -164,41 +164,125 @@
     </section>    
     <!--End Breadcrumbs-->
 
-    <!--Contact Information-->
+    <!--My Orders-->
     <section class="contact_information">
         <div class="container">
             <div class="row">
                 <div class="contact_btns">
-                    <a class="active">Контактная информация</a>
-                    <a href="#">Мои заказы</a>
+                    <a href="#">Контактная информация</a>
+                    <a class="active">Мои заказы</a>
                     <a href="#">Избранное</a>
                     <a href="#">Информация</a>
                     <a href="#">Выход</a>
                 </div>
-                <div class="personal_data">
-                    <h2>Контактная информация</h2>
-                    <ul>
-                        <li class="name">Иван Иванов</li>
-                        <li class="phone">+38 (012) 345-67-89</li>
-                        <li class="email">ivanov@gmail.com</li>
-                    </ul>
-                    <form>
-                        <input type="name" class="name" placeholder="Ваше имя">
-                        <input type="lastname" class="lastname" placeholder="Ваша фамилия">
-                        <input type="phone" class="phone" placeholder="Ваш телефон">
-                        <input type="email" class="email" placeholder="Ваш e-mail">
-                        <input type="oldpass" class="oldpass" placeholder="Старый пароль">
-                        <input type="newpass" class="newpass" placeholder="Новый пароль">
-                        <div class="btns">
-                            <button class="save">Сохранить</button>
-                            <button class="cancel">Отмена</button>
+                <div class="orders_data">
+                    <div class="order_number">
+                        <button class="back"><i class="fas fa-chevron-left"></i></button>
+                        <h2>Заказ №12345678</h2>
+                        <ul class="order_status">
+                            <li>Выполнено</li>
+                            <li>05.11.2018</li>
+                        </ul>
+                    </div>
+                    <div class="orders_products">
+                        <div class="product_info">
+                            <img src="images/item5.png" alt="">
+                            <div class="product_info_data">
+                                <h3>Комплект постельного белья Halley Home Prenses</h3>
+                                <p class="quantity">1 шт</p>
+                                <p class="sku">Артиркул: <span>010077181</span></p>
+                                <p class="availability">Есть в наличии</p>
+                                <p class="price">2236,00 грн</p>
+                            </div>
                         </div>
-                    </form>
+                        <div class="product_info">
+                            <img src="images/item5.png" alt="">
+                            <div class="product_info_data">
+                                <h3>Комплект постельного белья Halley Home Prenses</h3>
+                                <p class="quantity">1 шт</p>
+                                <p class="sku">Артиркул: <span>010077181</span></p>
+                                <p class="availability">Есть в наличии</p>
+                                <p class="price">2236,00 грн</p>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <img src="images/item5.png" alt="">
+                            <div class="product_info_data">
+                                <h3>Комплект постельного белья Halley Home Prenses</h3>
+                                <p class="quantity">1 шт</p>
+                                <p class="sku">Артиркул: <span>010077181</span></p>
+                                <p class="availability">Есть в наличии</p>
+                                <p class="price">2236,00 грн</p>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <img src="images/item5.png" alt="">
+                            <div class="product_info_data">
+                                <h3>Комплект постельного белья Halley Home Prenses</h3>
+                                <p class="quantity">1 шт</p>
+                                <p class="sku">Артиркул: <span>010077181</span></p>
+                                <p class="availability">Есть в наличии</p>
+                                <p class="price">2236,00 грн</p>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <img src="images/item5.png" alt="">
+                            <div class="product_info_data">
+                                <h3>Комплект постельного белья Halley Home Prenses</h3>
+                                <p class="quantity">1 шт</p>
+                                <p class="sku">Артиркул: <span>010077181</span></p>
+                                <p class="availability">Есть в наличии</p>
+                                <p class="price">2236,00 грн</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="payments_result">
+                        <div class="total">
+                            <p class="total_text">Всего сумма заказа</p>
+                            <p class="total_sum">15 652,00 грн</p>
+                        </div>
+                        <div class="discount">
+                            <p class="discount_text">Скидка</p>
+                            <p class="discount_sum">500,00 грн</p>
+                        </div>
+                        <div class="paid">
+                            <p class="paid_text">Оплачено</p>
+                            <p class="paid_sum">15 162,00 грн</p>
+                        </div>
+                    </div>
+                    <div class="history">
+                        <div class="status">
+                            <h3>История изменения статуса заказа</h3>
+                            <ul>
+                                <li>
+                                    <p class="date">28.09.2018 12:25</p>
+                                    <p class="info">Статус: <span>Новый</span></p>
+                                </li>
+                                <li>
+                                    <p class="date">29.09.2018 10:10</p>
+                                    <p class="info">Статус: <span>Принято</span></p>
+                                </li>
+                                <li>
+                                    <p class="date">05.10.2018 13:15</p>
+                                    <p class="info">Статус: <span>Выполнено</span></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="payments">
+                            <h3>Способ оплаты</h3>
+                            <p class="info">Наложенный платеж</p>
+                        </div>
+                        <div class="delivery">
+                            <h3>Способ доставки</h3>
+                            <p class="info">Новая Почта, г. Черкассы, Отделение №22</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--End Contact Information-->
+    <!--End My Orders-->
 
     <!--FAQ-->
     <section class="faq">
