@@ -395,8 +395,21 @@ button:focus {
 }
 .middle .middle_line .modal_form_registration {
   display: block;
-  padding: 25px;
+  padding: 60px;
   text-align: left;
+  width: 100%;
+}
+.middle .middle_line .modal_form_registration .row {
+  display: flex;
+  justify-content: space-between;
+}
+.middle .middle_line .modal_form_registration .block {
+  width: 47%;
+}
+.middle .middle_line .modal_form_registration label {
+  font-size: 16px;
+  padding-left: 25px;
+  margin-bottom: 25px;
 }
 .middle .middle_line .modal_form_registration .name,
 .middle .middle_line .modal_form_registration .lastname,
@@ -405,37 +418,112 @@ button:focus {
 .middle .middle_line .modal_form_registration .pass,
 .middle .middle_line .modal_form_registration .passconfirm {
   margin-bottom: 25px;
+  margin-top: 20px;
   border: 1px solid #707070;
   border-radius: 22px;
-  width: 32vw;
+  width: 100%;
   height: 50px;
+}
+.middle .middle_line .modal_form_registration .therms {
+  font-size: 14px;
+  padding-left: 25px;
+}
+.middle .middle_line .modal_form_registration .therms a {
+  color: #BD4F50;
+  text-decoration: underline;
+}
+.middle .middle_line .modal_form_registration .modal_btns {
+  margin-top: 50px;
+  text-align: center;
 }
 .middle .middle_line .modal_form_registration .modal_btns li {
   display: inline-flex;
 }
+.middle .middle_line .modal_form_registration .modal_btns .login {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  border: 1px solid #BD4F50;
+  border-radius: 30px;
+  padding: 15px 50px;
+  width: auto;
+  height: auto;
+  background: #BD4F50;
+  margin-left: 0;
+  margin-right: 25px;
+}
+.middle .middle_line .modal_form_registration .modal_btns .close-button2 {
+  color: #BD4F50;
+  font-size: 20px;
+  border: 1px solid #BD4F50;
+  border-radius: 30px;
+  padding: 15px 40px;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+}
 .middle .middle_line .modal_form {
   display: block;
-  padding: 25px;
+  padding: 60px;
   text-align: left;
+}
+.middle .middle_line .modal_form label {
+  font-size: 16px;
+  padding-left: 25px;
+  margin-bottom: 25px;
 }
 .middle .middle_line .modal_form .email,
 .middle .middle_line .modal_form .pass {
   margin-bottom: 25px;
+  margin-top: 20px;
   border: 1px solid #707070;
   border-radius: 22px;
-  width: 32vw;
+  width: 600px;
   height: 50px;
+}
+.middle .middle_line .modal_form .passremind {
+  color: #BD4F50;
+  font-size: 14px;
+  padding-left: 25px;
+  text-decoration: underline;
+}
+.middle .middle_line .modal_form .modal_btns {
+  margin-top: 50px;
+  text-align: center;
 }
 .middle .middle_line .modal_form .modal_btns li {
   display: inline-flex;
+}
+.middle .middle_line .modal_form .modal_btns .login {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  border: 1px solid #BD4F50;
+  border-radius: 30px;
+  padding: 15px 50px;
+  width: auto;
+  height: auto;
+  background: #BD4F50;
+  margin-left: 0;
+  margin-right: 25px;
+}
+.middle .middle_line .modal_form .modal_btns .close-button {
+  color: #BD4F50;
+  font-size: 20px;
+  border: 1px solid #BD4F50;
+  border-radius: 30px;
+  padding: 15px 40px;
+  width: auto;
+  height: auto;
+  cursor: pointer;
 }
 .middle .middle_line .modal-content {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 860px;
   transform: translate(-50%, -50%);
   background-color: #ffffff;
-  padding: 10px;
 }
 .middle .middle_line .show-modal {
   opacity: 1;
@@ -443,54 +531,74 @@ button:focus {
   transform: scale(1);
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
-.middle .middle_line .tab-slider--tabs {
+.middle .middle_line * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.middle .middle_line ul {
+  list-style: none;
+  margin-left: 0;
+}
+.middle .middle_line ul .taba {
+  width: 50%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+  font-style: italic;
+  background: #ffe9e9;
+  box-shadow: 0px 0 1px #000000;
+}
+.middle .middle_line a {
+  text-decoration: none;
+  color: black;
+}
+.middle .middle_line .tabs {
   display: flex;
   justify-content: center;
+}
+.middle .middle_line .tabs .active {
+  font-style: normal;
+  color: #232323;
+  text-decoration: underline;
+  font-weight: 500;
   background: #ffffff;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  box-shadow: 0px 0px 0px #ffffff;
 }
-.middle .middle_line .tab-slider--tabs:after {
-  content: "";
-  width: 33%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: all 250ms ease-in-out;
-  border-radius: 35px;
+.middle .middle_line .tabs li:not(:last-child) {
+  margin-right: 0;
 }
-.middle .middle_line .tab-slider--tabs.slide:after {
-  left: 33%;
-}
-.middle .middle_line .tab-slider--trigger {
-  width: 100%;
-  font-size: 24px;
-  line-height: 1;
-  color: #CCCCCC;
-  border: 1px solid #CCCCCC;
-  border-radius: 25px;
-  text-align: center;
-  padding: 13px 0;
+.middle .middle_line .tabs li a {
+  display: block;
   position: relative;
+  top: 4px;
+  padding: 30px 10px;
+  border-radius: 2px 2px 0 0;
+  opacity: 0.7;
+  transition: all 0.1s ease-in-out;
+}
+.middle .middle_line .tabs li.active a,
+.middle .middle_line .tabs li a:hover {
+  opacity: 1;
+  top: 0;
+}
+.middle .middle_line .tabs-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
   z-index: 2;
-  cursor: pointer;
-  display: inline-block;
-  transition: color 250ms ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  padding: 25px;
+  border-radius: 0 4px 4px 4px;
+  background: white;
 }
-.middle .middle_line .tab-slider--trigger.active {
-  color: #BD4F50;
-  border: 1px solid #BD4F50;
-  border-radius: 25px;
+.middle .middle_line .tabs-panel {
+  display: none;
 }
-.middle .middle_line .tab-slider--body {
-  margin-bottom: 20px;
+.middle .middle_line .tabs-panel.active {
+  display: contents;
+}
+.middle .middle_line .tabs-panel p + div {
+  margin-top: 15px;
 }
 .fs_row {
   flex-wrap: inherit;

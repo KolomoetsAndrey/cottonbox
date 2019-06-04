@@ -2,6 +2,7 @@
 var modal = document.querySelector(".modal");
 var trigger = document.querySelector(".trigger");
 var closeButton = document.querySelector(".close-button");
+var closeButton2 = document.querySelector(".close-button2");
 
 function toggleModal() {
     modal.classList.toggle("show-modal");
@@ -15,8 +16,28 @@ function windowOnClick(event) {
 
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
+closeButton2.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
 // Ens Modal
+
+const tabLinks = document.querySelectorAll(".tabs a");
+const tabPanels = document.querySelectorAll(".tabs-panel");
+
+for (let el of tabLinks) {
+  el.addEventListener("click", e => {
+    e.preventDefault();
+
+    document.querySelector(".tabs li.active").classList.remove("active");
+    document.querySelector(".tabs-panel.active").classList.remove("active");
+
+    const parentListItem = el.parentElement;
+    parentListItem.classList.add("active");
+    const index = [...parentListItem.parentElement.children].indexOf(parentListItem);
+
+    const panel = [...tabPanels].filter(el => el.getAttribute("data-index") == index);
+    panel[0].classList.add("active");
+    });
+}
 
 // PlusMinus
 jQuery(document).ready(function(){

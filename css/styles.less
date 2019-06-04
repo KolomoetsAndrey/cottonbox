@@ -291,40 +291,138 @@ button:focus {
 
         .modal_form_registration {
             display: block;
-            padding: 25px;
+            padding: 60px;
             text-align: left;
+            width: 100%;
+
+            .row {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .block {
+                width: 47%;
+            }
+
+            label {
+                font-size: 16px;
+                padding-left: 25px;
+                margin-bottom: 25px;
+            }
 
             .name, .lastname, .phone, .email, .pass, .passconfirm {
                 margin-bottom: 25px;
+                margin-top: 20px;
                 border: 1px solid #707070;
                 border-radius: 22px;
-                width: 32vw;
+                width: 100%;
                 height: 50px;
             }
 
+            .therms {
+
+                font-size: 14px;
+                padding-left: 25px;
+
+                a {
+                    color: #BD4F50;
+                    text-decoration: underline;
+                }
+            }
+
             .modal_btns {
+                margin-top: 50px;
+                text-align: center;
+
                 li {
                     display: inline-flex;
+                }
+
+                .login {
+                    font-family: @montserrat;
+                    color: #ffffff;
+                    font-size: 20px;
+                    border: 1px solid #BD4F50;
+                    border-radius: 30px;
+                    padding: 15px 50px;
+                    width: auto;
+                    height: auto;
+                    background: #BD4F50;
+                    margin-left: 0;
+                    margin-right: 25px;
+                }
+
+                .close-button2 {
+                    color: #BD4F50;
+                    font-size: 20px;
+                    border: 1px solid #BD4F50;
+                    border-radius: 30px;
+                    padding: 15px 40px;
+                    width: auto;
+                    height: auto;
+                    cursor: pointer;
                 }
             }
         }
 
         .modal_form {
             display: block;
-            padding: 25px;
+            padding: 60px;
             text-align: left;
+
+            label {
+                font-size: 16px;
+                padding-left: 25px;
+                margin-bottom: 25px;
+            }
 
             .email, .pass {
                 margin-bottom: 25px;
+                margin-top: 20px;
                 border: 1px solid #707070;
                 border-radius: 22px;
-                width: 32vw;
+                width: 600px;
                 height: 50px;
             }
 
+            .passremind {
+                color: #BD4F50;
+                font-size: 14px;
+                padding-left: 25px;
+                text-decoration: underline;
+            }
+
             .modal_btns {
+                margin-top: 50px;
+                text-align: center;
+
                 li {
                     display: inline-flex;
+                }
+
+                .login {
+                    font-family: @montserrat;
+                    color: #ffffff;
+                    font-size: 20px;
+                    border: 1px solid #BD4F50;
+                    border-radius: 30px;
+                    padding: 15px 50px;
+                    width: auto;
+                    height: auto;
+                    background: #BD4F50;
+                    margin-left: 0;
+                    margin-right: 25px;
+                }
+
+                .close-button {
+                    color: #BD4F50;
+                    font-size: 20px;
+                    border: 1px solid #BD4F50;
+                    border-radius: 30px;
+                    padding: 15px 40px;
+                    width: auto;
+                    height: auto;
+                    cursor: pointer;
                 }
             }
         }
@@ -333,9 +431,9 @@ button:focus {
             position: absolute;
             top: 50%;
             left: 50%;
+            width: 860px;
             transform: translate(-50%, -50%);
             background-color: #ffffff;
-            padding: 10px;
         }
         .close-button {
             
@@ -343,6 +441,7 @@ button:focus {
         .close-button:hover {
             
         }
+
         .show-modal {
             opacity: 1;
             visibility: visible;
@@ -350,66 +449,93 @@ button:focus {
             transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
         }
 
-        .tab-slider--nav {
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        ul {
+            list-style: none;
+            margin-left: 0;
+            
+            .taba {
+                width: 50%;
+                text-align: center;
+                font-size: 30px;
+                font-weight: 200;
+                font-style: italic;
+                background: #ffe9e9;
+                box-shadow: 0px 0 1px #000000;
+            }
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        
+        .tabs-container {
 
         }
-          
-        .tab-slider--tabs {
+        
+        .tabs {
             display: flex;
             justify-content: center;
-            background: #ffffff;
-            -webkit-user-select: none;
-               -moz-user-select: none;
-                -ms-user-select: none;
-                    user-select: none;
+
+            .active {
+                font-style: normal;
+                color: #232323;
+                text-decoration: underline;
+                font-weight: 500;
+                background: #ffffff;
+                box-shadow: 0px 0px 0px #ffffff;
+            }
         }
         
-        .tab-slider--tabs:after {
-            content: "";
-            width: 33%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            transition: all 250ms ease-in-out;
-            border-radius: 35px;
+        .tabs li:not(:last-child) {
+            margin-right: 0;
         }
         
-        .tab-slider--tabs.slide:after {
-            left: 33%;
-        }
-          
-        .tab-slider--trigger {
-            width: 100%;
-            font-size: 24px;
-            line-height: 1;
-            color: #CCCCCC;
-            border: 1px solid #CCCCCC;
-            border-radius: 25px;
-            text-align: center;
-            padding: 13px 0;
+        .tabs li a {
+            display: block;
             position: relative;
-            z-index: 2;
-            cursor: pointer;
-            display: inline-block;
-            transition: color 250ms ease-in-out;
-            -webkit-user-select: none;
-               -moz-user-select: none;
-                -ms-user-select: none;
-                    user-select: none;
+            top: 4px;
+            padding: 30px 10px;
+            border-radius: 2px 2px 0 0;
+            //background: white;
+            opacity: 0.7;
+            transition: all 0.1s ease-in-out;
         }
         
-        .tab-slider--trigger.active {
-            color: #BD4F50;
-            border: 1px solid #BD4F50;
-            border-radius: 25px;
+        .tabs li.active a,
+        .tabs li a:hover {
+            opacity: 1;
+            top: 0;
         }
-          
-        .tab-slider--body {
-            margin-bottom: 20px;
+        
+        .tabs-content {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            z-index: 2;
+            padding: 25px;
+            border-radius: 0 4px 4px 4px;
+            background: white;
         }
-
-
+        
+        .tabs-panel {
+            display: none;
+        }
+        
+        .tabs-panel.active {
+            display: contents;
+        }
+        
+        .tabs-panel p + div {
+            margin-top: 15px;
+        }
         /* End My Cabinet */
     }
 }
