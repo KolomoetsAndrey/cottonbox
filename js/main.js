@@ -1,3 +1,24 @@
+// Modal
+var modal = document.querySelector(".modal");
+var trigger = document.querySelector(".trigger");
+var closeButton = document.querySelector(".close-button");
+
+function toggleModal() {
+    modal.classList.toggle("show-modal");
+}
+
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+    }
+}
+
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
+// Ens Modal
+
+// PlusMinus
 jQuery(document).ready(function(){
     // This button will increment the value
     $('[data-quantity="plus"]').click(function(e){
@@ -34,6 +55,7 @@ jQuery(document).ready(function(){
         }
     });
 });
+//End PlusMinus
 
 $('.sim-thumb').on('click', function() {
     $('#main-product-image').attr('src', $(this).data('image'));
@@ -101,6 +123,7 @@ function closeNav() {
     document.getElementById("mySidepanel").style.width = "0";
 };
 
+// Tabs
 $("document").ready(function(){
     $(".tab-slider--body").hide();
     $(".tab-slider--body:first").show();
@@ -113,6 +136,7 @@ $(".tab-slider--nav li").click(function() {
     $(".tab-slider--nav li").removeClass("active");
     $(this).addClass("active");
 });
+// End Tabs
 
 $(document).ready(function(){
     $('.mainSlider').owlCarousel({

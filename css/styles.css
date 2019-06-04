@@ -253,6 +253,8 @@ button:focus {
 .middle .middle_line {
   justify-content: space-between;
   align-items: center;
+  /* Modal My Cabinet */
+  /* End My Cabinet */
 }
 .middle .middle_line .logo {
   height: 78px;
@@ -314,6 +316,7 @@ button:focus {
 }
 .middle .middle_line .my_cabinet {
   color: #232323;
+  background: transparent;
   font-size: 16px;
   font-weight: 400;
   border: 1px solid #232323;
@@ -327,6 +330,7 @@ button:focus {
   color: #ffffff;
   border: 1px solid #BD4F50;
   background: #BD4F50;
+  cursor: pointer;
 }
 .middle .middle_line .hamburger button {
   width: 52px;
@@ -375,6 +379,118 @@ button:focus {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+.middle .middle_line .modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.middle .middle_line .modal_form_registration {
+  display: block;
+  padding: 25px;
+  text-align: left;
+}
+.middle .middle_line .modal_form_registration .name,
+.middle .middle_line .modal_form_registration .lastname,
+.middle .middle_line .modal_form_registration .phone,
+.middle .middle_line .modal_form_registration .email,
+.middle .middle_line .modal_form_registration .pass,
+.middle .middle_line .modal_form_registration .passconfirm {
+  margin-bottom: 25px;
+  border: 1px solid #707070;
+  border-radius: 22px;
+  width: 32vw;
+  height: 50px;
+}
+.middle .middle_line .modal_form_registration .modal_btns li {
+  display: inline-flex;
+}
+.middle .middle_line .modal_form {
+  display: block;
+  padding: 25px;
+  text-align: left;
+}
+.middle .middle_line .modal_form .email,
+.middle .middle_line .modal_form .pass {
+  margin-bottom: 25px;
+  border: 1px solid #707070;
+  border-radius: 22px;
+  width: 32vw;
+  height: 50px;
+}
+.middle .middle_line .modal_form .modal_btns li {
+  display: inline-flex;
+}
+.middle .middle_line .modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 10px;
+}
+.middle .middle_line .show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.middle .middle_line .tab-slider--tabs {
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.middle .middle_line .tab-slider--tabs:after {
+  content: "";
+  width: 33%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 250ms ease-in-out;
+  border-radius: 35px;
+}
+.middle .middle_line .tab-slider--tabs.slide:after {
+  left: 33%;
+}
+.middle .middle_line .tab-slider--trigger {
+  width: 100%;
+  font-size: 24px;
+  line-height: 1;
+  color: #CCCCCC;
+  border: 1px solid #CCCCCC;
+  border-radius: 25px;
+  text-align: center;
+  padding: 13px 0;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  display: inline-block;
+  transition: color 250ms ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.middle .middle_line .tab-slider--trigger.active {
+  color: #BD4F50;
+  border: 1px solid #BD4F50;
+  border-radius: 25px;
+}
+.middle .middle_line .tab-slider--body {
+  margin-bottom: 20px;
 }
 .fs_row {
   flex-wrap: inherit;
@@ -3128,6 +3244,23 @@ button:focus {
 }
 .contact_information .personal_data .my_orders .order:hover a {
   color: #BD4F50;
+}
+.contact_information .personal_data .my_promocodes .promocode .title,
+.contact_information .personal_data .my_promocodes .promocode .promoinfo {
+  display: flex;
+  margin-bottom: 25px;
+}
+.contact_information .personal_data .my_promocodes .promocode .title h3,
+.contact_information .personal_data .my_promocodes .promocode .promoinfo h3 {
+  font-size: 24px;
+  color: #BD4F50;
+  text-decoration: underline;
+  width: 25%;
+}
+.contact_information .personal_data .my_promocodes .promocode .title p,
+.contact_information .personal_data .my_promocodes .promocode .promoinfo p {
+  font-size: 24px;
+  width: 25%;
 }
 .contact_information .orders_data {
   box-sizing: border-box;

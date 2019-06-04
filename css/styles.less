@@ -199,6 +199,7 @@ button:focus {
 
         .my_cabinet {
             color: #232323;
+            background: transparent;
             font-size: 16px;
             font-weight: 400;
             border: 1px solid #232323;
@@ -212,6 +213,7 @@ button:focus {
                 color: #ffffff;
                 border: 1px solid #BD4F50;
                 background: #BD4F50;
+                cursor: pointer;
             }
         }
 
@@ -271,6 +273,144 @@ button:focus {
                 margin-left: 50px;
             }
         }
+
+        /* Modal My Cabinet */
+        .modal {
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 2000;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            visibility: hidden;
+            transform: scale(1.1);
+            transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+        }
+
+        .modal_form_registration {
+            display: block;
+            padding: 25px;
+            text-align: left;
+
+            .name, .lastname, .phone, .email, .pass, .passconfirm {
+                margin-bottom: 25px;
+                border: 1px solid #707070;
+                border-radius: 22px;
+                width: 32vw;
+                height: 50px;
+            }
+
+            .modal_btns {
+                li {
+                    display: inline-flex;
+                }
+            }
+        }
+
+        .modal_form {
+            display: block;
+            padding: 25px;
+            text-align: left;
+
+            .email, .pass {
+                margin-bottom: 25px;
+                border: 1px solid #707070;
+                border-radius: 22px;
+                width: 32vw;
+                height: 50px;
+            }
+
+            .modal_btns {
+                li {
+                    display: inline-flex;
+                }
+            }
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
+            padding: 10px;
+        }
+        .close-button {
+            
+        }
+        .close-button:hover {
+            
+        }
+        .show-modal {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1.0);
+            transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+        }
+
+        .tab-slider--nav {
+
+        }
+          
+        .tab-slider--tabs {
+            display: flex;
+            justify-content: center;
+            background: #ffffff;
+            -webkit-user-select: none;
+               -moz-user-select: none;
+                -ms-user-select: none;
+                    user-select: none;
+        }
+        
+        .tab-slider--tabs:after {
+            content: "";
+            width: 33%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 250ms ease-in-out;
+            border-radius: 35px;
+        }
+        
+        .tab-slider--tabs.slide:after {
+            left: 33%;
+        }
+          
+        .tab-slider--trigger {
+            width: 100%;
+            font-size: 24px;
+            line-height: 1;
+            color: #CCCCCC;
+            border: 1px solid #CCCCCC;
+            border-radius: 25px;
+            text-align: center;
+            padding: 13px 0;
+            position: relative;
+            z-index: 2;
+            cursor: pointer;
+            display: inline-block;
+            transition: color 250ms ease-in-out;
+            -webkit-user-select: none;
+               -moz-user-select: none;
+                -ms-user-select: none;
+                    user-select: none;
+        }
+        
+        .tab-slider--trigger.active {
+            color: #BD4F50;
+            border: 1px solid #BD4F50;
+            border-radius: 25px;
+        }
+          
+        .tab-slider--body {
+            margin-bottom: 20px;
+        }
+
+
+        /* End My Cabinet */
     }
 }
 
@@ -3346,6 +3486,27 @@ button:focus {
                     }
 
                     border-bottom: 1px solid #e8abac;
+                }
+            }
+        }
+
+        .my_promocodes {
+            .promocode {
+                .title, .promoinfo {
+                    display: flex;
+                    margin-bottom: 25px;
+
+                    h3 {
+                        font-size: 24px;
+                        color: #BD4F50;
+                        text-decoration: underline;
+                        width: 25%;
+                    }
+
+                    p {
+                        font-size: 24px;
+                        width: 25%;
+                    }
                 }
             }
         }

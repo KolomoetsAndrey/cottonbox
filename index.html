@@ -77,9 +77,69 @@
                         </a>
                     </li>
                 </ul>
-                <a href="#" class="my_cabinet">
+                <button class="my_cabinet trigger">
                     Личный кабинет
-                </a>
+                </button>
+
+                <!--MODAL MY CABINET-->
+                <div class="modal">
+                    <div class="modal-content">
+                        <div class="tab-slider--nav">
+                            <ul class="tab-slider--tabs">
+                                <li class="tab-slider--trigger active" rel="tab001">Хиты продаж</li>
+                                <li class="tab-slider--trigger" rel="tab002">Новинки</li>
+                            </ul>
+                        </div>
+                        <div class="tab-slider--container">
+                            <div id="tab001" class="tab-slider--body">
+                                <form class="modal_form">
+                                    <label class="modalemail" for="modalemail" >Ваш e-mail</label>
+                                    <input type="email" id="modalemail" class="email form-control">
+                                    <label for="modalpass" >Ваш пароль</label>
+                                    <input type="pass" id="modalpass" class="pass form-control">
+                                    <a href="#" class="passremind">Напомнить пароль</a>
+                                    <ul class="modal_btns">
+                                        <li>
+                                            <button class="login">Войти</button>
+                                        </li>
+                                        <li>
+                                            <button class="close-button">Отмена</button>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-slider--container">
+                            <div id="tab002" class="tab-slider--body">
+                                <form class="modal_form_registration">
+                                    <label class="modalname" for="modalname">Ваше имя</label>
+                                    <input type="name" id="modalname" class="name form-control">
+                                    <label class="modallastname" for="modallastname">Ваша фамилия</label>
+                                    <input type="lastname" id="modallastname" class="lastname form-control">
+                                    <label class="modalphone" for="modalphone">Ваш телефон</label>
+                                    <input type="phone" id="modalphone" class="phone form-control">
+                                    <label class="modalemail" for="modalemail">Ваш e-mail</label>
+                                    <input type="email" id="modalemail" class="email form-control">
+                                    <label class="modapass" for="modalpass">Придумайте пароль</label>
+                                    <input type="pass" id="modalpass" class="pass form-control">
+                                    <label class="modapassconfirm" for="modalpassconfirm">Повторите пароль</label>
+                                    <input type="passconfirm" id="modalpassconfirm" class="passconfirm form-control">
+                                    <p class="therms">Регистрируясь, Вы соглашаетесь с <a href="#" class="rules">пользовательским соглашением</a></p>
+                                    <ul class="modal_btns">
+                                        <li>
+                                            <button class="login">Зарегистрироваться</button>
+                                        </li>
+                                        <li>
+                                            <button class="close-button">Отмена</button>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END MODAL MY CABINET-->
+
                 <div class="hamburger">
                     <button class="openbtn" onclick="openNav()">
                         <img src="images/hamburger.png" alt="">
