@@ -20,65 +20,6 @@ closeButton2.addEventListener("click", toggleModal);
 // window.addEventListener("click", windowOnClick);
 // Ens Modal
 
-// buy_it Modal
-var buyModal = document.querySelector(".buy-modal");
-var byTrigger = document.querySelector(".buy-trigger");
-var buyCloseButton = document.querySelector(".buy-close-button");
-
-function byToggleModal() {
-    buyModal.classList.toggle("buy-show-modal");
-}
-
-function windowOnClick(event) {
-    if (event.target === buyModal) {
-        byToggleModal();
-    }
-}
-
-byTrigger.addEventListener("click", byToggleModal);
-buyCloseButton.addEventListener("click", byToggleModal);
-// window.addEventListener("click", windowOnClick);
-//End buy_it Modal
-
-// oneclick Modal
-var oneclickModal = document.querySelector(".oneclick-modal");
-var oneclickTrigger = document.querySelector(".oneclick-trigger");
-var oneclickCloseButton = document.querySelector(".oneclick-close-button");
-
-function oneclickToggleModal() {
-    oneclickModal.classList.toggle("oneclick-show-modal");
-}
-
-function windowOnClick(event) {
-    if (event.target === oneclickModal) {
-        oneclickToggleModal();
-    }
-}
-
-oneclickTrigger.addEventListener("click", oneclickToggleModal);
-oneclickCloseButton.addEventListener("click", oneclickToggleModal);
-// window.addEventListener("click", windowOnClick);
-//End oneclick Modal
-
-// ask Modal
-var askModal = document.querySelector(".ask-modal");
-var askTrigger = document.querySelector(".ask-trigger");
-var askCloseButton = document.querySelector(".ask-close-button");
-
-function askToggleModal() {
-    askModal.classList.toggle("ask-show-modal");
-}
-
-function windowOnClick(event) {
-    if (event.target === askModal) {
-        askToggleModal();
-    }
-}
-askTrigger.addEventListener("click", askToggleModal);
-askCloseButton.addEventListener("click", askToggleModal);
-// window.addEventListener("click", windowOnClick);
-//End ask Modal
-
 const tabLinks = document.querySelectorAll(".tabs a");
 const tabPanels = document.querySelectorAll(".tabs-panel");
 
