@@ -54,7 +54,7 @@
     <header class="middle">
         <div class="container">
             <div class="row middle_line">
-                <a href="index.html">
+                <a href="#">
                     <img class="logo" src="images/logo.png" alt="">
                 </a>
                 <form action="#" class="search justify-content-center">
@@ -77,9 +77,91 @@
                         </a>
                     </li>
                 </ul>
-                <a href="#" class="my_cabinet">
+                <button class="my_cabinet trigger">
                     Личный кабинет
-                </a>
+                </button>
+
+                <!--MODAL MY CABINET-->
+                <div class="modal">
+                    <div class="modal-content">
+                        <div class="tabs-container">
+                            <ul class="tabs">
+                                <li class="taba active">
+                                    <a href="">Вход в аккаунт</a>
+                                </li>
+                                <li class="taba">
+                                    <a href="">Регистрация</a>
+                                </li>
+                            </ul>
+                            <div class="tabs-content">
+                                <div class="tabs-panel active" data-index="0">
+                                    <form class="modal_form">
+                                        <label class="modalemail" for="modalemail" >Ваш e-mail</label>
+                                        <input type="email" id="modalemail" class="email form-control">
+                                        <label for="modalpass" >Ваш пароль</label>
+                                        <input type="pass" id="modalpass" class="pass form-control">
+                                        <a href="#" class="passremind">Напомнить пароль</a>
+                                        <ul class="modal_btns">
+                                            <li>
+                                                <button class="login">Войти</button>
+                                            </li>
+                                            <li>
+                                                <span class="close-button">Отмена</span>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                </div>
+                                <div class="tabs-panel" data-index="1">
+                                    <form class="modal_form_registration">
+                                        <div class="row">
+                                            <div class="block">
+                                                <label class="modalname" for="modalname">Ваше имя</label>
+                                                <input type="name" id="modalname" class="name form-control">
+                                            </div>
+                                            <div class="block">
+                                                <label class="modallastname" for="modallastname">Ваша фамилия</label>
+                                                <input type="lastname" id="modallastname" class="lastname form-control">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="block">
+                                                <label class="modalphone" for="modalphone">Ваш телефон</label>
+                                                <input type="phone" id="modalphone" class="phone form-control">
+                                            </div>
+                                            <div class="block">
+                                                <label class="modalemail" for="modalemail">Ваш e-mail</label>
+                                                <input type="email" id="modalemail" class="email form-control">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="block">
+                                                <label class="modapass" for="modalpass">Придумайте пароль</label>
+                                                <input type="pass" id="modalpass" class="pass form-control">
+                                            </div>
+                                            <div class="block">
+                                                <label class="modapassconfirm" for="modalpassconfirm">Повторите пароль</label>
+                                                <input type="passconfirm" id="modalpassconfirm" class="passconfirm form-control">
+                                            </div>
+                                        </div>
+                                        <div class="block_btns">
+                                            <p class="therms">Регистрируясь, Вы соглашаетесь с <a href="#" class="rules">пользовательским соглашением</a></p>
+                                            <ul class="modal_btns">
+                                                <li>
+                                                    <button class="login">Зарегистрироваться</button>
+                                                </li>
+                                                <li>
+                                                    <span class="close-button2">Отмена</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END MODAL MY CABINET-->
+
                 <div class="hamburger">
                     <button class="openbtn" onclick="openNav()">
                         <img src="images/hamburger.png" alt="">
@@ -104,117 +186,6 @@
         </div>
     </header>
     <!--End Header-->
-
-    <!--SubMenu & MainSlider-->
-    <section class="mainslider">
-        <div class="container">
-            <div class="row sub_menu">
-                <ul class="categories">
-                    <li>
-                        <a href="#">Постели</a>
-                    </li>
-                    <li>
-                        <a href="#">Одеяла</a>
-                    </li>
-                    <li>
-                        <a href="#">Подушки</a>
-                    </li>
-                    <li>
-                        <a href="#">Покрывала</a>
-                    </li>
-                    <li>
-                        <a href="#">Скатерти</a>
-                    </li>
-                    <li>
-                        <a href="#">Коврики</a>
-                    </li>
-                    <li>
-                        <a href="#">Халаты</a>
-                    </li>
-                    <li>
-                        <a href="#">Полотенца</a>
-                    </li>
-                    <li>
-                        <a href="#">Наматрасники</a>
-                    </li>
-                    <li>
-                        <a href="#">Сотрудничество</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!--End SubMenu & MainSlider-->
-
-    <!--Breadcrumbs-->
-    <section class="breadcrumbs">
-        <div class="container">
-            <div class="row">
-                <ul>
-                    <li>
-                        <a href="index.html">Главная</a>
-                    </li>
-                    <li><i class="fas fa-chevron-right"></i></li>
-                    <li class="last">
-                        Контакты
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>    
-    <!--End Breadcrumbs-->
-
-    <!--Contacts-->
-    <section class="contacts">
-        <div class="container">
-            <div class="row">
-                <div class="contact_info">
-                    <div class="phones">
-                        <img src="images/phones.png" alt="">
-                        <ul>
-                            <li>+38 068 582 01 54</li>
-                            <li>+38 063 566 04 13</li>
-                        </ul>
-                    </div>
-                    <div class="mail">
-                        <img src="images/mail.png" alt="">
-                        <ul>
-                            <li>cottonboxua@gmail.com</li>
-                        </ul>
-                    </div>
-                    <div class="time">
-                        <img src="images/time.png" alt="">
-                        <ul>
-                            <li>Понедельник-пятница</li>
-                            <li>с 10:00 до 19:00</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="contact_form">
-                    <h2>Свяжитесь с нами</h2>
-                    <p>
-                        Спасибо за Ваш интерес к Cottonbox.
-                        <br>Если у Вас есть вопросы, то напишите нам и мы в ближайшие сроки свяжемся с Вами.
-                    </p>
-                    <form>
-                        <input type="name" class="name" placeholder="Ваше имя"></input>
-                        <input type="lastname" class="lastname" placeholder="Ваша фамилия">
-                        <input type="phone" class="phone" placeholder="Ваш телефон">
-                        <input type="email" class="email" placeholder="Ваш e-mail">
-                        <textarea type="text" class="message" placeholder="Ваше сообщение" rows="5"></textarea>
-                        <ul>
-                            <li class="checkbox">
-                                <input type="checkbox" name="personal_data" id="personal_data">
-                                <label for="personal_data">Нажав кнопку Вы соглашаетесь на обработку персональных данных.</label>
-                            </li>
-                        </ul>
-                        <button class="subscribe">Отправить</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End Contacts-->
 
     <!--FAQ-->
     <section class="faq">

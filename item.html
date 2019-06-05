@@ -54,7 +54,7 @@
     <header class="middle">
         <div class="container">
             <div class="row middle_line">
-                <a href="index.html">
+                <a href="#">
                     <img class="logo" src="images/logo.png" alt="">
                 </a>
                 <form action="#" class="search justify-content-center">
@@ -77,9 +77,91 @@
                         </a>
                     </li>
                 </ul>
-                <a href="#" class="my_cabinet">
+                <button class="my_cabinet trigger">
                     Личный кабинет
-                </a>
+                </button>
+
+                <!--MODAL MY CABINET-->
+                <div class="modal">
+                    <div class="modal-content">
+                        <div class="tabs-container">
+                            <ul class="tabs">
+                                <li class="taba active">
+                                    <a href="">Вход в аккаунт</a>
+                                </li>
+                                <li class="taba">
+                                    <a href="">Регистрация</a>
+                                </li>
+                            </ul>
+                            <div class="tabs-content">
+                                <div class="tabs-panel active" data-index="0">
+                                    <form class="modal_form">
+                                        <label class="modalemail" for="modalemail" >Ваш e-mail</label>
+                                        <input type="email" id="modalemail" class="email form-control">
+                                        <label for="modalpass" >Ваш пароль</label>
+                                        <input type="pass" id="modalpass" class="pass form-control">
+                                        <a href="#" class="passremind">Напомнить пароль</a>
+                                        <ul class="modal_btns">
+                                            <li>
+                                                <button class="login">Войти</button>
+                                            </li>
+                                            <li>
+                                                <span class="close-button">Отмена</span>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                </div>
+                                <div class="tabs-panel" data-index="1">
+                                    <form class="modal_form_registration">
+                                        <div class="row">
+                                            <div class="block">
+                                                <label class="modalname" for="modalname">Ваше имя</label>
+                                                <input type="name" id="modalname" class="name form-control">
+                                            </div>
+                                            <div class="block">
+                                                <label class="modallastname" for="modallastname">Ваша фамилия</label>
+                                                <input type="lastname" id="modallastname" class="lastname form-control">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="block">
+                                                <label class="modalphone" for="modalphone">Ваш телефон</label>
+                                                <input type="phone" id="modalphone" class="phone form-control">
+                                            </div>
+                                            <div class="block">
+                                                <label class="modalemail" for="modalemail">Ваш e-mail</label>
+                                                <input type="email" id="modalemail" class="email form-control">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="block">
+                                                <label class="modapass" for="modalpass">Придумайте пароль</label>
+                                                <input type="pass" id="modalpass" class="pass form-control">
+                                            </div>
+                                            <div class="block">
+                                                <label class="modapassconfirm" for="modalpassconfirm">Повторите пароль</label>
+                                                <input type="passconfirm" id="modalpassconfirm" class="passconfirm form-control">
+                                            </div>
+                                        </div>
+                                        <div class="block_btns">
+                                            <p class="therms">Регистрируясь, Вы соглашаетесь с <a href="#" class="rules">пользовательским соглашением</a></p>
+                                            <ul class="modal_btns">
+                                                <li>
+                                                    <button class="login">Зарегистрироваться</button>
+                                                </li>
+                                                <li>
+                                                    <span class="close-button2">Отмена</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END MODAL MY CABINET-->
+
                 <div class="hamburger">
                     <button class="openbtn" onclick="openNav()">
                         <img src="images/hamburger.png" alt="">
@@ -277,9 +359,66 @@
                         <button class="favorites">Добавить в избранное</button>
                     </div>
                     <div class="buy_buttons">
-                        <button class="buy_it">Купить</button>
-                        <button class="buy_oneclick">Купить в 1 клик</button>
-                        <button class="ask_about">Задать вопрос о товаре</button>
+                        <button class="buy_it buy-trigger">Купить</button>
+                            <!--buy_it-->
+                            <div class="buy-modal">
+                                <div class="buy-modal-content">
+                                    <div class="buy_it_content">
+                                        <h3>Комплект постельного  белья Halley Home Prenses упешно добавлен в корзину</h3>
+                                        <button class="go_to_cart">Перейти в корзину</button>
+                                        <span class="buy-close-button">Продолжить покупки</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End buy_it-->
+                        <button class="buy_oneclick oneclick-trigger">Купить в 1 клик</button>
+                            <!--buy_oneclick-->
+                            <div class="oneclick-modal">
+                                <div class="oneclick-modal-content">
+                                    <div class="oneclick_content">
+                                        <h3>Купить в 1 клик</h3>
+                                        <form class="oneclick_form">
+                                            <label class="oneclick_label" for="oneclick_phone">Ваш телефон</label>
+                                            <input type="phone" id="oneclick_phone" class="oneclick_phone form-control">
+                                        </form>
+                                        <ul class="oneclick_btns">
+                                            <li>
+                                                <button class="oneclick_buy">Купить</button>
+                                            </li>
+                                            <li>
+                                                <span class="oneclick-close-button">Отмена</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End buy_oneclick-->
+                        <button class="ask_about ask-trigger">Задать вопрос о товаре</button>
+                            <!--ask_about-->
+                            <div class="ask-modal">
+                                <div class="ask-modal-content">
+                                    <div class="ask_content">
+                                        <h3>Задать вопрос о товаре</h3>
+                                        <form class="ask_form">
+                                            <label class="label_name" for="name">Ваше имя</label>
+                                            <input type="name" class="name" id="name"></input>
+                                            <label class="label_email" for="email">Ваш e-mail</label>
+                                            <input type="email" class="email" id="email">
+                                            <label class="label_text" for="text">Ваш вопрос</label>
+                                            <textarea type="text" class="message" rows="5"></textarea>
+                                            <ul class="ask_btns">
+                                                <li>
+                                                    <button class="ask_buy">Отправить</button>
+                                                </li>
+                                                <li>
+                                                    <span class="ask-close-button">Отмена</span>
+                                                </li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End ask_about-->
                     </div>
                 </div>
             </div>

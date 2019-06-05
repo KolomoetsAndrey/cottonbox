@@ -287,6 +287,10 @@ button:focus {
             visibility: hidden;
             transform: scale(1.1);
             transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+
+            input {
+                padding-left: 20px;
+            }
         }
 
         .modal_form_registration {
@@ -350,6 +354,7 @@ button:focus {
                     background: #BD4F50;
                     margin-left: 0;
                     margin-right: 25px;
+                    box-shadow: 0px 5px 20px #CCCCCC;
                 }
 
                 .close-button2 {
@@ -361,6 +366,7 @@ button:focus {
                     width: auto;
                     height: auto;
                     cursor: pointer;
+                    box-shadow: 0px 5px 20px #CCCCCC;
                 }
             }
         }
@@ -412,6 +418,7 @@ button:focus {
                     background: #BD4F50;
                     margin-left: 0;
                     margin-right: 25px;
+                    box-shadow: 0px 5px 20px #CCCCCC;
                 }
 
                 .close-button {
@@ -423,6 +430,7 @@ button:focus {
                     width: auto;
                     height: auto;
                     cursor: pointer;
+                    box-shadow: 0px 5px 20px #CCCCCC;
                 }
             }
         }
@@ -2018,6 +2026,300 @@ button:focus {
                 }
             }
         }
+
+        /* buy_it Modal */
+        .buy-modal {
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 2000;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            visibility: hidden;
+            transform: scale(1.1);
+            transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+
+            input {
+                padding-left: 20px;
+            }
+        }
+
+        .buy-modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 630px;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
+
+            .buy_it_content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 80px 20px;
+
+                h3 {
+                    font-size: 20px;
+                    text-align: center;
+                    margin-bottom: 65px;
+                }
+
+                .go_to_cart {
+                    border: 1px solid #BD4F50;
+                    background: #ffffff;
+                    border-radius: 30px;
+                    padding: 15px 50px;
+                    font-family: @montserrat;
+                    font-size: 20px;
+                    color: #BD4F50;
+                    transition: all 0.2s;
+                    box-shadow: 0px 5px 20px #CCCCCC;
+                    margin-bottom: 25px;
+
+                    &:hover {
+                        cursor: pointer;
+                        background: #BD4F50;
+                        color: #ffffff;
+                    }
+                }
+
+                .buy-close-button {
+                    color: #A7A7A7;
+                    font-size: 20px;
+                    transition: all 0.2s;
+                    text-decoration: underline;
+
+                    &:hover {
+                        color: #BD4F50;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .buy-show-modal {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1.0);
+            transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+        }
+
+        /* buy_oneclick */
+        .oneclick-modal {
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 2000;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            visibility: hidden;
+            transform: scale(1.1);
+            transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+
+            input {
+                padding-left: 20px;
+            }
+        }
+
+        .oneclick-modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 840px;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
+
+            .oneclick_content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 80px 20px;
+
+                h3 {
+                    font-size: 20px;
+                    text-align: center;
+                    margin-bottom: 55px;
+                    font-weight: 500;
+                    text-decoration: underline;
+                }
+
+                .oneclick_form {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 55px;
+
+                    .oneclick_label {
+                        font-size: 16px;
+                        padding-left: 20px;
+                        margin-bottom: 20px;
+                    }
+
+                    .oneclick_phone {
+                        height: 50px;
+                        width: 600px;
+                        border: 1px solid #707070;
+                        border-radius: 22px;
+                        padding-left: 20px;
+                    }
+                }
+
+                .oneclick_btns {
+                    li {
+                        display: inline;
+                    }
+
+                    .oneclick_buy {
+                        color: #ffffff;
+                        font-size: 20px;
+                        font-family: @montserrat;
+                        border: 1px solid #2AE101;
+                        background: #2AE101;
+                        border-radius: 30px;
+                        padding: 15px 50px;
+                        transition: all 0.2s;
+                        margin-right: 20px;
+                        box-shadow: 0px 5px 20px #CCCCCC;
+
+                        &:hover {
+                            background: #00bc52;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .oneclick-close-button {
+                        font-size: 20px;
+                        color: #BD4F50;
+                        border: 1px solid #BD4F50;
+                        border-radius: 30px;
+                        padding: 15px 50px;
+                        cursor: pointer;
+                        box-shadow: 0px 5px 20px #CCCCCC;
+                    }
+                }
+            }
+        }
+
+        .oneclick-show-modal {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1.0);
+            transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+        }
+
+        /* ask_about */
+        .ask-modal {
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 2000;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            visibility: hidden;
+            transform: scale(1.1);
+            transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+
+            input {
+                padding-left: 20px;
+            }
+        }
+
+        .ask-modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 840px;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
+
+            .ask_content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 80px 20px;
+
+                h3 {
+                    font-size: 20px;
+                    text-align: center;
+                    margin-bottom: 55px;
+                    font-weight: 500;
+                    text-decoration: underline;
+                }
+
+                .ask_form {
+                    display: flex;
+                    flex-direction: column;
+
+                    .label_name, .label_email, .label_text {
+                        font-size: 16px;
+                        padding-left: 20px;
+                        margin-bottom: 20px;
+                    }
+
+                    .name, .email {
+                        height: 50px;
+                        width: 600px;
+                        border: 1px solid #707070;
+                        border-radius: 22px;
+                        padding-left: 20px;
+                        margin-bottom: 20px;
+                    }
+
+                    .message {
+                        width: 580px;
+                        border: 1px solid #707070;
+                        border-radius: 22px;
+                        padding-left: 20px;
+                        margin-bottom: 55px;
+                    }
+                }
+
+                .ask_btns {
+                    text-align: center;
+
+                    li {
+                        display: inline;
+                    }
+
+                    .ask_buy {
+                        color: #ffffff;
+                        font-size: 20px;
+                        font-family: @montserrat;
+                        border: 1px solid #BD4F50;
+                        background: #BD4F50;
+                        border-radius: 30px;
+                        padding: 15px 50px;
+                        transition: all 0.2s;
+                        margin-right: 20px;
+                        box-shadow: 0px 5px 20px #CCCCCC;
+                        cursor: pointer;
+                    }
+
+                    .ask-close-button {
+                        font-size: 20px;
+                        color: #BD4F50;
+                        border: 1px solid #BD4F50;
+                        border-radius: 30px;
+                        padding: 15px 50px;
+                        cursor: pointer;
+                        box-shadow: 0px 5px 20px #CCCCCC;
+                    }
+                }
+            }
+        }
+
+        .ask-show-modal {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1.0);
+            transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+        }
+
     }
 
     .desc_title {
