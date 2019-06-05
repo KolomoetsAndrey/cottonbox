@@ -4601,4 +4601,36 @@ button:focus {
     width: 45px;
     margin-top: 20px;
   }
+  .footer .column {
+    line-height: 25px;
+  }
+  .footer .column .footer_logo {
+    width: 96px;
+  }
+  .footer .column form .email {
+    font-size: 10px;
+    padding: 10px;
+    width: 160px;
+  }
+  .footer .column form .subscribe {
+    font-size: 8px;
+  }
+  .footer .column h3 {
+    font-size: 14px;
+  }
+  .footer .column .works {
+    font-size: 12px;
+  }
+  .footer .column .works .socials {
+    font-size: 10px;
+  }
+  .footer .column .works .socials li {
+    margin-right: 5px;
+  }
+  .footer .column .footer_menu {
+    font-size: 12px;
+  }
+  .footer .column .footer_contacts {
+    font-size: 12px;
+  }
 }
