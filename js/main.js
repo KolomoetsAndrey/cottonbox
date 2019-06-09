@@ -1,6 +1,7 @@
 // Modal
 var modal = document.querySelector(".modal");
 var trigger = document.querySelector(".trigger");
+var triggerMobile = document.querySelector(".trigger-mobile");
 var closeButton = document.querySelector(".close-button");
 var closeButton2 = document.querySelector(".close-button2");
 
@@ -15,6 +16,7 @@ function windowOnClick(event) {
 }
 
 trigger.addEventListener("click", toggleModal);
+triggerMobile.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 closeButton2.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
