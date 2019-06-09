@@ -575,7 +575,8 @@ button:focus {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 860px;
+  width: 80%;
+  max-width: 860px;
   transform: translate(-50%, -50%);
   background-color: #ffffff;
 }
@@ -4488,6 +4489,15 @@ button:focus {
     width: 32px;
     cursor: pointer;
   }
+  .middle .middle_line .modal_form_registration .modal_btns .login {
+    margin-right: 0;
+  }
+  .middle .middle_line .modal_form_registration .modal_btns li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
   .mainslider .sub_menu {
     display: none;
   }
@@ -4681,6 +4691,23 @@ button:focus {
 @media (max-width: 790px) {
   .middle .middle_line .my_cabinet {
     padding: 10px 15px;
+  }
+  .middle .middle_line .modal_form_registration {
+    padding: 25px;
+  }
+  .middle .middle_line .modal_form {
+    padding: 25px;
+    width: 100%;
+  }
+  .middle .middle_line .modal_form .email,
+  .middle .middle_line .modal_form .pass {
+    width: 100%;
+  }
+  .middle .middle_line .modal_form_registration .row {
+    flex-direction: column;
+  }
+  .middle .middle_line .modal_form_registration .block {
+    width: 100%;
   }
 }
 @media (max-width: 720px) {
