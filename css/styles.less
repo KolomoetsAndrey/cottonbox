@@ -259,6 +259,10 @@ button:focus {
             transition: 0.5s;
             text-align: left;
             color: #ffffff;
+
+            .mobile_login {
+                display: none;
+            }
         
             a {
                 padding: 8px 8px 8px 32px;
@@ -5454,6 +5458,57 @@ button:focus {
 
     .middle .middle_line .my_cabinet {
         display: none;
+    }
+
+    .middle {
+        .middle_line {
+            .sidepanel {
+                .mobile_login {
+                    display: flex;
+                    flex-direction: row-reverse;
+
+                    ul {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    li {
+                        display: inline-flex;
+                    }
+
+                    a {
+                        color: #ffffff;
+                        text-decoration: none;
+                    }
+        
+                    .heart {
+                        height: 37px;
+                        width: 37px;
+                    }
+        
+                    .badge {
+                        position: relative;
+                        font-size: 16px;
+                        background: #BD4F50;
+                        padding: 4px 9px;
+                        border-radius: 50%;
+                        top: -22px;
+                        left: -17px;
+                    }
+
+                    .my_cabinet_mobile {
+                        font-family: @montserrat;
+                        font-size: 20px;
+                        color: #ffffff;
+                        border: 1px solid #ffffff;
+                        border-radius: 20px;
+                        padding: 10px;
+                        margin-right: 20px;
+                        background: transparent;
+                    }
+                }
+            }
+        }
     }
 
     .middle .middle_line form .search_btn_mobile img {

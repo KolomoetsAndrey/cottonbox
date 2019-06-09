@@ -136,7 +136,7 @@ function openNav() {
     var x = window.matchMedia("(max-width:900px)");
 
     if (x.matches) {
-        document.getElementById("mySidepanel").style.width = "90%";
+        document.getElementById("mySidepanel").style.width = "80%";
     } else {
         document.getElementById("mySidepanel").style.width = "25%";
     }
@@ -151,7 +151,7 @@ function openPhone() {
     var x = window.matchMedia("(max-width:900px)");
 
     if (x.matches) {
-        document.getElementById("myOpenphone").style.width = "90%";
+        document.getElementById("myOpenphone").style.width = "80%";
     } else {
         document.getElementById("myOpenphone").style.width = "25%";
     }
