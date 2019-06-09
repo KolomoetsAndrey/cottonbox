@@ -17,7 +17,7 @@ function windowOnClick(event) {
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 closeButton2.addEventListener("click", toggleModal);
-// window.addEventListener("click", windowOnClick);
+window.addEventListener("click", windowOnClick);
 // Ens Modal
 
 const tabLinks = document.querySelectorAll(".tabs a");
@@ -97,6 +97,7 @@ for (i = 0; i < coll.length; i++) {
     });
 }
 
+
 function myFunction() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
@@ -135,7 +136,7 @@ function openNav() {
     var x = window.matchMedia("(max-width:900px)");
 
     if (x.matches) {
-        document.getElementById("mySidepanel").style.width = "50%";
+        document.getElementById("mySidepanel").style.width = "90%";
     } else {
         document.getElementById("mySidepanel").style.width = "25%";
     }
@@ -150,7 +151,7 @@ function openPhone() {
     var x = window.matchMedia("(max-width:900px)");
 
     if (x.matches) {
-        document.getElementById("myOpenphone").style.width = "50%";
+        document.getElementById("myOpenphone").style.width = "90%";
     } else {
         document.getElementById("myOpenphone").style.width = "25%";
     }

@@ -3899,6 +3899,9 @@ button:focus {
 .faq_mobile input {
   width: 30%;
 }
+.faq_mobile .button {
+  box-shadow: 0px 5px 20px #CCCCCC;
+}
 /* Footer */
 .footer {
   padding-bottom: 65px;
@@ -3922,6 +3925,11 @@ button:focus {
 @media screen and (max-width: 500px) {
   .footer .column {
     width: calc(50% - 16px);
+  }
+}
+@media screen and (max-width: 320px) {
+  .footer .column {
+    width: calc(100% - 16px);
   }
 }
 .footer .column .footer_logo {
@@ -4895,6 +4903,12 @@ button:focus {
   .tabs_slider .owl-controls .seeall {
     display: none;
   }
+  .tabs_slider .tab-slider--trigger {
+    margin-bottom: 15px;
+  }
+  .tabs_slider .owl-controls {
+    margin-bottom: 95px;
+  }
   .tabs_slider .item {
     height: 100vw;
   }
@@ -4916,5 +4930,50 @@ button:focus {
   .about_us .aboutUs_fullscreen {
     padding-left: 40px;
     padding-right: 40px;
+  }
+  .about_us .title_block h2 {
+    width: 100%;
+  }
+  .about_us .title_block .more {
+    display: none;
+  }
+  .about_us .aboutUs_fullscreen .about_us_desc {
+    padding-top: 0;
+  }
+  .faq_form {
+    text-align: center;
+  }
+  .faq_mobile .faq_form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .faq_mobile .faq_form form .question,
+  .faq_mobile .faq_form form .email {
+    width: 80%;
+  }
+  .faq_mobile .faq_form form .button {
+    width: 40%;
+  }
+  .faq_mobile .faq_form form input {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .column {
+    width: 100%;
+    text-align: center;
+  }
+  .footer .column form {
+    align-items: center;
+  }
+  .footer .column form .email {
+    width: 70%;
+  }
+  .footer .f_menu {
+    order: 0;
   }
 }
