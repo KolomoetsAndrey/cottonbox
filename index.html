@@ -10,6 +10,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/styles.css">
     <!--FontAwesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -58,22 +59,22 @@
                     <img class="logo" src="images/logo.png" alt="">
                 </a>
                 <form class="search justify-content-center">
-                    <input type="text" placeholder="Поиск">
-                    <button type="submit">
+                    <input class="top_search" type="text" placeholder="Поиск">
+                    <button class="top_search_confirm" type="submit">
                         <img src="images/search_btn.png" alt="" class="search_btn">
                     </button>
-                    <button class="search_btn_mobile">
+                    <button class="search_btn_mobile" data-fancybox data-src="#hidden-content" href="javascript:;">
                         <img src="images/search_btn.png" alt="" class="btn_mobile">
                     </button>
                 </form>
                 <ul class="my_cart">
-                    <li>
+                    <li class="heart_block">
                         <a href="#">
                             <img class="heart" src="images/heart.png" alt="">
                             <span class="badge">3</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="cart_block">
                         <a href="#">
                             <img class="cart" src="images/cart.png" alt="">
                             <span class="badge">5</span>
@@ -165,6 +166,20 @@
                 </div>
                 <!--END MODAL MY CABINET-->
 
+                <div class="phone_rec">
+                    <button class="phone_btn" onclick="openPhone()">
+                        <img src="images/phone-receiver.png" alt="">
+                    </button>
+                </div>
+                <div id="myOpenphone" class="sidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closePhone()">&times;</a>
+                    <a class="the_menu">Контакты</a>
+                    <a class="the_menu" href="tel:+380123456789">+38 123 456 67 89</a>
+                    <a class="the_menu" href="tel:+380123456789">+38 123 456 67 89</a>
+                    <a class="the_menu">График работы</a>
+                    <a class="the_menu">Пн - Пт с 10:00 - 19:00</a>
+                </div>
+
                 <div class="hamburger">
                     <button class="openbtn" onclick="openNav()">
                         <img src="images/hamburger.png" alt="">
@@ -177,7 +192,12 @@
                     </div>
                     <a class="the_menu" href="#">Главная</a>
                     <a class="the_menu" href="#">О Нас</a>
-                    <a class="the_menu" href="#">Каталог</a>
+                    <a class="the_menu collapsible" href="#">Каталог</a>
+                    <div class="content">
+                        <a class="the_menu" href="#">Постели</a>
+                        <a class="the_menu" href="#">Одеяла</a>
+                        <a class="the_menu" href="#">Подушки</a>
+                    </div>
                     <a class="the_menu" href="#">Возврат товара</a>
                     <a class="the_menu" href="#">Оплата</a>
                     <a class="the_menu" href="#">Доставка</a>
@@ -235,7 +255,7 @@
                         <span>Поставщик</span>
                         <br>постельного белья и домашнего текстиля
                     </h1>
-                    <h2>Здесь вы сможете купить постельное белье оптом и в розницу!</h2>
+                    <h2 class="mi_h2">Здесь вы сможете купить постельное белье оптом и в розницу!</h2>
                     <a href="#" class="goto">Перейти в каталог</a>
                 </div>
                 <div class="owl-controls mainSliderDots">
@@ -1294,6 +1314,7 @@
                     <p class="three">
                         Просмотрев каталог, вы легко можете купить постельное белье, просто нажав на кнопку «Купить», и выбранный постельный комплект будет доставлен вам в ближайшее время. Магазин постельного белья CottonBox.com.ua поможет выбрать отличный подарок родным и близким. Без сомнения, вашим знакомым молодоженам будет очень приятно получить в день свадьбы в качестве подарка шикарный постельный комплект из ранфорса или сатина, а молодым родителям придется по душе набор для кроватки новорожденного...
                     </p>
+                    <a href="#" class="more_mobile">Узнать больше</a>
                 </div>
             </div>
         </div>
@@ -1324,19 +1345,36 @@
         </div>
     </section>
     <!--End FAQ-->
+    <!--FAQ Mobile-->
+    <section class="faq_mobile">
+        <div class="container">
+            <div class="row">
+                <div class="faq_form">
+                    <h2>У Вас остались вопросы?</h2>
+                    <p>Получите ответ от наших специалистов за несколько минут</p>
+                    <form>
+                        <input type="text" class="question" minlength="2" maxlength="5000" required="required" placeholder="Что Вас интересует?">
+                        <input type="email" class="email" minlength="2" maxlength="50" required="required" placeholder="Введите Ваш e-mail">
+                        <input type="button" class="button" value="Отправить">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End FAQ Mobile-->
 
     <!--Footer-->
     <footer class="footer">
         <div class="container">
             <div class="row between">
-                <div class="column">
+                <div class="column f_logo">
                     <img src="images/logo.png" alt="" class="footer_logo">
                     <form>
                         <input type="email" class="email" minlength="2" maxlength="50" required="required" placeholder="Введите Ваш e-mail">
                         <input type="button" class="button subscribe" value="Подпишитесь на наши обновления">
                     </form>
                 </div>
-                <div class="column">
+                <div class="column f_works">
                     <h3>
                         График работы
                     </h3>
@@ -1359,7 +1397,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="column">
+                <div class="column f_menu">
                     <ul class="footer_menu">
                         <li>
                             <a href="#">Каталог</a>
@@ -1375,7 +1413,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="column">
+                <div class="column f_contacts">
                     <h3>Свяжитесь с нами</h3>
                     <ul class="footer_contacts">
                         <li>+38 (098) 065 18 36</li>
@@ -1388,12 +1426,28 @@
     </footer>
     <!--End Footer-->
 
-
+    <!--Modal-->
+        <!--Fancybox Search-->
+        <div class="mobile-search-content fancybox-content" style="display: none;" id="hidden-content">
+            <h3>Поиск</h3>
+            <input type="text" class="ms-input">
+            <ul class="ms_btns">
+                <li>
+                    <button class="find">Поиск</button>
+                </li>
+                <li>
+                    <span data-fancybox-close class="ms_cancel">Отмена</span>
+                </li>
+            </ul>
+        </div>
+        <!--End Fancybox Search-->
+    <!--End Modal-->
 
 
 
     <!--Scripts-->
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/main.js"></script>
 </body>

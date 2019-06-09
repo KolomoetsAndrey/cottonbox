@@ -130,11 +130,12 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+// Main Menu
 function openNav() {
     var x = window.matchMedia("(max-width:900px)");
 
     if (x.matches) {
-        document.getElementById("mySidepanel").style.width = "85%";
+        document.getElementById("mySidepanel").style.width = "50%";
     } else {
         document.getElementById("mySidepanel").style.width = "25%";
     }
@@ -142,6 +143,21 @@ function openNav() {
     
 function closeNav() {
     document.getElementById("mySidepanel").style.width = "0";
+};
+
+// Phone Menu
+function openPhone() {
+    var x = window.matchMedia("(max-width:900px)");
+
+    if (x.matches) {
+        document.getElementById("myOpenphone").style.width = "50%";
+    } else {
+        document.getElementById("myOpenphone").style.width = "25%";
+    }
+};
+    
+function closePhone() {
+    document.getElementById("myOpenphone").style.width = "0";
 };
 
 // Tabs
@@ -206,6 +222,9 @@ $(document).ready(function(){
             },
             500:{
                 items:2
+            },
+            671:{
+                items:4
             },
             900:{
                 items:4
@@ -278,6 +297,9 @@ $(document).ready(function(){
             },
             500:{
                 items:2
+            },
+            671:{
+                items:4
             },
             900:{
                 items:4
