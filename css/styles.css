@@ -4948,8 +4948,37 @@ button:focus {
   .middle .middle_line .my_cabinet {
     display: none;
   }
+  .middle .middle_line .tabs-content {
+    padding: 15px;
+  }
+  .middle .middle_line .modal_form {
+    text-align: center;
+  }
+  .middle .middle_line .modal_form .email,
+  .middle .middle_line .modal_form .pass {
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  .middle .middle_line .modal_form label {
+    padding-left: 0;
+  }
   .middle .middle_line .modal_form .modal_btns .close-button {
     padding: 10px 30px;
+  }
+  .middle .middle_line .modal_form_registration {
+    text-align: center;
+  }
+  .middle .middle_line .modal_form_registration label {
+    padding-left: 0;
+  }
+  .middle .middle_line .modal_form_registration .name,
+  .middle .middle_line .modal_form_registration .lastname,
+  .middle .middle_line .modal_form_registration .phone,
+  .middle .middle_line .modal_form_registration .email,
+  .middle .middle_line .modal_form_registration .pass,
+  .middle .middle_line .modal_form_registration .passconfirm {
+    margin-top: 0;
+    margin-bottom: 10px;
   }
   .middle .middle_line .modal_form_registration .modal_btns .login {
     font-size: 16px;
@@ -5152,10 +5181,13 @@ button:focus {
     padding: 20px;
   }
 }
-@media (max-width: 370px) {
+@media (max-width: 375px) {
   .middle .middle_line .sidepanel .mobile_login .heart {
     height: 32px;
     width: 32px;
+  }
+  .middle .middle_line .tabs li a {
+    padding: 10px;
   }
   .middle .middle_line .tabs-content {
     padding: 15px;
