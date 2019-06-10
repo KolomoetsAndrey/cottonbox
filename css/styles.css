@@ -4966,6 +4966,11 @@ button:focus {
   .middle .middle_line .tabs li a {
     padding: 15px 10px;
   }
+  .middle .middle_line .modal_form_registration .therms {
+    font-size: 12px;
+    padding: 0;
+    text-align: center;
+  }
   .middle .middle_line {
     justify-content: space-around;
   }
@@ -5151,6 +5156,33 @@ button:focus {
   .middle .middle_line .sidepanel .mobile_login .heart {
     height: 32px;
     width: 32px;
+  }
+  .middle .middle_line .tabs-content {
+    padding: 15px;
+  }
+  .middle .middle_line .modal_form {
+    text-align: center;
+  }
+  .middle .middle_line .modal_form label {
+    padding-left: 0;
+  }
+  .middle .middle_line .modal_form .email,
+  .middle .middle_line .modal_form .pass {
+    margin-top: 0;
+  }
+  .middle .middle_line .modal_form_registration {
+    text-align: center;
+  }
+  .middle .middle_line .modal_form_registration .name,
+  .middle .middle_line .modal_form_registration .lastname,
+  .middle .middle_line .modal_form_registration .phone,
+  .middle .middle_line .modal_form_registration .email,
+  .middle .middle_line .modal_form_registration .pass,
+  .middle .middle_line .modal_form_registration .passconfirm {
+    margin-top: 0;
+  }
+  .middle .middle_line .modal_form_registration label {
+    margin-top: 0;
   }
   .middle .middle_line .sidepanel .mobile_login .badge {
     font-size: 12px;
