@@ -5128,6 +5128,24 @@ button:focus {
   .footer .f_menu {
     order: 0;
   }
+  .fancybox-slide--current .mobile-search-content .ms-input {
+    height: 32px;
+  }
+  .fancybox-slide--current .mobile-search-content .ms_btns {
+    margin-top: 15px;
+  }
+  .fancybox-slide--current .mobile-search-content .ms_btns .find {
+    padding: 10px 30px;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  .fancybox-slide--current .mobile-search-content .ms_btns .ms_cancel {
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+  .fancybox-slide--current .mobile-search-content {
+    padding: 20px;
+  }
 }
 @media (max-width: 370px) {
   .middle .middle_line .sidepanel .mobile_login .heart {
