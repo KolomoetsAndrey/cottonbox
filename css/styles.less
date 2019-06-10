@@ -1434,6 +1434,7 @@ button:focus {
     .filter {
         .col();
         .size(4);
+        .size-xs(16);
 
         margin-left: 1px;
         margin-right: 1px;
@@ -1614,6 +1615,7 @@ button:focus {
                 .show_price {
                     border: 1px solid #BD4F50;
                     text-align: center;
+                    padding: 5px 15px;
                     width: 50%;
                     cursor: pointer;
                     transition: all 0.2s;
@@ -1711,6 +1713,7 @@ button:focus {
     .items {
         .col();
         .size(12);
+        .size-xs(16);
 
         margin-right: 1px;
         margin-left: 1px;
@@ -1782,6 +1785,44 @@ button:focus {
                 border-radius: 5px;
                 cursor: pointer;
                 margin-bottom: 20px;
+
+                .image {
+                    position: relative;
+
+                    .labels {
+                        position: absolute;
+                        right: 5px;
+                        font-size: 12px;
+                        text-align: center;
+                        width: 40%;
+                        color: #ffffff;
+
+                        b {
+                            font-weight: normal;
+                        }
+
+                        .sale {
+                            margin-top: 5px;
+                            border-radius: 15px;
+                            border: 1px solid #FE3152;
+                            background: #FE3152;
+                        }
+
+                        .new {
+                            margin-top: 5px;
+                            border-radius: 15px;
+                            border: 1px solid #2AE101;
+                            background: #2AE101;
+                        }
+
+                        .hit {
+                            margin-top: 5px;
+                            border-radius: 15px;
+                            border: 1px solid #FEA800;
+                            background: #FEA800;
+                        }
+                    }
+                }
         
                 .item_btns {
                     display: flex;
@@ -4893,6 +4934,51 @@ button:focus {
         }
     }
 
+    .category {
+        .filter {
+            h3 {
+                font-size: 14px;
+                padding: 10px 15px;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 10px 15px;
+            }
+
+            .content {
+                font-size: 14px;
+
+                .checkbox {
+                    label::before {
+                        height: 14px;
+                        width: 14px;
+                    }
+                }
+            }
+
+            .rs_content {
+                input[type=number] {
+                    font-size: 14px;
+                    width: 35%;
+                }
+            }
+        }
+
+        .items {
+            .cat_items {
+                .item {
+                    height: 300px;
+
+                    .item_desc {
+                        font-size: 13px;
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+
     .about_us {
         .title_block {
             .more {
@@ -5427,6 +5513,16 @@ button:focus {
     .middle .middle_line .modal_form_registration .block {
         width: 100%;
     }
+
+    .category {
+        .filter {
+            width: 100%;
+        }
+
+        .items {
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: 720px) {
@@ -5438,6 +5534,8 @@ button:focus {
             }
         }
     }
+
+
 }
 
 @media (max-width: 670px) {

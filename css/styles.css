@@ -1455,6 +1455,11 @@ button:focus {
   margin-left: 1px;
   margin-right: 1px;
 }
+@media screen and (max-width: 500px) {
+  .category .filter {
+    width: calc(100% - 16px);
+  }
+}
 .category .filter h3 {
   font-size: 18px;
   color: #232323;
@@ -1610,6 +1615,7 @@ button:focus {
 .category .filter .rs_content .rs_btns .show_price {
   border: 1px solid #BD4F50;
   text-align: center;
+  padding: 5px 15px;
   width: 50%;
   cursor: pointer;
   transition: all 0.2s;
@@ -1696,6 +1702,11 @@ button:focus {
   padding-left: 10px;
   padding-right: 5px;
 }
+@media screen and (max-width: 500px) {
+  .category .items {
+    width: calc(100% - 16px);
+  }
+}
 .category .items .select {
   justify-content: space-between;
   align-items: center;
@@ -1756,6 +1767,38 @@ button:focus {
   border-radius: 5px;
   cursor: pointer;
   margin-bottom: 20px;
+}
+.category .items .cat_items .item .image {
+  position: relative;
+}
+.category .items .cat_items .item .image .labels {
+  position: absolute;
+  right: 5px;
+  font-size: 12px;
+  text-align: center;
+  width: 40%;
+  color: #ffffff;
+}
+.category .items .cat_items .item .image .labels b {
+  font-weight: normal;
+}
+.category .items .cat_items .item .image .labels .sale {
+  margin-top: 5px;
+  border-radius: 15px;
+  border: 1px solid #FE3152;
+  background: #FE3152;
+}
+.category .items .cat_items .item .image .labels .new {
+  margin-top: 5px;
+  border-radius: 15px;
+  border: 1px solid #2AE101;
+  background: #2AE101;
+}
+.category .items .cat_items .item .image .labels .hit {
+  margin-top: 5px;
+  border-radius: 15px;
+  border: 1px solid #FEA800;
+  background: #FEA800;
 }
 .category .items .cat_items .item .item_btns {
   display: flex;
@@ -4521,6 +4564,32 @@ button:focus {
     margin-left: 0;
     display: block;
   }
+  .category .filter h3 {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+  .category .filter button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+  .category .filter .content {
+    font-size: 14px;
+  }
+  .category .filter .content .checkbox label::before {
+    height: 14px;
+    width: 14px;
+  }
+  .category .filter .rs_content input[type=number] {
+    font-size: 14px;
+    width: 35%;
+  }
+  .category .items .cat_items .item {
+    height: 300px;
+  }
+  .category .items .cat_items .item .item_desc {
+    font-size: 13px;
+    margin-top: 15px;
+  }
   .about_us .title_block .more {
     padding-top: 110px;
   }
@@ -4891,6 +4960,12 @@ button:focus {
     flex-direction: column;
   }
   .middle .middle_line .modal_form_registration .block {
+    width: 100%;
+  }
+  .category .filter {
+    width: 100%;
+  }
+  .category .items {
     width: 100%;
   }
 }
