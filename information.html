@@ -10,6 +10,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/styles.css">
     <!--FontAwesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -57,20 +58,23 @@
                 <a href="#">
                     <img class="logo" src="images/logo.png" alt="">
                 </a>
-                <form action="#" class="search justify-content-center">
-                    <input type="text" placeholder="Поиск">
-                    <button type="submit">
+                <form class="search justify-content-center">
+                    <input class="top_search" type="text" placeholder="Поиск">
+                    <button class="top_search_confirm" type="submit">
                         <img src="images/search_btn.png" alt="" class="search_btn">
+                    </button>
+                    <button class="search_btn_mobile" data-fancybox data-src="#hidden-content" href="javascript:;">
+                        <img src="images/search_btn.png" alt="" class="btn_mobile">
                     </button>
                 </form>
                 <ul class="my_cart">
-                    <li>
+                    <li class="heart_block">
                         <a href="#">
                             <img class="heart" src="images/heart.png" alt="">
                             <span class="badge">3</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="cart_block">
                         <a href="#">
                             <img class="cart" src="images/cart.png" alt="">
                             <span class="badge">5</span>
@@ -80,6 +84,61 @@
                 <button class="my_cabinet trigger">
                     Личный кабинет
                 </button>
+
+                <div class="phone_rec">
+                    <button class="phone_btn" onclick="openPhone()">
+                        <img src="images/phone-receiver.png" alt="">
+                    </button>
+                </div>
+                <div id="myOpenphone" class="sidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closePhone()">&times;</a>
+                    <a class="the_menu">Контакты</a>
+                    <a class="the_menu" href="tel:+380123456789">+38 123 456 67 89</a>
+                    <a class="the_menu" href="tel:+380123456789">+38 123 456 67 89</a>
+                    <a class="the_menu">График работы</a>
+                    <a class="the_menu">Пн - Пт с 10:00 - 19:00</a>
+                </div>
+
+                <div class="hamburger">
+                    <button class="openbtn" onclick="openNav()">
+                        <img src="images/hamburger.png" alt="">
+                    </button> 
+                </div>
+                <div id="mySidepanel" class="sidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="mobile_login">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img class="heart" src="images/heart-white.png" alt="">
+                                    <span class="badge">3</span>
+                                </a>
+                            </li>
+                            <li>
+                                <button class="my_cabinet_mobile trigger-mobile">
+                                    Личный кабинет
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="msp_menu">
+                        <p>Меню</p>
+                    </div>
+                    <a class="the_menu" href="#">Главная</a>
+                    <a class="the_menu" href="#">О Нас</a>
+                    <a class="the_menu collapsible" href="#">Каталог</a>
+                    <div class="content">
+                        <a class="the_menu" href="#">Постели</a>
+                        <a class="the_menu" href="#">Одеяла</a>
+                        <a class="the_menu" href="#">Подушки</a>
+                    </div>
+                    <a class="the_menu" href="#">Возврат товара</a>
+                    <a class="the_menu" href="#">Оплата</a>
+                    <a class="the_menu" href="#">Доставка</a>
+                    <a class="the_menu" href="#">Гарантии</a>
+                    <a class="the_menu" href="#">Сотрудничество</a>
+                    <a class="the_menu" href="#">Контакты</a>
+                </div>
 
                 <!--MODAL MY CABINET-->
                 <div class="modal">
@@ -162,26 +221,6 @@
                 </div>
                 <!--END MODAL MY CABINET-->
 
-                <div class="hamburger">
-                    <button class="openbtn" onclick="openNav()">
-                        <img src="images/hamburger.png" alt="">
-                    </button> 
-                </div>
-                <div id="mySidepanel" class="sidepanel">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <div class="msp_menu">
-                        <p>Меню</p>
-                    </div>
-                    <a class="the_menu" href="#">Главная</a>
-                    <a class="the_menu" href="#">О Нас</a>
-                    <a class="the_menu" href="#">Каталог</a>
-                    <a class="the_menu" href="#">Возврат товара</a>
-                    <a class="the_menu" href="#">Оплата</a>
-                    <a class="the_menu" href="#">Доставка</a>
-                    <a class="the_menu" href="#">Гарантии</a>
-                    <a class="the_menu" href="#">Сотрудничество</a>
-                    <a class="the_menu" href="#">Контакты</a>
-                </div>
             </div>
         </div>
     </header>
@@ -392,7 +431,22 @@
     </footer>
     <!--End Footer-->
 
-
+    <!--Modal-->
+        <!--Fancybox Search-->
+        <div class="mobile-search-content fancybox-content" style="display: none;" id="hidden-content">
+            <h3>Поиск</h3>
+            <input type="text" class="ms-input">
+            <ul class="ms_btns">
+                <li>
+                    <button class="find">Поиск</button>
+                </li>
+                <li>
+                    <span data-fancybox-close class="ms_cancel">Отмена</span>
+                </li>
+            </ul>
+        </div>
+        <!--End Fancybox Search-->
+    <!--End Modal-->
 
 
 
