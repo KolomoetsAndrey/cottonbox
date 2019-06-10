@@ -1362,6 +1362,9 @@ button:focus {
 .about_us .about_us_more p {
   padding-bottom: 20px;
 }
+.about_mobile {
+  display: none;
+}
 /* Our Partners */
 .our_partners {
   text-align: center;
@@ -1376,6 +1379,11 @@ button:focus {
   margin-left: 8px;
   margin-right: 8px;
   width: calc(18.75% - 16px);
+}
+@media screen and (max-width: 500px) {
+  .our_partners .brands .brand_name {
+    width: calc(100% - 16px);
+  }
 }
 .our_partners .brands .brand_name img {
   width: 100%;
@@ -4877,6 +4885,28 @@ button:focus {
   .about_us .aboutUs_fullscreen .about_us_desc {
     width: 100%;
     padding-top: 40px;
+  }
+  .about_desktop {
+    display: none;
+  }
+  .about_mobile {
+    display: block;
+  }
+  .about_mobile .aboutUs_fullscreen {
+    padding-left: 0;
+  }
+  .about_mobile .aboutUs_fullscreen .about_us_img {
+    height: 70vw;
+  }
+  .about_mobile .about_mobile_desc {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .about_mobile .about_mobile_desc p {
+    margin-bottom: 15px;
+  }
+  .our_partners .brands .brand_name {
+    padding: 20px;
   }
   .faq {
     display: none;

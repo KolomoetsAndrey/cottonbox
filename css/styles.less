@@ -1342,6 +1342,10 @@ button:focus {
     }
 }
 
+.about_mobile {
+    display: none;
+}
+
 /* Our Partners */
 .our_partners {
     text-align: center;
@@ -1353,6 +1357,7 @@ button:focus {
         .brand_name {
             .col();
             .size(3);
+            .size-xs(16);
 
             img {
                 width: 100%;
@@ -5466,6 +5471,35 @@ button:focus {
                 padding-top: 40px;
             }
         }
+    }
+
+    .about_desktop {
+        display: none;
+    }
+
+    .about_mobile {
+        display: block;
+
+        .aboutUs_fullscreen {
+            padding-left: 0;
+
+            .about_us_img {
+                height: 70vw;
+            }
+        }
+
+        .about_mobile_desc {
+            font-size: 14px;
+            line-height: 20px;
+
+            p {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .our_partners .brands .brand_name {
+        padding: 20px;
     }
 
     .faq {
