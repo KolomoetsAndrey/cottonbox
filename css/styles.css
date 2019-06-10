@@ -1419,6 +1419,16 @@ button:focus {
   text-align: center;
   transition: all 0.2s;
 }
+@media screen and (max-width: 1200px) {
+  .catalogue .categories .cat_name {
+    width: calc(25% - 16px);
+  }
+}
+@media screen and (max-width: 500px) {
+  .catalogue .categories .cat_name {
+    width: calc(31.25% - 16px);
+  }
+}
 .catalogue .categories .cat_name img {
   width: 100%;
   margin-bottom: 25px;
@@ -4226,6 +4236,12 @@ button:focus {
   cursor: pointer;
   box-shadow: 0px 5px 20px #CCCCCC;
 }
+@media (max-width: 1703px) {
+  .catalogue .categories .cat_name {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
 @media (max-width: 1400px) {
   .top .top_line {
     font-size: 14px;
@@ -4457,6 +4473,19 @@ button:focus {
     font-size: 14px;
   }
 }
+@media (max-width: 1200px) {
+  .catalogue .categories .cat_name {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px 5px 30px 5px;
+  }
+  .catalogue .categories .cat_name img {
+    margin-bottom: 5px;
+  }
+  .catalogue .categories .cat_name a {
+    font-size: 22px;
+  }
+}
 @media (max-width: 900px) {
   .top {
     padding-top: 15px;
@@ -4534,6 +4563,12 @@ button:focus {
   }
   .mainslider .goto {
     font-size: 14px;
+  }
+  .catalogue .categories .cat_name {
+    padding: 5px;
+  }
+  .catalogue .categories .cat_name a {
+    font-size: 18px;
   }
   .title_block h2 {
     font-size: 20px;
@@ -4948,6 +4983,12 @@ button:focus {
   .mainslider .mySlider_fullscreen .main_info h1 span {
     font-size: 28px;
   }
+  .catalogue .categories {
+    justify-content: space-between;
+  }
+  .catalogue .categories .cat_name a {
+    font-size: 12px;
+  }
   .footer .column {
     margin-top: 20px;
   }
@@ -5106,6 +5147,9 @@ button:focus {
   .mainslider .goto {
     font-size: 12px;
     padding: 6px 12px;
+  }
+  .catalogue .categories .cat_name {
+    width: 45%;
   }
   .recomendation .owl-controls .seeall {
     display: none;
