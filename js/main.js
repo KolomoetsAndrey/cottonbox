@@ -132,20 +132,40 @@ $('.sim-thumb').on('click', function() {
 })  
 
 //Collapse
-var coll = document.getElementsByClassName("collapsible");
-var i;
+var mq = window.matchMedia( "(min-width: 791px)" );
 
-for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "none") {
-        content.style.display = "block";
-        } else {
-        content.style.display = "none";
-        }
-    });
-}
+if (mq.matches) {
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "none") {
+            content.style.display = "block";
+            } else {
+            content.style.display = "none";
+            }
+        });
+    };
+} else {
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+            content.style.display = "block";
+            }
+        });
+    };
+};
+
 //End Collapse
 
 function myFunction() {
@@ -229,6 +249,8 @@ $(".tab-slider--nav li").click(function() {
 $(document).ready(function(){
     $('.mainSlider').owlCarousel({
         loop: true,
+        animateIn: 'fadeIn',
+        animateOut: 'fadeOut',
         dotsContainer: '.mainSliderCustomDots',
         autoplay: true,
         autoplayTimeout: 10000,
@@ -304,6 +326,8 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.saleSlider').owlCarousel({
         loop: true,
+        animateIn: 'fadeIn',
+        animateOut: 'fadeOut',
         dotsContainer: '.saleSliderCustomDots',
         autoplay: true,
         autoplayTimeout: 10000,
@@ -374,4 +398,15 @@ $(document).ready(function(){
         $('.prevBtn').click(function() {
             hitsSlider.trigger('prev.owl.carousel', [300]);
         });
+});
+
+//Top-menu
+$(function(){
+    $(window).scroll(function() {
+        if($(this).scrollTop() >= 120) {
+        $('.middle').addClass(' sticky-menu ');
+        }else{
+        $('.middle').removeClass(' sticky-menu ');
+        }
+    });
 });
