@@ -423,9 +423,8 @@ button:focus {
 .middle .middle_line .sidepanel .content {
   font-size: 16px;
   padding-left: 30px;
-  max-height: 0;
+  display: block;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
 }
 .middle .middle_line .modal {
   position: fixed;
@@ -921,7 +920,6 @@ button:focus {
   transition: all 0.2s;
   height: 525px;
   box-shadow: 0 0 0 1px #FDF5F5;
-  border-radius: 5px;
   cursor: pointer;
 }
 .recomendation .item .labels {
@@ -1014,7 +1012,6 @@ button:focus {
 }
 .recomendation .item:hover {
   box-shadow: 0 0 0 1px #BD4F50;
-  border-radius: 5px;
 }
 .recomendation .item:hover .item_btns {
   visibility: visible;
@@ -1161,7 +1158,6 @@ button:focus {
   transition: all 0.2s;
   height: 525px;
   box-shadow: 0 0 0 1px #FDF5F5;
-  border-radius: 5px;
   cursor: pointer;
 }
 .tabs_slider .item .labels {
@@ -1254,7 +1250,6 @@ button:focus {
 }
 .tabs_slider .item:hover {
   box-shadow: 0 0 0 1px #BD4F50;
-  border-radius: 5px;
 }
 .tabs_slider .item:hover .item_btns {
   visibility: visible;
@@ -1455,6 +1450,11 @@ button:focus {
   margin-left: 1px;
   margin-right: 1px;
 }
+@media screen and (max-width: 900px) {
+  .category .filter {
+    width: calc(31.25% - 16px);
+  }
+}
 @media screen and (max-width: 500px) {
   .category .filter {
     width: calc(100% - 16px);
@@ -1642,9 +1642,8 @@ button:focus {
 }
 .category .filter .content {
   font-size: 16px;
-  max-height: 0;
+  display: block;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
 }
 .category .filter .content ul li {
   margin-bottom: 10px;
@@ -1701,6 +1700,11 @@ button:focus {
   margin-left: 1px;
   padding-left: 10px;
   padding-right: 5px;
+}
+@media screen and (max-width: 900px) {
+  .category .items {
+    width: calc(68.75% - 16px);
+  }
 }
 @media screen and (max-width: 500px) {
   .category .items {
@@ -1764,9 +1768,28 @@ button:focus {
   transition: all 0.2s;
   height: 430px;
   box-shadow: 0 0 0 1px #FDF5F5;
-  border-radius: 5px;
   cursor: pointer;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 1600px) {
+  .category .items .cat_items .item {
+    width: calc(25% - 16px);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .category .items .cat_items .item {
+    width: calc(25% - 16px);
+  }
+}
+@media screen and (max-width: 900px) {
+  .category .items .cat_items .item {
+    width: calc(31.25% - 16px);
+  }
+}
+@media screen and (max-width: 500px) {
+  .category .items .cat_items .item {
+    width: calc(75% - 16px);
+  }
 }
 .category .items .cat_items .item .image {
   position: relative;
@@ -1836,6 +1859,11 @@ button:focus {
   width: 24px;
   padding: 15px 8px;
 }
+.category .items .cat_items .item .desc_and_price {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 .category .items .cat_items .item .item_desc {
   font-size: 15px;
   padding-left: 5px;
@@ -1862,11 +1890,13 @@ button:focus {
 }
 .category .items .cat_items .item:hover {
   box-shadow: 0 0 0 1px #BD4F50;
-  border-radius: 5px;
 }
 .category .items .cat_items .item:hover .item_btns {
   visibility: visible;
   opacity: 1;
+}
+.category .items .cat_items_mobile {
+  display: none;
 }
 .category .items .pagination {
   justify-content: space-between;
@@ -4583,12 +4613,27 @@ button:focus {
     font-size: 14px;
     width: 35%;
   }
+  .category .items .select {
+    margin-bottom: 20px;
+  }
   .category .items .cat_items .item {
     height: 300px;
   }
   .category .items .cat_items .item .item_desc {
     font-size: 13px;
     margin-top: 15px;
+  }
+  .category .items .cat_items .item .item_btns {
+    margin-top: -55px;
+  }
+  .category .items .cat_items .item .item_btns .like img {
+    padding: 8px 6px;
+  }
+  .category .items .cat_items .item .item_btns .add img {
+    padding: 8px 6px;
+  }
+  .category .items .cat_items .item .price {
+    font-size: 15px;
   }
   .about_us .title_block .more {
     padding-top: 110px;
@@ -4774,6 +4819,78 @@ button:focus {
   .mainslider .goto {
     font-size: 14px;
   }
+  .breadcrumbs {
+    font-size: 12px;
+    margin-bottom: 35px;
+    padding-top: 20px;
+  }
+  .category .filter h3 {
+    padding: 5px 15px;
+  }
+  .category .filter button {
+    padding: 5px 15px;
+  }
+  .category .filter .collapsible:after {
+    padding-top: 3px;
+  }
+  .category .filter .rs_content .rs_btns {
+    margin-top: 0;
+  }
+  .category .filter .rs_content .rs_btns .show_price {
+    width: 60%;
+  }
+  .category .filter .rs_content .range-slider input[type=range] {
+    bottom: 25px;
+  }
+  .category .items .select {
+    font-size: 14px;
+  }
+  .category .items .select h3 {
+    font-size: 14px;
+  }
+  .category .items .select .selectdiv select {
+    height: 28px;
+  }
+  .category .items .select .selectdiv:after {
+    top: 13px;
+    right: 20px;
+  }
+  .category .items .cat_items {
+    justify-content: space-around;
+  }
+  .category .items .cat_items .item {
+    height: 270px;
+  }
+  .category .items .cat_items .item .item_btns {
+    margin-top: -45px;
+    visibility: visible;
+    opacity: 1;
+  }
+  .category .items .cat_items .item .item_btns .like img {
+    height: 15px;
+    width: 15px;
+    padding: 8px 5px;
+  }
+  .category .items .cat_items .item .item_btns .add img {
+    height: 16px;
+    width: 16px;
+    padding: 8px 5px;
+  }
+  .category .items .cat_items .item .image .labels {
+    width: 55%;
+  }
+  .category .items .pagination {
+    margin-top: 50px;
+    font-size: 16px;
+  }
+  .category .items .pagination .more_btn button {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .category .items .pagination .paginats .page_link,
+  .category .items .pagination .paginats .dots {
+    padding: 6px 13px;
+  }
   .catalogue .categories .cat_name {
     padding: 5px;
   }
@@ -4797,11 +4914,16 @@ button:focus {
     font-size: 12px;
     width: 85px;
   }
+  .recomendation .item .labels b {
+    font-weight: normal;
+  }
   .recomendation .item .item_desc {
     font-size: 13px;
   }
   .recomendation .item .item_btns {
     margin-top: -45px;
+    visibility: visible;
+    opacity: 1;
   }
   .recomendation .item .item_btns .like img {
     height: 15px;
@@ -4827,7 +4949,7 @@ button:focus {
   }
   .tabs_slider .item .labels {
     margin-top: 10px;
-    margin-right: 15px;
+    margin-right: 5px;
   }
   .tabs_slider .item .labels .new,
   .tabs_slider .item .labels .sale,
@@ -4835,11 +4957,16 @@ button:focus {
     font-size: 12px;
     width: 85px;
   }
+  .tabs_slider .item .labels b {
+    font-weight: normal;
+  }
   .tabs_slider .item .item_desc {
     font-size: 13px;
   }
   .tabs_slider .item .item_btns {
     margin-top: -45px;
+    visibility: visible;
+    opacity: 1;
   }
   .tabs_slider .item .item_btns .like img {
     height: 15px;
@@ -5198,6 +5325,116 @@ button:focus {
 @media (max-width: 500px) {
   .mainslider .mySlider_fullscreen .main_info h1 span {
     font-size: 28px;
+  }
+  .category .filter .content {
+    display: none;
+  }
+  .category .items {
+    /*
+            .cat_items_mobile {
+                display: block;
+
+                .col();
+                .size-xs(16);
+
+                .item_mobile {
+                    display: flex;
+
+                    .item_mobile_image {
+                        width: 40%;
+
+                        .labels {
+                            position: absolute;
+                            right: 0;
+                            margin-top: 25px;
+                            margin-right: 25px;
+                
+                            .new, .sale, .hit {
+                                text-align: center;
+                                padding: 5px 15px;
+                                color: #ffffff;
+                                border-radius: 15px;
+                                margin-bottom: 5px;
+                                font-size: 14px;
+                                width: 100px;
+                            }
+                
+                            .new {
+                                background: #2AE101;
+                            }
+                
+                            .sale {
+                                background: #FE3152;
+                
+                            }
+                
+                            .hit {
+                                background: #FEA800;
+                            }
+                        }
+
+                        .item_btns {
+                            display: flex;
+                            justify-content: flex-end;
+                            margin-right: 5px;
+                            margin-top: -60px;
+                            visibility: hidden;
+                            opacity: 0;
+                            transition: visibility 0s, opacity 0.2s ease-in-out;
+                
+                            button {
+                                border: none;
+                                border-radius: 50%;
+                                cursor: pointer;
+                                margin-left: 10px;
+                                z-index: 1000;
+                                transition: all 0.2s;
+                
+                                &:hover {
+                                    box-shadow: 0 0 0 2px #BD4F50;
+                                }
+                            }
+                
+                            .like {
+                                background: #D0D0D0;
+                
+                                img {
+                                    height: 24px;
+                                    width: 24px;
+                                    padding: 15px 10px;
+                                }
+                            }
+                
+                            .add {
+                                background: #2AE101;
+                
+                                img {
+                                    height: 24px;
+                                    width: 24px;
+                                    padding: 15px 10px;
+                                }
+                            }
+                        }
+                    }
+
+                    .item_mobile_desc {
+                        width: 60%;
+                    }
+                }
+            } */
+  }
+  .category .items .cat_items .item {
+    height: 350px;
+  }
+  .category .items .cat_items .item .image .labels {
+    width: 30%;
+  }
+  .category .items .pagination {
+    display: block;
+    text-align: center;
+  }
+  .category .items .pagination .more_btn {
+    margin-bottom: 20px;
   }
   .catalogue .categories {
     justify-content: space-between;

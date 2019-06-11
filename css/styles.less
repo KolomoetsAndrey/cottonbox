@@ -320,9 +320,8 @@ button:focus {
             .content {
                 font-size: 16px;
                 padding-left: 30px;
-                max-height: 0;
+                display: block;
                 overflow: hidden;
-                transition: max-height 0.2s ease-out;
             }
         }
 
@@ -859,7 +858,6 @@ button:focus {
         transition: all 0.2s;
         height: 525px;
         box-shadow: 0 0 0 1px #FDF5F5;
-        border-radius: 5px;
         cursor: pointer;
 
         .labels {
@@ -968,7 +966,6 @@ button:focus {
 
         &:hover {
             box-shadow: 0 0 0 1px #BD4F50;
-            border-radius: 5px;
 
             .item_btns {
                 visibility: visible;
@@ -1142,7 +1139,6 @@ button:focus {
         transition: all 0.2s;
         height: 525px;
         box-shadow: 0 0 0 1px #FDF5F5;
-        border-radius: 5px;
         cursor: pointer;
 
         .labels {
@@ -1251,7 +1247,6 @@ button:focus {
 
         &:hover {
             box-shadow: 0 0 0 1px #BD4F50;
-            border-radius: 5px;
 
             .item_btns {
                 visibility: visible;
@@ -1434,6 +1429,7 @@ button:focus {
     .filter {
         .col();
         .size(4);
+        .size-sm(5);
         .size-xs(16);
 
         margin-left: 1px;
@@ -1649,9 +1645,8 @@ button:focus {
 
         .content {
             font-size: 16px;
-            max-height: 0;
+            display: block;
             overflow: hidden;
-            transition: max-height 0.2s ease-out;
 
             ul {
                 li {
@@ -1713,6 +1708,7 @@ button:focus {
     .items {
         .col();
         .size(12);
+        .size-sm(11);
         .size-xs(16);
 
         margin-right: 1px;
@@ -1775,6 +1771,10 @@ button:focus {
             .item {
                 .col();
                 .size(4);
+                .size-lg(4);
+                .size-md(4);
+                .size-sm(5);
+                .size-xs(12);
 
                 display: flex;
                 flex-direction: column;
@@ -1782,7 +1782,6 @@ button:focus {
                 transition: all 0.2s;
                 height: 430px;
                 box-shadow: 0 0 0 1px #FDF5F5;
-                border-radius: 5px;
                 cursor: pointer;
                 margin-bottom: 20px;
 
@@ -1866,6 +1865,12 @@ button:focus {
                         }
                     }
                 }
+
+                .desc_and_price {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                }
         
                 .item_desc {
                     font-size: 15px;
@@ -1898,7 +1903,6 @@ button:focus {
         
                 &:hover {
                     box-shadow: 0 0 0 1px #BD4F50;
-                    border-radius: 5px;
         
                     .item_btns {
                         visibility: visible;
@@ -1906,6 +1910,10 @@ button:focus {
                     }
                 }
             }
+        }
+
+        .cat_items_mobile {
+            display: none;
         }
 
         .pagination {
@@ -4966,6 +4974,10 @@ button:focus {
         }
 
         .items {
+            .select {
+                margin-bottom: 20px;
+            }
+
             .cat_items {
                 .item {
                     height: 300px;
@@ -4973,6 +4985,26 @@ button:focus {
                     .item_desc {
                         font-size: 13px;
                         margin-top: 15px;
+                    }
+
+                    .item_btns {
+                        margin-top: -55px;
+
+                        .like {
+                            img {
+                                padding: 8px 6px;
+                            }
+                        }
+
+                        .add {
+                            img {
+                                padding: 8px 6px;
+                            }
+                        }
+                    }
+
+                    .price {
+                        font-size: 15px;
                     }
                 }
             }
@@ -5232,6 +5264,120 @@ button:focus {
         }
     }
 
+    .breadcrumbs {
+        font-size: 12px;
+        margin-bottom: 35px;
+        padding-top: 20px;
+    }
+
+    .category {
+        .filter {
+            h3 {
+                padding: 5px 15px;
+            }
+
+            button {
+                padding: 5px 15px;
+            }
+
+            .collapsible:after {
+                padding-top: 3px;
+            }
+
+            .rs_content {
+                .rs_btns {
+                    margin-top: 0;
+
+                    .show_price {
+                        width: 60%;
+                    }
+                }
+
+                .range-slider {
+                    input[type=range] {
+                        bottom: 25px;
+                    }
+                }
+            }
+        }
+
+        .items {
+            .select {
+                font-size: 14px;
+
+                h3 {
+                    font-size: 14px;
+                }
+
+                .selectdiv {
+                    select {
+                        height: 28px;
+
+                    }
+                }
+
+                .selectdiv:after {
+                    top: 13px;
+                    right: 20px;
+                }
+            }
+
+            .cat_items {
+                justify-content: space-around;
+
+                .item {
+                    height: 270px;
+
+                    .item_btns {
+                        margin-top: -45px;
+                        visibility: visible;
+                        opacity: 1;
+
+                        .like {
+                            img {
+                                height: 15px;
+                                width: 15px;
+                                padding: 8px 5px;
+                            }
+                        }
+
+                        .add {
+                            img {
+                                height: 16px;
+                                width: 16px;
+                                padding: 8px 5px;
+                            }
+                        }
+                    }
+
+                    .image {
+                        .labels {
+                            width: 55%;
+                        }
+                    }
+                }
+            }
+
+            .pagination {
+                margin-top: 50px;
+                font-size: 16px;
+
+                .more_btn {
+                    button {
+                        font-size: 16px;
+                        font-family: @montserrat;
+                    }
+                }
+
+                .paginats {
+                    .page_link, .dots {
+                        padding: 6px 13px;
+                    }
+                }
+            }
+        }
+    }
+
     .catalogue .categories .cat_name {
         padding: 5px;
     }
@@ -5259,6 +5405,10 @@ button:focus {
                     font-size: 12px;
                     width: 85px;
                 }
+
+                b {
+                    font-weight: normal;
+                }
             }
 
             .item_desc {
@@ -5267,6 +5417,8 @@ button:focus {
 
             .item_btns {
                 margin-top: -45px;
+                visibility: visible;
+                opacity: 1;
 
                 .like {
                     img {
@@ -5309,11 +5461,15 @@ button:focus {
 
             .labels {
                 margin-top: 10px;
-                margin-right: 15px;
+                margin-right: 5px;
 
                 .new, .sale, .hit {
                     font-size: 12px;
                     width: 85px;
+                }
+
+                b {
+                    font-weight: normal;
                 }
             }
 
@@ -5323,6 +5479,8 @@ button:focus {
 
             .item_btns {
                 margin-top: -45px;
+                visibility: visible;
+                opacity: 1;
 
                 .like {
                     img {
@@ -5844,6 +6002,129 @@ button:focus {
 @media (max-width: 500px) {
     .mainslider .mySlider_fullscreen .main_info h1 span {
         font-size: 28px;
+    }
+
+    .category {
+        .filter {
+            .content {
+                display: none;
+            }
+        }
+
+        .items  {
+            .cat_items {
+                .item {
+                    height: 350px;
+
+                    .image {
+                        .labels {
+                            width: 30%;
+                        }
+                    }
+                }
+            }
+
+            .pagination {
+                display: block;
+                text-align: center;
+
+                .more_btn {
+                    margin-bottom: 20px;
+                }
+            }
+/*
+            .cat_items_mobile {
+                display: block;
+
+                .col();
+                .size-xs(16);
+
+                .item_mobile {
+                    display: flex;
+
+                    .item_mobile_image {
+                        width: 40%;
+
+                        .labels {
+                            position: absolute;
+                            right: 0;
+                            margin-top: 25px;
+                            margin-right: 25px;
+                
+                            .new, .sale, .hit {
+                                text-align: center;
+                                padding: 5px 15px;
+                                color: #ffffff;
+                                border-radius: 15px;
+                                margin-bottom: 5px;
+                                font-size: 14px;
+                                width: 100px;
+                            }
+                
+                            .new {
+                                background: #2AE101;
+                            }
+                
+                            .sale {
+                                background: #FE3152;
+                
+                            }
+                
+                            .hit {
+                                background: #FEA800;
+                            }
+                        }
+
+                        .item_btns {
+                            display: flex;
+                            justify-content: flex-end;
+                            margin-right: 5px;
+                            margin-top: -60px;
+                            visibility: hidden;
+                            opacity: 0;
+                            transition: visibility 0s, opacity 0.2s ease-in-out;
+                
+                            button {
+                                border: none;
+                                border-radius: 50%;
+                                cursor: pointer;
+                                margin-left: 10px;
+                                z-index: 1000;
+                                transition: all 0.2s;
+                
+                                &:hover {
+                                    box-shadow: 0 0 0 2px #BD4F50;
+                                }
+                            }
+                
+                            .like {
+                                background: #D0D0D0;
+                
+                                img {
+                                    height: 24px;
+                                    width: 24px;
+                                    padding: 15px 10px;
+                                }
+                            }
+                
+                            .add {
+                                background: #2AE101;
+                
+                                img {
+                                    height: 24px;
+                                    width: 24px;
+                                    padding: 15px 10px;
+                                }
+                            }
+                        }
+                    }
+
+                    .item_mobile_desc {
+                        width: 60%;
+                    }
+                }
+            } */
+        }
     }
 
     .catalogue {

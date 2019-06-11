@@ -80,11 +80,11 @@ for (let el of tabLinks) {
     document.querySelector(".tabs-panel.active").classList.remove("active");
 
     const parentListItem = el.parentElement;
-    parentListItem.classList.add("active");
+        parentListItem.classList.add("active");
     const index = [...parentListItem.parentElement.children].indexOf(parentListItem);
 
     const panel = [...tabPanels].filter(el => el.getAttribute("data-index") == index);
-    panel[0].classList.add("active");
+        panel[0].classList.add("active");
     });
 }
 
@@ -131,6 +131,7 @@ $('.sim-thumb').on('click', function() {
     $('#main-product-image').attr('src', $(this).data('image'));
 })  
 
+//Collapse
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -138,14 +139,14 @@ for (i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
         var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-        content.style.maxHeight = null;
+        if (content.style.display === "none") {
+        content.style.display = "block";
         } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-        } 
+        content.style.display = "none";
+        }
     });
 }
-
+//End Collapse
 
 function myFunction() {
     var dots = document.getElementById("dots");
