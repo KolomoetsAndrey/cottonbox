@@ -989,6 +989,7 @@ button:focus {
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 45px;
+  margin-left: 10px;
 }
 .recomendation .item .item_desc a {
   color: #666666;
@@ -1001,9 +1002,11 @@ button:focus {
   color: #232323;
   padding-bottom: 35px;
   padding-left: 20px;
+  margin-left: 10px;
 }
 .recomendation .item .price strike {
   color: #666666;
+  font-size: 18px;
 }
 .recomendation .item .price .price_desc {
   color: #CCCCCC;
@@ -1227,6 +1230,7 @@ button:focus {
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 45px;
+  margin-left: 10px;
 }
 .tabs_slider .item .item_desc a {
   color: #666666;
@@ -1239,9 +1243,11 @@ button:focus {
   color: #232323;
   padding-bottom: 35px;
   padding-left: 20px;
+  margin-left: 10px;
 }
 .tabs_slider .item .price strike {
   color: #666666;
+  font-size: 18px;
 }
 .tabs_slider .item .price .price_desc {
   color: #CCCCCC;
@@ -1290,6 +1296,7 @@ button:focus {
   font-size: 14px;
   color: #CCCCCC;
   transition: all 0.2s;
+  text-decoration: underline;
 }
 .about_us .title_block .more a:hover {
   color: #BD4F50;
