@@ -1418,6 +1418,13 @@ button:focus {
 .our_partners {
   text-align: center;
 }
+.our_partners .line_before::before {
+  position: absolute;
+  margin-top: -55px;
+  border-top: 1px solid #FDF5F5;
+  content: "";
+  width: 35vW;
+}
 .our_partners .brands {
   justify-content: space-between;
   align-items: center;
@@ -6087,6 +6094,10 @@ button:focus {
   }
   .tabs_slider .tab-slider--trigger {
     width: 110px;
+  }
+  .our_partners .line_before::before {
+    margin-top: -15px;
+    width: 60vW;
   }
   .about_us .title_block h2 {
     padding-left: 0;
