@@ -2007,6 +2007,11 @@ button:focus {
   margin-right: 8px;
   width: calc(50% - 16px);
 }
+@media screen and (max-width: 900px) {
+  .product_card .product-image-gallery {
+    width: calc(100% - 16px);
+  }
+}
 .product_card .product-image-gallery ul {
   text-align: center;
 }
@@ -2032,12 +2037,20 @@ button:focus {
 .product_card .product-image-gallery .product-thumbs a img:hover {
   box-shadow: 0 0 0 1px #BD4F50;
 }
+.product_card .product-image-gallery-mobile {
+  display: none;
+}
 .product_card .product-price-information {
   box-sizing: border-box;
   word-wrap: break-word;
   margin-left: 8px;
   margin-right: 8px;
   width: calc(50% - 16px);
+}
+@media screen and (max-width: 900px) {
+  .product_card .product-price-information {
+    width: calc(100% - 16px);
+  }
 }
 .product_card .product-price-information .product_price {
   display: flex;
@@ -2171,11 +2184,17 @@ button:focus {
   margin-top: 60px;
 }
 .product_card .product-price-information .advantages .advant_name {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  border-bottom: 1px dotted #666666;
   margin-top: 15px;
   font-size: 18px;
 }
-.product_card .product-price-information .advantages .advant_name li {
-  display: inline;
+.product_card .product-price-information .advantages .advant_name .name,
+.product_card .product-price-information .advantages .advant_name .value {
+  margin-bottom: -0.31em;
+  background: #ffffff;
 }
 .product_card .product-price-information .advantages .see_advantages {
   background: transparent;
@@ -2237,6 +2256,21 @@ button:focus {
   transition: all 0.2s;
 }
 .product_card .product-price-information .quantity .favorites:hover {
+  color: #BD4F50;
+}
+.product_card .product-price-information .quantity .ask_about_mobile {
+  display: none;
+  color: #666666;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  margin-left: 30px;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.2s;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.product_card .product-price-information .quantity .ask_about_mobile:hover {
   color: #BD4F50;
 }
 .product_card .product-price-information .buy_buttons {
@@ -4522,11 +4556,30 @@ button:focus {
   .product_card .product-price-information .product_price .name h1 {
     font-size: 22px;
   }
+  .product_card .product-price-information .product_price .name .sku {
+    margin-bottom: 15px;
+  }
   .product_card .product-price-information .product_price .price .new_price {
     font-size: 30px;
   }
   .product_card .product-price-information .product_price .price .old_price {
     font-size: 22px;
+  }
+  .product_card .product-price-information .quantity .plus-minus-input {
+    margin-left: 25px;
+  }
+  .product_card .product-price-information .buy_buttons .buy_it {
+    font-size: 16px;
+    padding: 13px 40px;
+  }
+  .product_card .product-price-information .buy_buttons .buy_oneclick {
+    font-size: 16px;
+    padding: 13px 20px;
+    margin-left: 0;
+  }
+  .product_card .product-price-information .buy_buttons .ask_about {
+    font-size: 16px;
+    margin-left: 0;
   }
 }
 @media (max-width: 1400px) {
@@ -4708,6 +4761,24 @@ button:focus {
   .category .items .cat_items .item .price {
     font-size: 15px;
   }
+  .product_card .prod_info {
+    margin-bottom: 70px;
+  }
+  .product_card .product-image-gallery .product-thumbs li:nth-of-type(1n+6) {
+    display: none;
+  }
+  .product_card .product-price-information .product_price .price .new_price {
+    font-size: 25px;
+  }
+  .product_card .product-price-information .advantages {
+    margin-top: 25px;
+  }
+  .product_card .product-price-information .advantages .see_advantages {
+    margin-bottom: 25px;
+  }
+  .product_card .product-price-information .buy_buttons {
+    margin-top: 25px;
+  }
   .about_us .title_block .more {
     padding-top: 110px;
   }
@@ -4838,6 +4909,52 @@ button:focus {
     height: 30px;
     line-height: 30px;
   }
+  .product_card .prod_info {
+    margin-bottom: 50px;
+  }
+  .product_card .product-image-gallery .main_image {
+    padding: 5px;
+  }
+  .product_card .product-image-gallery .product-thumbs a img {
+    width: 85px;
+    height: 85px;
+  }
+  .product_card .product-price-information .product_price .price .new_price {
+    font-size: 25px;
+  }
+  .product_card .product-price-information .buy_buttons .buy_it {
+    padding: 13px 25px;
+  }
+  .product_card .product-price-information .buy_buttons .buy_oneclick {
+    padding: 13px 10px;
+  }
+  .product_card .product-price-information .quantity .plus-minus-input .input-group-field {
+    width: 50px;
+  }
+  .product_card .desc_title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .product_card .description .desc_text {
+    padding-right: 50px;
+    font-size: 16px;
+  }
+  .product_card .description table {
+    font-size: 16px;
+  }
+  .product_card .description table .value {
+    padding-right: 20px;
+  }
+  .product_card .testimonials .testimonial .testimonial_text {
+    line-height: 20px;
+  }
+  .product_card .testimonials .testimonial .answer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .product_card .testimonials .testimonial .answer .answer_text {
+    line-height: 20px;
+  }
 }
 @media (max-width: 900px) {
   .top {
@@ -4921,6 +5038,38 @@ button:focus {
     font-size: 12px;
     margin-bottom: 35px;
     padding-top: 20px;
+  }
+  .product_card .product-image-gallery {
+    display: none;
+  }
+  .product_card .product-image-gallery-mobile {
+    display: block;
+  }
+  .product_card .product-price-information .product_price .name {
+    width: 100%;
+  }
+  .product_card .product-price-information .product_price .name h1 {
+    width: 50%;
+  }
+  .product_card .product-price-information .product_price .name .name_param {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .product_card .product-price-information .product_price .name .name_param li {
+    display: inline-flex;
+  }
+  .product_card .product-price-information .product_price .price {
+    width: 50%;
+    position: absolute;
+    right: 90px;
+  }
+  .product_card .product-price-information .product_price .price .new_price {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .product_card .product-price-information .advantages {
+    display: none;
   }
   .category .filter h3 {
     padding: 5px 15px;
