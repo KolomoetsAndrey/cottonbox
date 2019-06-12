@@ -4804,6 +4804,59 @@ button:focus {
   .product_card .product-price-information .buy_buttons {
     margin-top: 25px;
   }
+  .delivery_info h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .delivery_info h3 {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .delivery_info p {
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+  .delivery_info .delivery {
+    margin-bottom: 30px;
+    background-size: contain;
+  }
+  .delivery_info .delivery .info {
+    margin-left: 0;
+    margin-top: 50px;
+    max-width: 64%;
+    padding: 20px;
+  }
+  .delivery_info .warranty {
+    background-size: contain;
+    margin-bottom: 30px;
+  }
+  .delivery_info .warranty .info {
+    margin-right: 0;
+    padding: 20px;
+    margin-top: 50px;
+    max-width: 64%;
+  }
+  .delivery_info .return {
+    background-size: contain;
+    margin-bottom: 30px;
+  }
+  .delivery_info .return .info {
+    margin-left: 0;
+    padding: 20px;
+    margin-top: 50px;
+    max-width: 64%;
+  }
+  .delivery_info .payment {
+    background-size: contain;
+    margin-bottom: 30px;
+  }
+  .delivery_info .payment .info {
+    margin-right: 0;
+    padding: 20px;
+    margin-top: 50px;
+    max-width: 64%;
+  }
   .about_us .title_block .more {
     padding-top: 110px;
   }
@@ -6132,6 +6185,25 @@ button:focus {
   }
   .product_card .product-price-information .product_price .price {
     right: 40px;
+  }
+  .delivery_info h2 {
+    text-align: center;
+  }
+  .delivery_info .delivery,
+  .delivery_info .warranty,
+  .delivery_info .return,
+  .delivery_info .payment {
+    background-image: none;
+  }
+  .delivery_info .delivery .info,
+  .delivery_info .warranty .info,
+  .delivery_info .return .info,
+  .delivery_info .payment .info {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    max-width: 100%;
+    width: 100%;
   }
   .footer .column {
     margin-top: 20px;
