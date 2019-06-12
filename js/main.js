@@ -362,6 +362,44 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+    $('.prodImageMobileSlider').owlCarousel({
+        loop: true,
+        animateIn: 'fadeIn',
+        animateOut: 'fadeOut',
+        dotsContainer: '.prodImageMobileCustomDots',
+        autoplay: true,
+        autoplayTimeout: 10000,
+        center: true,
+        margin: 10,
+        dots: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            500:{
+                items:1
+            },
+            900:{
+                items:1
+            },
+            1200:{
+                items:1
+            },
+            1920:{
+                items:1
+            }
+        }
+    });
+
+    var prodImageMobileDots = $('.prodImageMobileSlider');
+    prodImageMobileDots.owlCarousel();
+
+        $('.owl-dot').click(function () {
+            prodImageMobileDots.trigger('to.owl.carousel', [$(this).index(), 300]);
+        });
+});
+
+$(document).ready(function(){
     $('.hitsSlider').owlCarousel({
         loop: true,
         margin: 10,
