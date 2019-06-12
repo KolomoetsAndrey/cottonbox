@@ -4760,16 +4760,31 @@ button:focus {
     margin-top: 15px;
   }
   .category .items .cat_items .item .item_btns {
-    margin-top: -55px;
+    margin-top: -50px;
+  }
+  .category .items .cat_items .item .item_btns .like {
+    height: 40px;
+    width: 40px;
   }
   .category .items .cat_items .item .item_btns .like img {
-    padding: 8px 6px;
+    height: 15px;
+    width: 15px;
+    padding: 0;
+  }
+  .category .items .cat_items .item .item_btns .add {
+    height: 40px;
+    width: 40px;
   }
   .category .items .cat_items .item .item_btns .add img {
-    padding: 8px 6px;
+    height: 16px;
+    width: 16px;
+    padding: 0;
   }
   .category .items .cat_items .item .price {
     font-size: 15px;
+  }
+  .category .items .cat_items .item .price .price_desc {
+    display: block;
   }
   .product_card .prod_info {
     margin-bottom: 70px;
