@@ -117,7 +117,25 @@ button:focus {
             text-align: right;
 
             li {
-                margin-left: 65px;
+                margin-left: 40px;
+            }
+
+            .language {
+                .ua, .ru {
+                    color: #666666;
+
+                    &:hover {
+                        color: #BD4F50;
+                    }
+                }
+
+                .active {
+                    color: #CCCCCC;
+                }
+
+                span {
+                    color: #CCCCCC;
+                }
             }
         }
     }
@@ -922,7 +940,7 @@ button:focus {
 
             button {
                 border: none;
-                border-radius: 50%;
+                border-radius: 100%;
                 cursor: pointer;
                 margin-left: 10px;
                 z-index: 1000;
@@ -935,21 +953,29 @@ button:focus {
 
             .like {
                 background: #D0D0D0;
+                height: 50px;
+                width: 50px;
+                line-height: 0;
+                padding: 0;
 
                 img {
+                    display: inline-block;
                     height: 24px;
                     width: 24px;
-                    padding: 15px 10px;
                 }
             }
 
             .add {
                 background: #2AE101;
+                height: 50px;
+                width: 50px;
+                line-height: 0;
+                padding: 0;
 
                 img {
+                    display: inline-block;
                     height: 24px;
                     width: 24px;
-                    padding: 15px 10px;
                 }
             }
         }
@@ -1219,21 +1245,29 @@ button:focus {
 
             .like {
                 background: #D0D0D0;
+                height: 50px;
+                width: 50px;
+                line-height: 0;
+                padding: 0;
 
                 img {
+                    display: inline-block;
                     height: 24px;
                     width: 24px;
-                    padding: 15px 10px;
                 }
             }
 
             .add {
                 background: #2AE101;
+                height: 50px;
+                width: 50px;
+                line-height: 0;
+                padding: 0;
 
                 img {
+                    display: inline-block;
                     height: 24px;
                     width: 24px;
-                    padding: 15px 10px;
                 }
             }
         }
@@ -1879,21 +1913,27 @@ button:focus {
         
                     .like {
                         background: #D0D0D0;
+                        height: 50px;
+                        width: 50px;
+                        line-height: 0;
+                        padding: 0;
         
                         img {
                             height: 24px;
                             width: 24px;
-                            padding: 15px 8px;
                         }
                     }
         
                     .add {
                         background: #2AE101;
+                        height: 50px;
+                        width: 50px;
+                        line-height: 0;
+                        padding: 0;
         
                         img {
                             height: 24px;
                             width: 24px;
-                            padding: 15px 8px;
                         }
                     }
                 }
@@ -4771,6 +4811,28 @@ button:focus {
         margin-left: 12px;
         margin-right: 12px;
     }
+
+    .product_card {
+        .product-price-information {
+            .product_price {
+                .name {
+                    h1 {
+                        font-size: 22px;
+                    }
+                }
+
+                .price {
+                    .new_price {
+                        font-size: 30px;
+                    }
+
+                    .old_price {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1400px) {
@@ -5187,6 +5249,33 @@ button:focus {
 
     .category {
         .items {
+            .cat_items {
+                .item {
+                    .item_btns {
+                        margin-top: -50px;
+
+                        .like {
+                            height: 40px;
+                            width: 40px;
+
+                            img {
+                                height: 16px;
+                                width: 16px;
+                            }
+                        }
+
+                        .add {
+                            height: 40px;
+                            width: 40px;
+
+                            img {
+                                height: 16px;
+                                width: 16px;
+                            }
+                        }
+                    }
+                }
+            }
             .pagination {
                 .paginats {
                     .page_link {
@@ -5376,24 +5465,27 @@ button:focus {
                     height: 270px;
 
                     .item_btns {
-                        margin-top: -45px;
+                        margin-top: -40px;
                         visibility: visible;
                         opacity: 1;
 
                         .like {
+                            height: 30px;
+                            width: 30px;
+
                             img {
-                                height: 15px;
-                                width: 15px;
-                                padding: 8px 5px;
+                                height: 13px;
+                                width: 13px;
                             }
                         }
 
                         .add {
+                            height: 30px;
+                            width: 30px;
+
                             img {
-                                height: 16px;
-                                width: 16px;
-                                padding: 8px 5px;
-                            }
+                                height: 13px;
+                                width: 13px;                            }
                         }
                     }
 
@@ -5466,18 +5558,24 @@ button:focus {
                 opacity: 1;
 
                 .like {
+                    height: 40px;
+                    width: 40px;
+                    line-height: 0;
+
                     img {
                         height: 15px;
                         width: 15px;
-                        padding: 10px 6px;
                     }
                 }
 
                 .add {
+                    height: 40px;
+                    width: 40px;
+                    line-height: 0;
+
                     img {
                         height: 16px;
                         width: 16px;
-                        padding: 10px 6px;
                     }
                 }
             }
@@ -5528,18 +5626,22 @@ button:focus {
                 opacity: 1;
 
                 .like {
+                    height: 40px;
+                    width: 40px;
+
                     img {
                         height: 15px;
                         width: 15px;
-                        padding: 10px 6px;
                     }
                 }
 
                 .add {
+                    height: 40px;
+                    width: 40px;
+                    
                     img {
                         height: 16px;
                         width: 16px;
-                        padding: 10px 6px;
                     }
                 }
             }
@@ -6379,12 +6481,45 @@ button:focus {
         .items  {
             .cat_items {
                 .item {
-                    height: 350px;
+                    width: 90%;
+                    height: 400px;
+
+                    .item_desc {
+                        font-size: 18px;
+                    }
 
                     .image {
                         .labels {
                             width: 30%;
                         }
+                    }
+
+                    .item_btns {
+                        margin-top: -70px;
+
+                        .like {
+                            height: 60px;
+                            width: 60px;
+
+                            img {
+                                height: 25px;
+                                width: 25px;
+                            }
+                        }
+
+                        .add {
+                            height: 60px;
+                            width: 60px;
+
+                            img {
+                                height: 25px;
+                                width: 25px;
+                            }
+                        }
+                    }
+
+                    .price {
+                        font-size: 24px;
                     }
                 }
             }
@@ -6754,6 +6889,12 @@ button:focus {
 
     .fancybox-slide--current .mobile-search-content {
         padding: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .category .items .cat_items .item {
+        height: 370px;
     }
 }
 
