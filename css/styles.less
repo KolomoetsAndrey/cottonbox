@@ -1511,7 +1511,7 @@ button:focus {
             font-size: 18px;
             color: #232323;
             border-radius: 20px;
-            padding: 15px;
+            padding: 10px;
             margin-bottom: 15px;
             box-shadow: 0px 0px 6px #0000002b;
         }
@@ -1525,9 +1525,9 @@ button:focus {
             border: none;
             background: transparent;
             border-radius: 20px;
-            padding: 15px;
+            padding: 10px;
             margin-bottom: 15px;
-            margin-top: 15px;
+            margin-top: 0;
             box-shadow: 0px 0px 6px #0000002b;
         }
 
@@ -1719,6 +1719,7 @@ button:focus {
             font-size: 16px;
             display: block;
             overflow: hidden;
+            margin-bottom: 15px;
 
             ul {
                 li {
@@ -1815,31 +1816,35 @@ button:focus {
                 font-family: "Font Awesome 5 Free";
                 content: "\f078";
                 font-weight: 600;
+                font-size: 12px;
                 color: #333;
                 right: 11px;
-                top: 17px;
+                top: 13px;
                 padding: 0 0 2px;                
                 position: absolute;
                 pointer-events: none;
             }
               
-            .selectdiv select {
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                appearance: none;
-                display: block;
-                width: 100%;
-                max-width: 320px;
-                height: 40px;
-                margin: 5px 0px;
-                padding: 0px 40px;
-                color: #232323;
-                background: transparent;
-                border: none;
-                border-radius: 20px;
-                box-shadow: 0px 0px 6px #0000002b;
-                -ms-word-break: normal;
-                word-break: normal;
+            .selectdiv {
+
+                select {
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    text-align-last: center;
+                    display: block;
+                    width: 100%;
+                    max-width: 320px;
+                    margin: 0;
+                    padding: 10px 40px;
+                    color: #232323;
+                    background: #ffffff;
+                    border: none;
+                    border-radius: 20px;
+                    box-shadow: 0px 0px 6px #0000002b;
+                    -ms-word-break: normal;
+                    word-break: normal;
+                }
             }
         }
 
@@ -5179,6 +5184,12 @@ button:focus {
         .items {
             .select {
                 margin-bottom: 20px;
+
+                .selectdiv {
+                    select {
+                        font-size: 14px;
+                    }
+                }
             }
 
             .cat_items {
@@ -5921,9 +5932,8 @@ button:focus {
                 }
 
                 .selectdiv {
-                    select {
-                        height: 28px;
-
+                    select {    
+                        padding: 5px 40px;
                     }
                 }
 
@@ -6429,7 +6439,7 @@ button:focus {
                 border-radius: 20px;
                 padding: 10px 15px;
                 margin-bottom: 15px;
-                margin-top: 15px;
+                margin-top: 5px;
                 box-shadow: 0px 0px 6px #0000002b;
             }
 
@@ -6680,6 +6690,10 @@ button:focus {
 
                 .selectdiv {
                     position: relative;
+
+                    select {
+                        text-align-last: center;
+                    }
                 }
                   
                 select::-ms-expand {

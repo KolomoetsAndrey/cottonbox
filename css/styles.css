@@ -1525,7 +1525,7 @@ button:focus {
   font-size: 18px;
   color: #232323;
   border-radius: 20px;
-  padding: 15px;
+  padding: 10px;
   margin-bottom: 15px;
   box-shadow: 0px 0px 6px #0000002b;
 }
@@ -1538,9 +1538,9 @@ button:focus {
   border: none;
   background: transparent;
   border-radius: 20px;
-  padding: 15px;
+  padding: 10px;
   margin-bottom: 15px;
-  margin-top: 15px;
+  margin-top: 0;
   box-shadow: 0px 0px 6px #0000002b;
 }
 .category .filter .rs_content {
@@ -1705,6 +1705,7 @@ button:focus {
   font-size: 16px;
   display: block;
   overflow: hidden;
+  margin-bottom: 15px;
 }
 .category .filter .content ul li {
   margin-bottom: 10px;
@@ -1795,9 +1796,10 @@ button:focus {
   font-family: "Font Awesome 5 Free";
   content: "\f078";
   font-weight: 600;
+  font-size: 12px;
   color: #333;
   right: 11px;
-  top: 17px;
+  top: 13px;
   padding: 0 0 2px;
   position: absolute;
   pointer-events: none;
@@ -1806,14 +1808,14 @@ button:focus {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  text-align-last: center;
   display: block;
   width: 100%;
   max-width: 320px;
-  height: 40px;
-  margin: 5px 0px;
-  padding: 0px 40px;
+  margin: 0;
+  padding: 10px 40px;
   color: #232323;
-  background: transparent;
+  background: #ffffff;
   border: none;
   border-radius: 20px;
   box-shadow: 0px 0px 6px #0000002b;
@@ -4800,6 +4802,9 @@ button:focus {
   .category .items .select {
     margin-bottom: 20px;
   }
+  .category .items .select .selectdiv select {
+    font-size: 14px;
+  }
   .category .items .cat_items .item {
     height: 300px;
   }
@@ -5364,7 +5369,7 @@ button:focus {
     font-size: 14px;
   }
   .category .items .select .selectdiv select {
-    height: 28px;
+    padding: 5px 40px;
   }
   .category .items .select .selectdiv:after {
     top: 13px;
@@ -5734,7 +5739,7 @@ button:focus {
     border-radius: 20px;
     padding: 10px 15px;
     margin-bottom: 15px;
-    margin-top: 15px;
+    margin-top: 5px;
     box-shadow: 0px 0px 6px #0000002b;
   }
   .category .filter_mobile .variants {
@@ -5948,6 +5953,9 @@ button:focus {
   }
   .category .filter_mobile .variants .selectdiv {
     position: relative;
+  }
+  .category .filter_mobile .variants .selectdiv select {
+    text-align-last: center;
   }
   .category .filter_mobile .variants select::-ms-expand {
     display: none;
