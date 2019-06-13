@@ -89,7 +89,7 @@ for (let el of tabLinks) {
 }
 
 // PlusMinus
-jQuery(document).ready(function(){
+$(document).ready(function(){
     // This button will increment the value
     $('[data-quantity="plus"]').click(function(e){
         // Stop acting like a button
@@ -445,6 +445,17 @@ $(function(){
         $('.middle').addClass(' sticky-menu ');
         }else{
         $('.middle').removeClass(' sticky-menu ');
+        }
+    });
+});
+
+//Top-Items Sum
+$(function(){
+    $(window).scroll(function() {
+        if($(this).scrollTop() >= 300) {
+        $('.items_sum').addClass(' itemsSum-menu ');
+        }else{
+        $('.items_sum').removeClass(' itemsSum-menu ');
         }
     });
 });

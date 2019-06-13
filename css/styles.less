@@ -639,6 +639,19 @@ button:focus {
     }
 }
 
+.itemsSum-menu {
+    position: fixed;
+    background: #ffffff;
+    width: 21% !important;
+    top: 120px;
+    z-index: 1200;
+    right: 130px;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    border-top: 2px solid #FDF5F5;
+    border-bottom: 2px solid #FDF5F5;
+}
+
 .fs_row {
     //justify-content: space-between;
     flex-wrap: inherit;
@@ -1564,6 +1577,7 @@ button:focus {
             input[type=number]::-webkit-outer-spin-button,
             input[type=number]::-webkit-inner-spin-button {
                 -webkit-appearance: none;
+                cursor: pointer;
             }
 
             input[type=number]:invalid,
@@ -3810,10 +3824,6 @@ button:focus {
             flex-direction: column;
             margin-left: 10%;
             margin-right: 10%;
-            
-            ::-webkit-input-placeholder {
-                text-align: center;
-            }
 
             .promocode {
                 border: 1px solid #BD4F50;
@@ -3821,6 +3831,19 @@ button:focus {
                 padding: 10px;
                 margin-bottom: 30px;
                 font-size: 20px;
+
+                &::-webkit-input-placeholder {
+                    text-align: center;
+                }
+                
+                &:-moz-placeholder { /* Firefox 18- */
+                    text-align: center;
+                }
+                 
+                &::-moz-placeholder {  /* Firefox 19+ */
+                    text-align: center;
+                }
+
             }
     
             .submit_promo {

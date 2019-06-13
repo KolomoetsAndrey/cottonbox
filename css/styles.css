@@ -685,6 +685,18 @@ button:focus {
 .sticky-menu .middle_line .logo {
   width: 110px;
 }
+.itemsSum-menu {
+  position: fixed;
+  background: #ffffff;
+  width: 21% !important;
+  top: 120px;
+  z-index: 1200;
+  right: 130px;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  border-top: 2px solid #FDF5F5;
+  border-bottom: 2px solid #FDF5F5;
+}
 .fs_row {
   flex-wrap: inherit;
   width: 100%;
@@ -1575,6 +1587,7 @@ button:focus {
 .category .filter .rs_content input[type=number]::-webkit-outer-spin-button,
 .category .filter .rs_content input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
+  cursor: pointer;
 }
 .category .filter .rs_content input[type=number]:invalid,
 .category .filter .rs_content input[type=number]:out-of-range {
@@ -3599,15 +3612,23 @@ button:focus {
   margin-left: 10%;
   margin-right: 10%;
 }
-.cart .items_sum .promo_btns ::-webkit-input-placeholder {
-  text-align: center;
-}
 .cart .items_sum .promo_btns .promocode {
   border: 1px solid #BD4F50;
   border-radius: 27px;
   padding: 10px;
   margin-bottom: 30px;
   font-size: 20px;
+}
+.cart .items_sum .promo_btns .promocode::-webkit-input-placeholder {
+  text-align: center;
+}
+.cart .items_sum .promo_btns .promocode:-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+.cart .items_sum .promo_btns .promocode::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
 }
 .cart .items_sum .promo_btns .submit_promo {
   border: 1px solid #BD4F50;
