@@ -5376,7 +5376,7 @@ button:focus {
     right: 20px;
   }
   .category .items .cat_items {
-    justify-content: space-around;
+    justify-content: center;
   }
   .category .items .cat_items .item {
     height: 270px;
