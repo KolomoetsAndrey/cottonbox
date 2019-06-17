@@ -3375,6 +3375,11 @@ button:focus {
   margin-right: 8px;
   width: calc(75% - 16px);
 }
+@media screen and (max-width: 900px) {
+  .cart .order_data {
+    width: calc(100% - 16px);
+  }
+}
 .cart .order_data h2 {
   font-size: 30px;
   font-weight: 500;
@@ -4694,6 +4699,27 @@ button:focus {
   .cart .shop_manage .issue {
     font-size: 16px;
   }
+  .cart .order_data h2 {
+    font-size: 25px;
+  }
+  .cart .order_data form .name,
+  .cart .order_data form .lastname,
+  .cart .order_data form .phone,
+  .cart .order_data form .email {
+    padding: 10px 15px;
+  }
+  .cart .order_data form .subscribe {
+    font-size: 16px;
+    padding: 10px 50px;
+  }
+  .cart .order_data form ul {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .cart .order_data form h3 {
+    font-size: 25px;
+  }
   .product_card .product-price-information .product_price .name h1 {
     font-size: 22px;
   }
@@ -4761,6 +4787,9 @@ button:focus {
   }
   .top .top_line .top_contacts li {
     margin-left: 15px;
+  }
+  .cart .items_sum .order_edit .edit {
+    font-size: 13px;
   }
   .itemsSum-menu {
     width: 18% !important;
@@ -5326,6 +5355,35 @@ button:focus {
   }
   .cart .items_in_cart .product .quantity .plus-minus-input .input-group-field {
     width: 30px;
+  }
+  .cart .items_sum_cart {
+    order: -1;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+    border-bottom: 1px solid #FDF5F5;
+    margin-bottom: 15px;
+  }
+  .cart .items_sum_cart .sum_header {
+    margin: 0;
+  }
+  .cart .items_sum_cart .order_edit {
+    margin: 0;
+  }
+  .cart .items_sum_cart .sum_products {
+    margin: 0;
+  }
+  .cart .items_sum_cart .sum_products .summ {
+    display: none;
+  }
+  .cart .items_sum_cart .sum_products .quantity {
+    width: 100%;
+  }
+  .cart .items_sum_cart .sum_discount {
+    display: none;
+  }
+  .cart .items_sum_cart .amount {
+    margin: 0;
   }
   .top {
     padding-top: 15px;
@@ -6196,6 +6254,47 @@ button:focus {
   .product_card .testimonials .testimonial .answer {
     padding-left: 40px;
   }
+  .cart .order_data {
+    text-align: center;
+  }
+  .cart .order_data h2 {
+    font-size: 23px;
+  }
+  .cart .order_data form ul {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .cart .order_data form ul li {
+    width: 100%;
+  }
+  .cart .order_data form .name,
+  .cart .order_data form .lastname,
+  .cart .order_data form .phone,
+  .cart .order_data form .email {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .cart .order_data form .message {
+    width: 93%;
+    border-radius: 21px;
+    margin-bottom: 0;
+  }
+  .cart .order_data form h3 {
+    margin-top: 40px;
+  }
+  .cart .order_data form .region,
+  .cart .order_data form .city,
+  .cart .order_data form .post_num {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    margin-top: 15px;
+  }
+  .cart .order_data form .subscribe {
+    margin-top: 15px;
+  }
   .catalogue .categories .cat_name a {
     font-size: 14px;
   }
@@ -6596,6 +6695,9 @@ button:focus {
   .cart .items_in_cart .product .product_name h2 {
     margin-top: 25px;
   }
+  .cart .order_data h2 {
+    font-size: 23px;
+  }
   .category .filter .content {
     display: none;
   }
@@ -6750,6 +6852,42 @@ button:focus {
 @media (max-width: 499px) {
   .cart .items_in_cart .product {
     padding: 10px;
+  }
+  .cart .items_sum_cart {
+    flex-direction: column;
+    align-items: inherit;
+  }
+  .cart .items_sum_cart .sum_products {
+    text-align: right;
+  }
+  .cart .items_sum_cart .sum_products .quantity {
+    margin: 0;
+  }
+  .cart .items_sum_cart .hr {
+    display: none;
+  }
+  .cart .items_sum_cart .amount {
+    font-size: 18px;
+  }
+  .cart .items_sum_cart .order_edit {
+    text-align: right;
+  }
+  .cart .items_sum_cart .order_edit .edit {
+    padding: 0;
+  }
+  .cart .order_data form {
+    font-size: 13px;
+  }
+  .cart .order_data form ul {
+    font-size: 12px;
+  }
+  .cart .order_data form .region,
+  .cart .order_data form .city,
+  .cart .order_data form .post_num {
+    width: 100%;
+  }
+  .cart .order_data form .subscribe {
+    font-size: 14px;
   }
   .middle .middle_line .logo {
     width: 92px;

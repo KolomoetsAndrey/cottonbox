@@ -3571,6 +3571,7 @@ button:focus {
     .order_data {
         .col();
         .size(12);
+        .size-sm(16);
 
         h2 {
             font-size: 30px;
@@ -4989,6 +4990,35 @@ button:focus {
         font-size: 16px;
     }
 
+    .cart {
+        .order_data {
+            h2 {
+                font-size: 25px;
+            }
+
+            form {
+                .name, .lastname, .phone, .email {
+                    padding: 10px 15px;
+                }
+
+                .subscribe {
+                    font-size: 16px;
+                    padding: 10px 50px;
+                }
+
+                ul {
+                    font-size: 15px;
+                    display: flex;
+                    align-items: center;
+                }
+
+                h3 {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
     .product_card {
         .product-price-information {
             .product_price {
@@ -5092,6 +5122,10 @@ button:focus {
                 }
             }
         }
+    }
+
+    .cart .items_sum .order_edit .edit {
+        font-size: 13px;
     }
 
     .itemsSum-menu {
@@ -5831,6 +5865,45 @@ button:focus {
 
     .cart .items_in_cart .product .quantity .plus-minus-input .input-group-field {
         width: 30px;
+    }
+
+    .cart {
+        .items_sum_cart {
+            order: -1;
+            flex-direction: row;
+            padding: 10px;
+            align-items: center;
+            border-bottom: 1px solid #FDF5F5;
+            margin-bottom: 15px;
+
+            .sum_header {
+                margin: 0;
+            }
+
+            .order_edit {
+                margin: 0;
+            }
+
+            .sum_products {
+                margin: 0;
+
+                .summ {
+                    display: none;
+                }
+
+                .quantity {
+                    width: 100%;
+                }
+            }
+
+            .sum_discount {
+                display: none;
+            }
+
+            .amount {
+                margin: 0;
+            }
+        }
     }
 
     .top {
@@ -6990,6 +7063,55 @@ button:focus {
         }
     }
 
+    .cart {
+        .order_data {
+            text-align: center;
+
+            h2 {
+                font-size: 23px;
+            }
+
+            form {
+                ul {
+                    display: inline-flex;
+                    flex-direction: column;
+                    text-align: left;
+
+                    li {
+                        width: 100%;
+                    }
+                }
+
+                .name, .lastname, .phone, .email {
+                    margin: 0;
+                    width: 100%;
+                    margin-bottom: 25px;
+                }
+
+                .message {
+                    width: 93%;
+                    border-radius: 21px;
+                    margin-bottom: 0;
+                }
+
+                h3 {
+                    margin-top: 40px;
+                }
+
+                .region, .city, .post_num {
+                    width: 75%;
+                    margin: 0 auto;
+                    margin-bottom: 25px;
+                    margin-top: 15px;
+                }
+
+                .subscribe {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+
     .catalogue .categories .cat_name a {
         font-size: 14px;
     }
@@ -7534,6 +7656,14 @@ button:focus {
         margin-top: 25px;
     }
 
+    .cart {
+        .order_data {
+            h2 {
+                font-size: 23px;
+            }
+        }
+    }
+
     .category {
         .filter {
             .content {
@@ -7690,6 +7820,55 @@ button:focus {
 
     .cart .items_in_cart .product {
         padding: 10px;
+    }
+
+    .cart {
+        .items_sum_cart {
+            flex-direction: column;
+            align-items: inherit;
+
+            .sum_products {
+                text-align: right;
+
+                .quantity {
+                    margin: 0;
+                }
+            }
+
+            .hr {
+                display: none;
+            }
+
+            .amount {
+                font-size: 18px;
+            }
+
+            .order_edit {
+                text-align: right;
+
+                .edit {
+                    padding: 0;
+                }
+            }
+        }
+
+        .order_data {
+            form {
+                ul {
+                    font-size: 12px;
+                }
+
+                font-size: 13px;
+
+                .region, .city, .post_num {
+                    width: 100%;
+                }
+
+                .subscribe {
+                    font-size: 14px;
+                }
+            }
+        }
     }
 
     .middle .middle_line .logo {
