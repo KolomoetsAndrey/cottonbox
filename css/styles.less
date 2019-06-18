@@ -5383,6 +5383,13 @@ button:focus {
                     padding: 10px 30px;
                 }
             }
+
+            .my_orders {
+                .order {
+                    font-size: 16px;
+                    margin-bottom: 5px;
+                }
+            }
         }
     }
 
@@ -5938,6 +5945,35 @@ button:focus {
             margin-top: 50px;
             display: flex;
             flex-direction: column;
+
+            a {
+                display: block;
+                text-align: center;
+                font-size: 18px;
+            }
+
+            .active {
+                display: none;
+            }
+        }
+    }
+
+    .my_orders_mobileinfo {
+        .contact_btns {
+            .cont_info {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        .mobile_my_orders_btns {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            
+            .cont_info {
+                display: none;
+            }
 
             a {
                 display: block;
@@ -7158,6 +7194,16 @@ button:focus {
             }
         }
     }
+
+    .contact_information {
+        .personal_data {
+            .my_orders {
+                .order {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -7823,6 +7869,29 @@ button:focus {
                     width: 100%;
                 }
             }
+
+            .my_orders {
+                .order {
+                    width: 100%;
+                    position: relative;
+                    margin-bottom: 15px;
+                    padding-bottom: 15px;
+
+                    .number, .date, .summ, {
+                        width: 40%;
+                    }
+
+                    .status {
+                        width: 20%;
+                    }
+
+                    .date {
+                        position: absolute;
+                        bottom: 0;
+                        font-size: 12px;
+                    }
+                }
+            }
         }
     }
 
@@ -8341,6 +8410,21 @@ button:focus {
                     .save, .cancel {
                         margin: 0 auto;
                         margin-bottom: 20px;
+                    }
+                }
+            }
+
+            .my_orders {
+                .order {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .status {
+                        position: absolute;
+                        bottom: 0;
+                        width: 30%;
+                        right: 10%;
+                        font-size: 12px;
                     }
                 }
             }

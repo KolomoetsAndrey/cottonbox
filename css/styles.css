@@ -4976,6 +4976,10 @@ button:focus {
     font-size: 16px;
     padding: 10px 30px;
   }
+  .contact_information .personal_data .my_orders .order {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
   .category .filter h3 {
     font-size: 14px;
     padding: 10px 15px;
@@ -5410,6 +5414,26 @@ button:focus {
     font-size: 18px;
   }
   .contact_information .mobile_contact_btns .active {
+    display: none;
+  }
+  .my_orders_mobileinfo .contact_btns .cont_info {
+    display: block;
+    text-align: center;
+  }
+  .my_orders_mobileinfo .mobile_my_orders_btns {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .my_orders_mobileinfo .mobile_my_orders_btns .cont_info {
+    display: none;
+  }
+  .my_orders_mobileinfo .mobile_my_orders_btns a {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+  }
+  .my_orders_mobileinfo .mobile_my_orders_btns .active {
     display: none;
   }
 }
@@ -6325,6 +6349,9 @@ button:focus {
   .category .items .select {
     display: none;
   }
+  .contact_information .personal_data .my_orders .order {
+    font-size: 14px;
+  }
 }
 @media (max-width: 768px) {
   .product_card .product-price-information .quantity {
@@ -6813,6 +6840,25 @@ button:focus {
   .contact_information .personal_data form input {
     width: 100%;
   }
+  .contact_information .personal_data .my_orders .order {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+  .contact_information .personal_data .my_orders .order .number,
+  .contact_information .personal_data .my_orders .order .date,
+  .contact_information .personal_data .my_orders .order .summ {
+    width: 40%;
+  }
+  .contact_information .personal_data .my_orders .order .status {
+    width: 20%;
+  }
+  .contact_information .personal_data .my_orders .order .date {
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
+  }
   .category .filter .content {
     display: none;
   }
@@ -7243,6 +7289,17 @@ button:focus {
   .contact_information .personal_data form .btns .cancel {
     margin: 0 auto;
     margin-bottom: 20px;
+  }
+  .contact_information .personal_data .my_orders .order {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact_information .personal_data .my_orders .order .status {
+    position: absolute;
+    bottom: 0;
+    width: 30%;
+    right: 10%;
+    font-size: 12px;
   }
   .product_card .product-price-information .product_price {
     position: relative;
