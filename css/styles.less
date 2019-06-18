@@ -3961,6 +3961,31 @@ button:focus {
         }
     }
 
+    .mobile_contact_btns {
+        display: none;
+        width: 100%;
+
+        a {
+            font-family: @montserrat;
+            background: transparent;
+            font-size: 22px;
+            border: 1px solid transparent;
+            border-radius: 20px;
+            color: #232323;
+            width: 100%;
+            text-align: left;
+            box-shadow: 0px 0px 6px #00000029;
+            padding: 15px 30px;
+            margin-bottom: 40px;
+            text-decoration: none;
+        }
+
+        .active {
+            border: 1px solid #BD4F50;
+            color: #BD4F50;
+        }
+    }
+
     .personal_data {
         .col();
         .size(12);
@@ -3977,6 +4002,7 @@ button:focus {
             display: flex;
             justify-content: space-around;
             margin-bottom: 50px;
+            align-items: center;
 
             li {
                 display: inline;
@@ -4014,6 +4040,7 @@ button:focus {
                 padding: 15px 30px;
                 border-radius: 30px;
                 margin-right: 20px;
+                box-shadow: 0px 5px 20px #CCCCCC;
             }
 
             .cancel {
@@ -4025,6 +4052,7 @@ button:focus {
                 font-family: @montserrat;
                 padding: 15px 45px;
                 border-radius: 30px;
+                box-shadow: 0px 5px 20px #CCCCCC;
             }
         }
 
@@ -5314,6 +5342,50 @@ button:focus {
         }
     }
 
+    .contact_information {
+        .contact_btns {
+            a {
+                font-size: 18px;
+                padding: 10px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .personal_data {
+            h2 {
+                font-size: 30px;
+                padding-bottom: 25px;
+            }
+
+            ul {
+                .name {
+                    font-size: 24px;
+                }
+
+                .phone, .email {
+                    font-size: 20px;
+                }
+            }
+
+            input {
+                font-size: 13px;
+                padding: 10px;
+                margin-bottom: 25px;
+            }
+
+            form {
+                .btns {
+                    text-align: left;
+                }
+
+                .save, .cancel {
+                    font-size: 16px;
+                    padding: 10px 30px;
+                }
+            }
+        }
+    }
+
     .category {
         .filter {
             h3 {
@@ -5727,6 +5799,14 @@ button:focus {
         }
     }
 
+    .contact_information {
+        .contact_btns {
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+
     .product_card {
         .prod_info {
             margin-bottom: 50px;
@@ -5808,6 +5888,65 @@ button:focus {
                         line-height: 20px;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .contact_information {
+        .contact_btns {
+            width: 100%;
+
+            a {
+                display: none;
+                font-size: 18px;
+            }
+
+            .active {
+                display: block;
+                text-align: center;
+                font-weight: 600;
+            }
+        }
+    
+        .personal_data {
+            width: 100%;
+
+            h2 {
+                display: none;
+            }
+
+            form {
+                .btns {
+                    text-align: center;
+                }
+            }
+
+            ul {
+                .name {
+                    font-size: 22px;
+                }
+
+                .phone, .email {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .mobile_contact_btns {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+
+            a {
+                display: block;
+                text-align: center;
+                font-size: 18px;
+            }
+
+            .active {
+                display: none;
             }
         }
     }
@@ -7664,6 +7803,29 @@ button:focus {
         }
     }
 
+    .contact_information {
+        .personal_data {
+            ul {
+                justify-content: left;
+                flex-wrap: wrap;
+                margin-bottom: 20px;
+
+                li {
+                    width: 45%;
+                    margin-bottom: 15px;
+                }
+            }
+
+            form {
+                width: 100%;
+
+                input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
     .category {
         .filter {
             .content {
@@ -8155,6 +8317,31 @@ button:focus {
                 input {
                     margin-bottom: 20px;
                     margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .contact_information {
+        .personal_data {
+            ul {
+                justify-content: center;
+                text-align: center;
+
+                li {
+                    width: 100%;
+                }
+            }
+
+            form {
+                .btns {
+                    display: flex;
+                    flex-direction: column;
+
+                    .save, .cancel {
+                        margin: 0 auto;
+                        margin-bottom: 20px;
+                    }
                 }
             }
         }

@@ -3743,6 +3743,28 @@ button:focus {
   border: 1px solid #BD4F50;
   color: #BD4F50;
 }
+.contact_information .mobile_contact_btns {
+  display: none;
+  width: 100%;
+}
+.contact_information .mobile_contact_btns a {
+  font-family: 'Montserrat', sans-serif;
+  background: transparent;
+  font-size: 22px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  color: #232323;
+  width: 100%;
+  text-align: left;
+  box-shadow: 0px 0px 6px #00000029;
+  padding: 15px 30px;
+  margin-bottom: 40px;
+  text-decoration: none;
+}
+.contact_information .mobile_contact_btns .active {
+  border: 1px solid #BD4F50;
+  color: #BD4F50;
+}
 .contact_information .personal_data {
   box-sizing: border-box;
   word-wrap: break-word;
@@ -3761,6 +3783,7 @@ button:focus {
   display: flex;
   justify-content: space-around;
   margin-bottom: 50px;
+  align-items: center;
 }
 .contact_information .personal_data ul li {
   display: inline;
@@ -3794,6 +3817,7 @@ button:focus {
   padding: 15px 30px;
   border-radius: 30px;
   margin-right: 20px;
+  box-shadow: 0px 5px 20px #CCCCCC;
 }
 .contact_information .personal_data form .cancel {
   font-size: 20px;
@@ -3804,6 +3828,7 @@ button:focus {
   font-family: 'Montserrat', sans-serif;
   padding: 15px 45px;
   border-radius: 30px;
+  box-shadow: 0px 5px 20px #CCCCCC;
 }
 .contact_information .personal_data input {
   width: 49%;
@@ -4922,6 +4947,35 @@ button:focus {
     margin-left: 0;
     display: block;
   }
+  .contact_information .contact_btns a {
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .contact_information .personal_data h2 {
+    font-size: 30px;
+    padding-bottom: 25px;
+  }
+  .contact_information .personal_data ul .name {
+    font-size: 24px;
+  }
+  .contact_information .personal_data ul .phone,
+  .contact_information .personal_data ul .email {
+    font-size: 20px;
+  }
+  .contact_information .personal_data input {
+    font-size: 13px;
+    padding: 10px;
+    margin-bottom: 25px;
+  }
+  .contact_information .personal_data form .btns {
+    text-align: left;
+  }
+  .contact_information .personal_data form .save,
+  .contact_information .personal_data form .cancel {
+    font-size: 16px;
+    padding: 10px 30px;
+  }
   .category .filter h3 {
     font-size: 14px;
     padding: 10px 15px;
@@ -5266,6 +5320,9 @@ button:focus {
     height: 30px;
     line-height: 30px;
   }
+  .contact_information .contact_btns a {
+    font-size: 16px;
+  }
   .product_card .prod_info {
     margin-bottom: 50px;
   }
@@ -5311,6 +5368,49 @@ button:focus {
   }
   .product_card .testimonials .testimonial .answer .answer_text {
     line-height: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .contact_information .contact_btns {
+    width: 100%;
+  }
+  .contact_information .contact_btns a {
+    display: none;
+    font-size: 18px;
+  }
+  .contact_information .contact_btns .active {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+  }
+  .contact_information .personal_data {
+    width: 100%;
+  }
+  .contact_information .personal_data h2 {
+    display: none;
+  }
+  .contact_information .personal_data form .btns {
+    text-align: center;
+  }
+  .contact_information .personal_data ul .name {
+    font-size: 22px;
+  }
+  .contact_information .personal_data ul .phone,
+  .contact_information .personal_data ul .email {
+    font-size: 18px;
+  }
+  .contact_information .mobile_contact_btns {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact_information .mobile_contact_btns a {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+  }
+  .contact_information .mobile_contact_btns .active {
+    display: none;
   }
 }
 @media (max-width: 900px) {
@@ -6698,6 +6798,21 @@ button:focus {
   .cart .order_data h2 {
     font-size: 23px;
   }
+  .contact_information .personal_data ul {
+    justify-content: left;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .contact_information .personal_data ul li {
+    width: 45%;
+    margin-bottom: 15px;
+  }
+  .contact_information .personal_data form {
+    width: 100%;
+  }
+  .contact_information .personal_data form input {
+    width: 100%;
+  }
   .category .filter .content {
     display: none;
   }
@@ -7112,6 +7227,22 @@ button:focus {
   .faq_mobile .faq_form form input {
     margin-bottom: 20px;
     margin-right: 0;
+  }
+  .contact_information .personal_data ul {
+    justify-content: center;
+    text-align: center;
+  }
+  .contact_information .personal_data ul li {
+    width: 100%;
+  }
+  .contact_information .personal_data form .btns {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact_information .personal_data form .btns .save,
+  .contact_information .personal_data form .btns .cancel {
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
   .product_card .product-price-information .product_price {
     position: relative;
