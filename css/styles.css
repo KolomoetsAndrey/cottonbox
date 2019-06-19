@@ -3743,11 +3743,13 @@ button:focus {
   border: 1px solid #BD4F50;
   color: #BD4F50;
 }
-.contact_information .mobile_contact_btns {
+.contact_information .mobile_contact_btns,
+.contact_information .mobile_my_orders_btns {
   display: none;
   width: 100%;
 }
-.contact_information .mobile_contact_btns a {
+.contact_information .mobile_contact_btns a,
+.contact_information .mobile_my_orders_btns a {
   font-family: 'Montserrat', sans-serif;
   background: transparent;
   font-size: 22px;
@@ -3761,7 +3763,8 @@ button:focus {
   margin-bottom: 40px;
   text-decoration: none;
 }
-.contact_information .mobile_contact_btns .active {
+.contact_information .mobile_contact_btns .active,
+.contact_information .mobile_my_orders_btns .active {
   border: 1px solid #BD4F50;
   color: #BD4F50;
 }
@@ -4049,7 +4052,7 @@ button:focus {
 }
 .contact_information .favorites .favorites_items {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   margin-top: 40px;
 }
 .contact_information .favorites .item {
@@ -4067,6 +4070,16 @@ button:focus {
   border-radius: 5px;
   cursor: pointer;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 900px) {
+  .contact_information .favorites .item {
+    width: calc(31.25% - 16px);
+  }
+}
+@media screen and (max-width: 500px) {
+  .contact_information .favorites .item {
+    width: calc(50% - 16px);
+  }
 }
 .contact_information .favorites .item .delete {
   text-align: right;
@@ -4101,19 +4114,25 @@ button:focus {
 }
 .contact_information .favorites .item .item_btns .like {
   background: #D0D0D0;
+  height: 50px;
+  width: 50px;
+  line-height: 0;
+  padding: 0;
 }
 .contact_information .favorites .item .item_btns .like img {
   height: 24px;
   width: 24px;
-  padding: 15px 8px;
 }
 .contact_information .favorites .item .item_btns .add {
   background: #2AE101;
+  height: 50px;
+  width: 50px;
+  line-height: 0;
+  padding: 0;
 }
 .contact_information .favorites .item .item_btns .add img {
   height: 24px;
   width: 24px;
-  padding: 15px 8px;
 }
 .contact_information .favorites .item .item_desc {
   font-size: 15px;
@@ -5016,6 +5035,21 @@ button:focus {
   .contact_information .orders_data .history .delivery {
     width: 45%;
   }
+  .contact_information .favorites .favorites_items {
+    justify-content: space-around;
+  }
+  .contact_information .favorites .item {
+    height: 360px;
+  }
+  .contact_information .favorites .item .delete {
+    font-size: 14px;
+  }
+  .contact_information .favorites .item .item_desc {
+    font-size: 13px;
+  }
+  .contact_information .favorites .item .price {
+    font-size: 16px;
+  }
   .category .filter h3 {
     font-size: 14px;
     padding: 10px 15px;
@@ -5452,24 +5486,35 @@ button:focus {
   .contact_information .mobile_contact_btns .active {
     display: none;
   }
-  .my_orders_mobileinfo .contact_btns .cont_info {
+  .contact_information .favorites {
+    width: 100%;
+  }
+  .contact_information .favorites h2 {
+    display: none;
+  }
+  .my_orders_mobileinfo .contact_btns .cont_info,
+  .my_ordersinfo_mobile .contact_btns .cont_info {
     display: block;
     text-align: center;
   }
-  .my_orders_mobileinfo .mobile_my_orders_btns {
+  .my_orders_mobileinfo .mobile_my_orders_btns,
+  .my_ordersinfo_mobile .mobile_my_orders_btns {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
   }
-  .my_orders_mobileinfo .mobile_my_orders_btns .cont_info {
+  .my_orders_mobileinfo .mobile_my_orders_btns .cont_info,
+  .my_ordersinfo_mobile .mobile_my_orders_btns .cont_info {
     display: none;
   }
-  .my_orders_mobileinfo .mobile_my_orders_btns a {
+  .my_orders_mobileinfo .mobile_my_orders_btns a,
+  .my_ordersinfo_mobile .mobile_my_orders_btns a {
     display: block;
     text-align: center;
     font-size: 18px;
   }
-  .my_orders_mobileinfo .mobile_my_orders_btns .active {
+  .my_orders_mobileinfo .mobile_my_orders_btns .active,
+  .my_ordersinfo_mobile .mobile_my_orders_btns .active {
     display: none;
   }
   .my_ordersinfo_mobile .contact_btns .cont_info {
@@ -5548,6 +5593,34 @@ button:focus {
   .my_ordersinfo_mobile .mobile_my_orders_btns .cont_info,
   .my_ordersinfo_mobile .mobile_my_orders_btns .my_orders {
     display: none;
+  }
+  .favourite_mobile .contact_btns a {
+    display: none;
+    text-align: center;
+  }
+  .favourite_mobile .contact_btns .cont_info,
+  .favourite_mobile .contact_btns .my_orders,
+  .favourite_mobile .contact_btns .my_favourites {
+    display: block;
+  }
+  .favorites {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  .favorites .favorites_items .item {
+    width: 30%;
+  }
+  .favorites .favorites_items .price .price_desc {
+    display: block;
+  }
+  .contact_information .mobile_my_favorites_btns .cont_info,
+  .contact_information .mobile_my_favorites_btns .my_orders,
+  .contact_information .mobile_my_favorites_btns .my_favourites {
+    display: none;
+  }
+  .contact_information .mobile_my_favorites_btns .my_information,
+  .contact_information .mobile_my_favorites_btns .my_exit {
+    display: block;
   }
 }
 @media (max-width: 900px) {
@@ -7001,6 +7074,13 @@ button:focus {
   .contact_information .orders_data .history .delivery p {
     font-size: 14px;
   }
+  .contact_information .favorites .favorites_items {
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  .contact_information .favorites .favorites_items .item {
+    width: 45%;
+  }
   .category .filter .content {
     display: none;
   }
@@ -7250,7 +7330,9 @@ button:focus {
     padding: 0;
     text-align: center;
   }
-  .cart .items_in_cart .product .quantity,
+  .cart .items_in_cart .product .quantity {
+    margin-top: 15px;
+  }
   .cart .items_in_cart .product .product_price {
     margin-top: 15px;
   }
@@ -7263,7 +7345,10 @@ button:focus {
     align-items: center;
     width: 100%;
   }
-  .cart .items_sum .items_sum_promo .promo_btns .promocode,
+  .cart .items_sum .items_sum_promo .promo_btns .promocode {
+    width: 70%;
+    margin-right: 0;
+  }
   .cart .items_sum .items_sum_promo .promo_btns .submit_promo {
     width: 70%;
     margin-right: 0;
@@ -7404,6 +7489,13 @@ button:focus {
   .my_ordersinfo_mobile .orders_data .history .payments p,
   .my_ordersinfo_mobile .orders_data .history .delivery p {
     text-align: center;
+  }
+  .contact_information .favorites .favorites_items {
+    justify-content: center;
+  }
+  .contact_information .favorites .favorites_items .item {
+    width: 80%;
+    height: 90vw;
   }
   .about_us .title_block .more a {
     display: none;
@@ -7644,5 +7736,8 @@ button:focus {
   }
   .middle .middle_line .sidepanel .mobile_login .my_cabinet_mobile {
     font-size: 12px;
+  }
+  .contact_information .favorites .favorites_items .item {
+    height: 340px;
   }
 }

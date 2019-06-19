@@ -3961,7 +3961,7 @@ button:focus {
         }
     }
 
-    .mobile_contact_btns {
+    .mobile_contact_btns, .mobile_my_orders_btns {
         display: none;
         width: 100%;
 
@@ -4308,13 +4308,15 @@ button:focus {
 
         .favorites_items {
             display: flex;
-            justify-content: center;
+            justify-content: left;
             margin-top: 40px;
         }
 
         .item {
             .col();
             .size(4);
+            .size-sm(5);
+            .size-xs(8);
 
             .delete {
                 text-align: right;
@@ -4362,21 +4364,27 @@ button:focus {
     
                 .like {
                     background: #D0D0D0;
+                    height: 50px;
+                    width: 50px;
+                    line-height: 0;
+                    padding: 0;
     
                     img {
                         height: 24px;
                         width: 24px;
-                        padding: 15px 8px;
                     }
                 }
     
                 .add {
                     background: #2AE101;
+                    height: 50px;
+                    width: 50px;
+                    line-height: 0;
+                    padding: 0;
     
                     img {
                         height: 24px;
                         width: 24px;
-                        padding: 15px 8px;
                     }
                 }
             }
@@ -5442,6 +5450,28 @@ button:focus {
                 }
             }
         }
+
+        .favorites {
+            .favorites_items {
+                justify-content: space-around;
+            }
+
+            .item {
+                height: 360px;
+
+                .delete {
+                    font-size: 14px;
+                }
+
+                .item_desc {
+                    font-size: 13px;
+                }
+
+                .price {
+                    font-size: 16px;
+                }
+            }
+        }
     }
 
     .category {
@@ -6007,9 +6037,17 @@ button:focus {
                 display: none;
             }
         }
+
+        .favorites {
+            width: 100%;
+
+            h2 {
+                display: none;
+            }
+        }
     }
 
-    .my_orders_mobileinfo {
+    .my_orders_mobileinfo, .my_ordersinfo_mobile {
         .contact_btns {
             .cont_info {
                 display: block;
@@ -6133,6 +6171,49 @@ button:focus {
 
             .cont_info, .my_orders {
                 display: none;
+            }
+        }
+    }
+
+    .favourite_mobile {
+        .contact_btns {
+            a {
+                display: none;
+                text-align: center;
+            }
+
+            .cont_info, .my_orders, .my_favourites {
+                display: block;
+            }
+        }
+    }
+
+    .favorites {
+        width: 100%;
+        margin-bottom: 35px;
+
+        .favorites_items {
+            .item {
+                width: 30%;
+            }
+
+            .price {
+                .price_desc {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .contact_information {
+        
+        .mobile_my_favorites_btns {
+            .cont_info, .my_orders, .my_favourites  {
+                display: none;
+            }
+
+            .my_information, .my_exit {
+                display: block;
             }
         }
     }
@@ -8100,6 +8181,17 @@ button:focus {
                 }
             }
         }
+
+        .favorites {
+            .favorites_items {
+                flex-wrap: wrap;
+                justify-content: left;
+
+                .item {
+                    width: 45%;
+                }
+            }
+        }
     }
 
     .category {
@@ -8355,48 +8447,103 @@ button:focus {
         font-size: 16px;
     }
 
-    .middle .middle_line .modal_form_registration .modal_btns .close-button2 {
-        font-size: 16px;
-    }
-
-    .middle .middle_line .modal_form .modal_btns .login {
-        font-size: 16px;
-    }
-
-    .middle .middle_line .modal_form .modal_btns .close-button {
-        font-size: 16px;
-    }
-
-    .middle .middle_line .tabs li a {
-        padding: 15px 10px;
-    }
-
-    .middle .middle_line .modal_form_registration .therms {
-        font-size: 12px;
-        padding: 0;
-        text-align: center;
-    }
-
-    .cart .items_in_cart .product {
-        .quantity, .product_price {
-            margin-top: 15px;
-        }
-    }
-
-    .cart .items_sum .items_sum_promo {
-        flex-direction: column;
-        align-items: center;
-
-        .promo_btns {
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-
-            .promocode, .submit_promo {
-                width: 70%;
-                margin-right: 0;
+    .middle {
+        .middle_line {
+            .modal_form_registration {
+                .modal_btns {
+                    .close-button2 {
+                        font-size: 16px;
+                    }
+                }
             }
         }
+    }
+
+    .middle {
+        .middle_line {
+            .modal_form {
+                .modal_btns {
+                    .login {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .middle {
+        .middle_line {
+            .modal_form {
+                .modal_btns {
+                    .close-button {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .middle {
+        .middle_line {
+            .tabs {
+                li {
+                    a {
+                        padding: 15px 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .middle {
+        .middle_line {
+            .modal_form_registration {
+                .therms {
+                    font-size: 12px;
+                    padding: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .cart {
+        .items_in_cart {
+            .product {
+                .quantity {
+                    margin-top: 15px;
+                }
+
+                .product_price {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+
+    .cart {
+        .items_sum {
+            .items_sum_promo {
+                flex-direction: column;
+                align-items: center;
+        
+                .promo_btns {
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+        
+                    .promocode {
+                        width: 70%;
+                        margin-right: 0;
+                    }
+        
+                    .submit_promo {
+                        width: 70%;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }    
     }
 
     .middle {
@@ -8579,6 +8726,19 @@ button:focus {
                     p {
                         text-align: center;
                     }
+                }
+            }
+        }
+    }
+
+    .contact_information {
+        .favorites {
+            .favorites_items {
+                justify-content: center;
+
+                .item {
+                    width: 80%;
+                    height: 90vw;
                 }
             }
         }
@@ -8892,5 +9052,9 @@ button:focus {
 
     .middle .middle_line .sidepanel .mobile_login .my_cabinet_mobile {
         font-size: 12px;
+    }
+
+    .contact_information .favorites .favorites_items .item {
+        height: 340px;
     }
 }
