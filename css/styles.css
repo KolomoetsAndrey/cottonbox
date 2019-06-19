@@ -5936,6 +5936,9 @@ button:focus {
   .category .filter .rs_content .range-slider input[type=range] {
     bottom: 25px;
   }
+  .category .items {
+    width: 70%;
+  }
   .category .items .select {
     font-size: 14px;
   }
@@ -5950,7 +5953,7 @@ button:focus {
     right: 20px;
   }
   .category .items .cat_items {
-    justify-content: center;
+    justify-content: space-between;
   }
   .category .items .cat_items .item {
     height: 270px;
