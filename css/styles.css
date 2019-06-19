@@ -446,6 +446,9 @@ button:focus {
   display: block;
   overflow: hidden;
 }
+.middle .middle_line .sidepanel .language {
+  display: none;
+}
 .middle .middle_line .modal {
   position: fixed;
   left: 0;
@@ -6881,6 +6884,21 @@ button:focus {
   .middle .middle_line .modal_form {
     padding: 0;
   }
+  .middle .middle_line .sidepanel .language {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    margin-left: 25px;
+    font-size: 14px;
+  }
+  .middle .middle_line .sidepanel .language a,
+  .middle .middle_line .sidepanel .language span {
+    padding: 0;
+    margin-right: 5px;
+  }
+  .middle .middle_line .sidepanel .language .active {
+    color: #707070;
+  }
   .middle .middle_line .modal_form_registration .modal_btns {
     margin-top: 15px;
   }
@@ -7124,7 +7142,9 @@ button:focus {
     font-size: 13px;
     text-align: center;
   }
-  .contact_information .orders_data .history .payments p,
+  .contact_information .orders_data .history .payments p {
+    font-size: 14px;
+  }
   .contact_information .orders_data .history .delivery p {
     font-size: 14px;
   }

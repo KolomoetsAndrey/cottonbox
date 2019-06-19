@@ -347,6 +347,10 @@ button:focus {
                 display: block;
                 overflow: hidden;
             }
+
+            .language {
+                display: none;
+            }
         }
 
         /* Modal My Cabinet */
@@ -6266,7 +6270,7 @@ button:focus {
         
         .mobile_my_information_btns {
             display: block;
-            
+
             .cont_info, .my_orders,
             .my_favourites, .my_information {
                 display: none;
@@ -7905,6 +7909,25 @@ button:focus {
             .modal_form_registration, .modal_form {
                 padding: 0;
             }
+
+            .sidepanel {
+                .language {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 35px;
+                    margin-left: 25px;
+                    font-size: 14px;
+
+                    a, span {
+                        padding: 0;
+                        margin-right: 5px;
+                    }
+
+                    .active {
+                        color: #707070;
+                    }
+                }
+            }
         }
     }
 
@@ -8251,7 +8274,13 @@ button:focus {
 
         .orders_data {
             .history {
-                .payments, .delivery {
+                .payments {
+                    p {
+                        font-size: 14px;
+                    }
+                }
+
+                .delivery {
                     p {
                         font-size: 14px;
                     }
