@@ -3744,12 +3744,14 @@ button:focus {
   color: #BD4F50;
 }
 .contact_information .mobile_contact_btns,
-.contact_information .mobile_my_orders_btns {
+.contact_information .mobile_my_orders_btns,
+.contact_information .mobile_my_information_btns {
   display: none;
   width: 100%;
 }
 .contact_information .mobile_contact_btns a,
-.contact_information .mobile_my_orders_btns a {
+.contact_information .mobile_my_orders_btns a,
+.contact_information .mobile_my_information_btns a {
   font-family: 'Montserrat', sans-serif;
   background: transparent;
   font-size: 22px;
@@ -3764,7 +3766,8 @@ button:focus {
   text-decoration: none;
 }
 .contact_information .mobile_contact_btns .active,
-.contact_information .mobile_my_orders_btns .active {
+.contact_information .mobile_my_orders_btns .active,
+.contact_information .mobile_my_information_btns .active {
   border: 1px solid #BD4F50;
   color: #BD4F50;
 }
@@ -3888,6 +3891,9 @@ button:focus {
 .contact_information .personal_data .my_promocodes .promocode .promoinfo p {
   font-size: 24px;
   width: 25%;
+}
+.contact_information .personal_data .my_promocodes .promocode_mobile {
+  display: none;
 }
 .contact_information .orders_data {
   box-sizing: border-box;
@@ -4999,6 +5005,14 @@ button:focus {
     font-size: 16px;
     margin-bottom: 5px;
   }
+  .contact_information .personal_data .my_promocodes .promocode .title h3,
+  .contact_information .personal_data .my_promocodes .promocode .promoinfo h3 {
+    font-size: 18px;
+  }
+  .contact_information .personal_data .my_promocodes .promocode .title p,
+  .contact_information .personal_data .my_promocodes .promocode .promoinfo p {
+    font-size: 16px;
+  }
   .contact_information .orders_data .order_number h2 {
     font-size: 30px;
   }
@@ -5473,6 +5487,14 @@ button:focus {
   .contact_information .personal_data ul .email {
     font-size: 18px;
   }
+  .contact_information .personal_data .my_promocodes .promocode .title h3,
+  .contact_information .personal_data .my_promocodes .promocode .promoinfo h3 {
+    font-size: 16px;
+  }
+  .contact_information .personal_data .my_promocodes .promocode .title p,
+  .contact_information .personal_data .my_promocodes .promocode .promoinfo p {
+    font-size: 14px;
+  }
   .contact_information .mobile_contact_btns {
     margin-top: 50px;
     display: flex;
@@ -5621,6 +5643,28 @@ button:focus {
   .contact_information .mobile_my_favorites_btns .my_information,
   .contact_information .mobile_my_favorites_btns .my_exit {
     display: block;
+  }
+  .my_info_mobile .personal_data {
+    margin-bottom: 35px;
+  }
+  .my_info_mobile .contact_btns .cont_info,
+  .my_info_mobile .contact_btns .my_orders,
+  .my_info_mobile .contact_btns .my_favourites {
+    display: block;
+    text-align: center;
+  }
+  .my_info_mobile .mobile_my_information_btns {
+    display: block;
+  }
+  .my_info_mobile .mobile_my_information_btns .cont_info,
+  .my_info_mobile .mobile_my_information_btns .my_orders,
+  .my_info_mobile .mobile_my_information_btns .my_favourites,
+  .my_info_mobile .mobile_my_information_btns .my_information {
+    display: none;
+  }
+  .my_info_mobile .mobile_my_information_btns .my_exit {
+    display: block;
+    text-align: center;
   }
 }
 @media (max-width: 900px) {
@@ -7070,6 +7114,16 @@ button:focus {
     bottom: 0;
     font-size: 12px;
   }
+  .contact_information .personal_data .my_promocodes .promocode .title h3,
+  .contact_information .personal_data .my_promocodes .promocode .promoinfo h3 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .contact_information .personal_data .my_promocodes .promocode .title p,
+  .contact_information .personal_data .my_promocodes .promocode .promoinfo p {
+    font-size: 13px;
+    text-align: center;
+  }
   .contact_information .orders_data .history .payments p,
   .contact_information .orders_data .history .delivery p {
     font-size: 14px;
@@ -7496,6 +7550,57 @@ button:focus {
   .contact_information .favorites .favorites_items .item {
     width: 80%;
     height: 90vw;
+  }
+  .contact_information .personal_data .my_promocodes .promocode {
+    display: none;
+  }
+  .contact_information .personal_data .my_promocodes .promocode_mobile {
+    display: block;
+  }
+  .contact_information .personal_data .my_promocodes .promocode_mobile .collapsible {
+    outline: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    background: #ffffff;
+    border: none;
+    padding: 15px;
+  }
+  .contact_information .personal_data .my_promocodes .promocode_mobile .collapsible h3 {
+    color: #BD4F50;
+    text-decoration: underline;
+    font-size: 15px;
+  }
+  .contact_information .personal_data .my_promocodes .promocode_mobile .collapsible span {
+    font-size: 13px;
+  }
+  .contact_information .personal_data .my_promocodes .promocode_mobile .collapsible:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f077";
+    font-weight: 600;
+    font-size: 13px;
+    color: #707070;
+    float: right;
+    padding-top: 5px;
+    padding-right: 5px;
+  }
+  .contact_information .personal_data .my_promocodes .promocode_mobile .collapsible.active:after {
+    content: "\f078";
+  }
+  .contact_information .personal_data .my_promocodes .promocode_mobile .content {
+    font-size: 16px;
+    display: block;
+    overflow: hidden;
+  }
+  .contact_information .personal_data .my_promocodes .promocode_mobile .content ul li {
+    display: flex;
+    width: 45%;
+    justify-content: center;
+  }
+  .contact_information .personal_data .my_promocodes .promocode_mobile .content ul li h3 {
+    text-decoration: underline;
   }
   .about_us .title_block .more a {
     display: none;

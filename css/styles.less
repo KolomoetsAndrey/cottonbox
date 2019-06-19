@@ -3961,7 +3961,7 @@ button:focus {
         }
     }
 
-    .mobile_contact_btns, .mobile_my_orders_btns {
+    .mobile_contact_btns, .mobile_my_orders_btns, .mobile_my_information_btns {
         display: none;
         width: 100%;
 
@@ -3985,6 +3985,8 @@ button:focus {
             color: #BD4F50;
         }
     }
+
+
 
     .personal_data {
         .col();
@@ -4119,6 +4121,10 @@ button:focus {
                         width: 25%;
                     }
                 }
+            }
+
+            .promocode_mobile {
+                display: none;
             }
         }
     }
@@ -5398,6 +5404,20 @@ button:focus {
                     margin-bottom: 5px;
                 }
             }
+
+            .my_promocodes {
+                .promocode {
+                    .title, .promoinfo {
+                        h3 {
+                            font-size: 18px;
+                        }
+
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
         }
 
         .orders_data {
@@ -6020,6 +6040,20 @@ button:focus {
                     font-size: 18px;
                 }
             }
+
+            .my_promocodes {
+                .promocode {
+                    .title, .promoinfo {
+                        h3 {
+                            font-size: 16px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
         }
 
         .mobile_contact_btns {
@@ -6214,6 +6248,33 @@ button:focus {
 
             .my_information, .my_exit {
                 display: block;
+            }
+        }
+    }
+
+    .my_info_mobile {
+        .personal_data {
+            margin-bottom: 35px;
+        }
+
+        .contact_btns {
+            .cont_info, .my_orders, .my_favourites {
+                display: block;
+                text-align: center;
+            }
+        }   
+        
+        .mobile_my_information_btns {
+            display: block;
+            
+            .cont_info, .my_orders,
+            .my_favourites, .my_information {
+                display: none;
+            }
+
+            .my_exit {
+                display: block;
+                text-align: center;
             }
         }
     }
@@ -8170,6 +8231,22 @@ button:focus {
                     }
                 }
             }
+
+            .my_promocodes {
+                .promocode {
+                    .title, .promoinfo {
+                        h3 {
+                            font-size: 15px;
+                            text-align: center;
+                        }
+
+                        p {
+                            font-size: 13px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
         }
 
         .orders_data {
@@ -8739,6 +8816,73 @@ button:focus {
                 .item {
                     width: 80%;
                     height: 90vw;
+                }
+            }
+        }
+
+        .personal_data {
+            .my_promocodes {
+                .promocode {
+                    display: none;
+                }
+
+                .promocode_mobile {
+                    display: block;
+
+                    .collapsible {
+                        outline: none;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-family: @montserrat;
+                        background: #ffffff;
+                        border: none;
+                        padding: 15px;
+
+                        h3 {
+                            color: #BD4F50;
+                            text-decoration: underline;
+                            font-size: 15px;
+                        }
+
+                        span {
+                            font-size: 13px;
+                        }
+                    }
+            
+                    .collapsible:after {
+                        font-family: "Font Awesome 5 Free";
+                        content: "\f077";
+                        font-weight: 600;
+                        font-size: 13px;
+                        color: #707070;
+                        float: right;
+                        padding-top: 5px;
+                        padding-right: 5px;
+                    }
+                      
+                    .collapsible.active:after {
+                        content: "\f078";
+                    }
+            
+                    .content {
+                        font-size: 16px;
+                        display: block;
+                        overflow: hidden;
+
+                        ul {
+                            li {
+                                display: flex;
+                                width: 45%;
+                                justify-content: center;
+
+                                h3 {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
