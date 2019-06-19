@@ -2211,7 +2211,7 @@ button:focus {
 .product_card .product-price-information .advantages .advant_name {
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  width: 100%;
   border-bottom: 1px dotted #666666;
   margin-top: 15px;
   font-size: 18px;
@@ -2257,6 +2257,9 @@ button:focus {
   text-align: center;
   border: none;
   width: 80px;
+}
+.product_card .product-price-information .quantity input[type='number'] {
+  -moz-appearance: textfield;
 }
 .product_card .product-price-information .quantity .plus-minus-input .input-group-field::-webkit-inner-spin-button,
 .product_card .product-price-information .quantity .plus-minus-input .input-group-field ::-webkit-outer-spin-button {
@@ -3342,6 +3345,9 @@ button:focus {
   text-align: center;
   border: none;
   width: 60px;
+}
+.cart .items_in_cart .product .quantity input[type='number'] {
+  -moz-appearance: textfield;
 }
 .cart .items_in_cart .product .quantity .plus-minus-input .input-group-field::-webkit-inner-spin-button,
 .cart .items_in_cart .product .quantity .plus-minus-input .input-group-field ::-webkit-outer-spin-button {

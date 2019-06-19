@@ -2288,7 +2288,7 @@ button:focus {
             .advant_name {
                 display: flex;
                 justify-content: space-between;
-                width: 70%;
+                width: 100%;
                 border-bottom: 1px dotted #666666;
 
                 .name, .value {
@@ -2341,6 +2341,10 @@ button:focus {
                 text-align: center;
                 border: none;
                 width: 80px;
+            }
+
+            input[type='number'] {
+                -moz-appearance: textfield;
             }
     
             .plus-minus-input .input-group-field::-webkit-inner-spin-button,
@@ -3532,6 +3536,10 @@ button:focus {
                     text-align: center;
                     border: none;
                     width: 60px;
+                }
+
+                input[type='number'] {
+                    -moz-appearance: textfield;
                 }
         
                 .plus-minus-input .input-group-field::-webkit-inner-spin-button,
