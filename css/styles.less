@@ -5391,6 +5391,57 @@ button:focus {
                 }
             }
         }
+
+        .orders_data {
+            .order_number {
+                h2 {
+                    font-size: 30px;
+                }
+
+                .order_status {
+                    font-size: 16px;
+                }
+            }
+            .orders_products {
+                .product_info {
+                    width: 100%;
+
+                    img {
+                        width: 180px;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .payments_result {
+                width: 100%;
+
+                .total, .discount {
+                    font-size: 22px;
+                }
+
+                .paid {
+                    font-size: 22px;
+                }
+            }
+
+            .history {
+                flex-wrap: wrap;
+
+                .status {
+                    width: 100%;
+                    margin-bottom: 35px;
+                }
+
+                .payments {
+                    width: 45%;
+                }
+
+                .delivery {
+                    width: 45%;
+                }
+            }
+        }
     }
 
     .category {
@@ -5982,6 +6033,105 @@ button:focus {
             }
 
             .active {
+                display: none;
+            }
+        }
+    }
+
+    .my_ordersinfo_mobile {
+        .contact_btns {
+            .cont_info {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        .orders_data {
+            width: 100%;
+
+            .order_number {
+                position: relative;
+                justify-content: center;
+
+                h2 {
+                    font-size: 20px;
+                }
+                .order_status {
+                    display: none;
+                }
+
+                .back {
+                    font-size: 20px;
+                    position: absolute;
+                    left: 0;
+                }
+            }
+
+            .orders_products {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .product_info {
+                    margin-bottom: 35px;
+                    width: 30%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+
+                    img {
+                        height: auto;
+                    }
+
+                    h3 {
+                        font-size: 16px;
+                        margin-top: 20px;
+                        margin-bottom: 10px;
+                        padding: 0 10px;
+                    }
+
+                    p {
+                        padding: 0 10px;
+                    }
+
+                    .quantity {
+                        font-size: 10px;
+                        margin-bottom: 10px;
+                    }
+
+                    .sku {
+                        font-size: 10px;
+                        margin-bottom: 10px;
+                    }
+
+                    .availability {
+                        font-size: 12px;
+                        margin-bottom: 10px;
+                    }
+
+                    .price {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .history {
+                margin-bottom: 35px;
+
+                .payments, .delivery {
+                    width: 50%;
+                }
+            }
+        }
+
+        .mobile_my_orders_btns {
+            a {
+                display: block;
+                text-align: center;
+            }
+
+            .cont_info, .my_orders {
                 display: none;
             }
         }
@@ -7343,6 +7493,53 @@ button:focus {
         }
     }
 
+    .contact_information {
+        .orders_data {
+            .orders_products {
+                .product_info {
+                    border-radius: 24px;
+                }
+            }
+        }
+    }
+
+    .my_ordersinfo_mobile {
+        .orders_data {
+            .orders_products {
+                .product_info {
+                    padding: 15px;
+                    width: 45%;
+
+                    .product_info_data {
+                        padding-left: 3px;
+                    }
+
+                    h3 {
+                        padding: 0 5px;
+                        font-size: 14px;
+                        margin-top: 10px;
+                    }
+
+                    p {
+                        padding: 0 5px;
+                    }
+                }
+            }
+
+            .history {
+                .status {
+                    p {
+                        font-size: 14px;
+                    }
+
+                    .date, .info {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+
     .footer .column .works {
         font-size: 10px;
     }
@@ -7893,6 +8090,16 @@ button:focus {
                 }
             }
         }
+
+        .orders_data {
+            .history {
+                .payments, .delivery {
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
     }
 
     .category {
@@ -8332,6 +8539,49 @@ button:focus {
 
     .tabs_slider .item .item_desc {
         font-size: 14px;
+    }
+
+    .my_ordersinfo_mobile {
+        .orders_data {
+            .orders_products {
+                .product_info {
+                    width: 80%;
+
+                    img {
+                        width: auto;
+                    }
+                }
+            }
+
+            .payments_result {
+                .total, .discount, .paid {
+                    p {
+                        width: 50%;
+                        font-size: 15px;
+                    }
+                }
+
+                .total_text, .discount_text, .paid_text {
+                    margin-right: 0;
+                }
+            }
+
+            .history {
+                h3 {
+                    font-size: 16px;
+                    text-align: center;
+                }
+
+                .payments, .delivery {
+                    width: 100%;
+                    margin-bottom: 25px;
+
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
     }
 
     .about_us .title_block .more a {

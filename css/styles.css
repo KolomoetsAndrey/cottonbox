@@ -4980,6 +4980,42 @@ button:focus {
     font-size: 16px;
     margin-bottom: 5px;
   }
+  .contact_information .orders_data .order_number h2 {
+    font-size: 30px;
+  }
+  .contact_information .orders_data .order_number .order_status {
+    font-size: 16px;
+  }
+  .contact_information .orders_data .orders_products .product_info {
+    width: 100%;
+  }
+  .contact_information .orders_data .orders_products .product_info img {
+    width: 180px;
+    height: 100%;
+  }
+  .contact_information .orders_data .payments_result {
+    width: 100%;
+  }
+  .contact_information .orders_data .payments_result .total,
+  .contact_information .orders_data .payments_result .discount {
+    font-size: 22px;
+  }
+  .contact_information .orders_data .payments_result .paid {
+    font-size: 22px;
+  }
+  .contact_information .orders_data .history {
+    flex-wrap: wrap;
+  }
+  .contact_information .orders_data .history .status {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  .contact_information .orders_data .history .payments {
+    width: 45%;
+  }
+  .contact_information .orders_data .history .delivery {
+    width: 45%;
+  }
   .category .filter h3 {
     font-size: 14px;
     padding: 10px 15px;
@@ -5434,6 +5470,83 @@ button:focus {
     font-size: 18px;
   }
   .my_orders_mobileinfo .mobile_my_orders_btns .active {
+    display: none;
+  }
+  .my_ordersinfo_mobile .contact_btns .cont_info {
+    display: block;
+    text-align: center;
+  }
+  .my_ordersinfo_mobile .orders_data {
+    width: 100%;
+  }
+  .my_ordersinfo_mobile .orders_data .order_number {
+    position: relative;
+    justify-content: center;
+  }
+  .my_ordersinfo_mobile .orders_data .order_number h2 {
+    font-size: 20px;
+  }
+  .my_ordersinfo_mobile .orders_data .order_number .order_status {
+    display: none;
+  }
+  .my_ordersinfo_mobile .orders_data .order_number .back {
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+  }
+  .my_ordersinfo_mobile .orders_data .orders_products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .my_ordersinfo_mobile .orders_data .orders_products .product_info {
+    margin-bottom: 35px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .my_ordersinfo_mobile .orders_data .orders_products .product_info img {
+    height: auto;
+  }
+  .my_ordersinfo_mobile .orders_data .orders_products .product_info h3 {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+  }
+  .my_ordersinfo_mobile .orders_data .orders_products .product_info p {
+    padding: 0 10px;
+  }
+  .my_ordersinfo_mobile .orders_data .orders_products .product_info .quantity {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .my_ordersinfo_mobile .orders_data .orders_products .product_info .sku {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .my_ordersinfo_mobile .orders_data .orders_products .product_info .availability {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .my_ordersinfo_mobile .orders_data .orders_products .product_info .price {
+    font-size: 18px;
+  }
+  .my_ordersinfo_mobile .orders_data .history {
+    margin-bottom: 35px;
+  }
+  .my_ordersinfo_mobile .orders_data .history .payments,
+  .my_ordersinfo_mobile .orders_data .history .delivery {
+    width: 50%;
+  }
+  .my_ordersinfo_mobile .mobile_my_orders_btns a {
+    display: block;
+    text-align: center;
+  }
+  .my_ordersinfo_mobile .mobile_my_orders_btns .cont_info,
+  .my_ordersinfo_mobile .mobile_my_orders_btns .my_orders {
     display: none;
   }
 }
@@ -6459,6 +6572,31 @@ button:focus {
     margin-right: 20px;
     margin-bottom: 0;
   }
+  .contact_information .orders_data .orders_products .product_info {
+    border-radius: 24px;
+  }
+  .my_ordersinfo_mobile .orders_data .orders_products .product_info {
+    padding: 15px;
+    width: 45%;
+  }
+  .my_ordersinfo_mobile .orders_data .orders_products .product_info .product_info_data {
+    padding-left: 3px;
+  }
+  .my_ordersinfo_mobile .orders_data .orders_products .product_info h3 {
+    padding: 0 5px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .my_ordersinfo_mobile .orders_data .orders_products .product_info p {
+    padding: 0 5px;
+  }
+  .my_ordersinfo_mobile .orders_data .history .status p {
+    font-size: 14px;
+  }
+  .my_ordersinfo_mobile .orders_data .history .status .date,
+  .my_ordersinfo_mobile .orders_data .history .status .info {
+    width: 50%;
+  }
   .footer .column .works {
     font-size: 10px;
   }
@@ -6859,6 +6997,10 @@ button:focus {
     bottom: 0;
     font-size: 12px;
   }
+  .contact_information .orders_data .history .payments p,
+  .contact_information .orders_data .history .delivery p {
+    font-size: 14px;
+  }
   .category .filter .content {
     display: none;
   }
@@ -7232,6 +7374,36 @@ button:focus {
   }
   .tabs_slider .item .item_desc {
     font-size: 14px;
+  }
+  .my_ordersinfo_mobile .orders_data .orders_products .product_info {
+    width: 80%;
+  }
+  .my_ordersinfo_mobile .orders_data .orders_products .product_info img {
+    width: auto;
+  }
+  .my_ordersinfo_mobile .orders_data .payments_result .total p,
+  .my_ordersinfo_mobile .orders_data .payments_result .discount p,
+  .my_ordersinfo_mobile .orders_data .payments_result .paid p {
+    width: 50%;
+    font-size: 15px;
+  }
+  .my_ordersinfo_mobile .orders_data .payments_result .total_text,
+  .my_ordersinfo_mobile .orders_data .payments_result .discount_text,
+  .my_ordersinfo_mobile .orders_data .payments_result .paid_text {
+    margin-right: 0;
+  }
+  .my_ordersinfo_mobile .orders_data .history h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+  .my_ordersinfo_mobile .orders_data .history .payments,
+  .my_ordersinfo_mobile .orders_data .history .delivery {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .my_ordersinfo_mobile .orders_data .history .payments p,
+  .my_ordersinfo_mobile .orders_data .history .delivery p {
+    text-align: center;
   }
   .about_us .title_block .more a {
     display: none;
