@@ -413,4 +413,71 @@ $(function(){
     });
 });
 
+//CustomSelect
+$(function() {
+    $('.choose').each(function() {
+        var a = $(this).children('option:first-child').val();
+        $(this).after('<div class="custom-select"></div>');
+        $('.custom-select').append('<span class="spanVal">' + a + '</span>');
+        $('.custom-select').append('<ul></ul>');
+    });
 
+    $('.choose option').each(function() {
+        var b = $(this).val();
+        $('<li>' + b + '</li>').appendTo('.custom-select ul');
+    });
+
+    $('.spanVal').on('click', function() {
+        $('.custom-select ul').slideToggle('fast');
+    });
+
+    $('.custom-select li').on('click', function() {
+        var c = $(this).text();
+        $('.spanVal').html(c);
+        $('.custom-select ul').hide();
+    });
+
+    $('.custom-select li').focus(function() {
+        alert(0);
+    });
+
+    $(document).click(function(e) {
+        if (e.target.class != '.custom-select' && !$('.custom-select').find(e.target).length) {
+            $(".custom-select ul").hide();
+        }
+    });
+});
+
+$(function() {
+    $('.choosemobile').each(function() {
+        var a = $(this).children('option:first-child').val();
+        $(this).after('<div class="mobile-custom-select"></div>');
+        $('.mobile-custom-select').append('<span class="mobile-spanVal">' + a + '</span>');
+        $('.mobile-custom-select').append('<ul></ul>');
+    });
+
+    $('.choosemobile option').each(function() {
+        var b = $(this).val();
+        $('<li>' + b + '</li>').appendTo('.mobile-custom-select ul');
+    });
+
+    $('.mobile-spanVal').on('click', function() {
+        $('.mobile-custom-select ul').slideToggle('fast');
+    });
+
+    $('.mobile-custom-select li').on('click', function() {
+        var c = $(this).text();
+        $('.mobile-spanVal').html(c);
+        $('.mobile-custom-select ul').hide();
+    });
+
+    $('.mobile-custom-select li').focus(function() {
+        alert(0);
+    });
+
+    $(document).click(function(e) {
+        if (e.target.class != '.mobile-custom-select' && !$('.mobile-custom-select').find(e.target).length) {
+            $(".mobile-custom-select ul").hide();
+        }
+    });
+});

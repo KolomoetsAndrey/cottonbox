@@ -1742,53 +1742,79 @@ button:focus {
                 padding-left: 15px;
             }
 
-            fieldset {
-                border: 0;
-            }
-            
-/*
             .selectdiv {
                 position: relative;
+                width: 250px;
             }
-              
-            select::-ms-expand {
-              display: none;
+
+            //SelectDiv
+            select {
+                float: left;
+                width: 100%;
+                height: 30px;
+                visibility: hidden;
             }
-              
-            .selectdiv:after {
+            
+            .custom-select {
+                float: left;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 1000;
+            }
+            
+            .spanVal {
+                font-size: 18px;
+                text-align: center;
+                color: #333;
+                border: none;
+                border-radius: 20px;
+                box-shadow: 0px 0px 6px #0000002b;
+                padding: 8px;
+                width: 100%;
+                float: left;
+                position: relative;
+                cursor: pointer;
+            }
+            
+            .spanVal:after {
                 font-family: "Font Awesome 5 Free";
                 content: "\f078";
                 font-weight: 600;
-                font-size: 12px;
-                color: #333;
-                right: 11px;
-                top: 13px;
-                padding: 0 0 2px;                
+                font-size: 13px;
+                color: #707070;
                 position: absolute;
-                pointer-events: none;
+                padding-top: 5px;
+                right: 15px;
             }
-              
-            .selectdiv {
-
-                select {
-                    -webkit-appearance: none;
-                    -moz-appearance: none;
-                    appearance: none;
-                    text-align-last: center;
-                    display: block;
-                    width: 100%;
-                    max-width: 320px;
-                    margin: 0;
-                    padding: 10px 40px;
-                    color: #232323;
-                    background: #ffffff;
-                    border: none;
-                    border-radius: 20px;
-                    box-shadow: 0px 0px 6px #0000002b;
-                    -ms-word-break: normal;
-                    word-break: normal;
-                }
-            } */
+            
+            .custom-select ul {
+                float: left;
+                width: 100%;
+                margin: -1px 0 0;
+                padding: 0;
+                border: 1px solid #ccc;
+                box-shadow: 1px 2px 2px 0px #ccc;
+                display: none;
+                background: #ffffff;
+            }
+            
+            .custom-select li {
+                float: left;
+                width: 92%;
+                text-align: center;
+                font-size: 18px;
+                color: #333;
+                list-style: none;
+                padding: 10px;
+                cursor: pointer;
+            }
+            
+            .custom-select li:hover,
+            .custom-select li.active {
+                background-color: #ffd0d0;
+            }
         }
 
         .cat_items {
@@ -3640,43 +3666,7 @@ button:focus {
                 width: 50%;
                 margin-top: 40px;
 
-                .selectdiv {
-                    position: relative;
-                }
-                  
-                select::-ms-expand {
-                  display: none;
-                }
-                  
-                .selectdiv:after {
-                    font-family: "Font Awesome 5 Free";
-                    content: "\f078";
-                    font-weight: 600;
-                    color: #CCCCCC;
-                    right: 30px;
-                    top: 14px;
-                    padding: 0 0 2px;                
-                    position: absolute;
-                    pointer-events: none;
-                }
-                  
-                .selectdiv select {
-                    -webkit-appearance: none;
-                    -moz-appearance: none;
-                    appearance: none;
-                    display: block;
-                    width: 100%;
-                    height: 40px;
-                    margin: 5px 0px;
-                    padding: 0px 40px;
-                    color: #CCCCCC;
-                    background: transparent;
-                    border: none;
-                    border-radius: 20px;
-                    box-shadow: 0px 0px 6px #0000002b;
-                    -ms-word-break: normal;
-                    word-break: normal;
-                }
+                
             }
         }
     }
@@ -5485,7 +5475,15 @@ button:focus {
                 margin-bottom: 20px;
 
                 .selectdiv {
-                    select {
+                    width: 200px;
+                }
+
+                .spanVal {
+                    font-size: 14px;
+                }
+
+                .custom-select {
+                    li {
                         font-size: 14px;
                     }
                 }
@@ -6610,15 +6608,8 @@ button:focus {
                     font-size: 14px;
                 }
 
-                .selectdiv {
-                    select {    
-                        padding: 5px 40px;
-                    }
-                }
-
-                .selectdiv:after {
-                    top: 13px;
-                    right: 20px;
+                .spanVal {
+                    padding: 5px;
                 }
             }
 
@@ -7311,46 +7302,77 @@ button:focus {
 
                 .selectdiv {
                     position: relative;
-
-                    select {
-                        text-align-last: center;
-                    }
-                }
-                  
-                select::-ms-expand {
-                  display: none;
-                }
-                  
-                .selectdiv:after {
-                    font-family: "Font Awesome 5 Free";
-                    content: "\f078";
-                    font-weight: 600;
-                    color: #707070;
-                    font-size: 14px;
-                    right: 19px;
-                    top: 15px;
-                    padding: 0 0 2px;                
-                    position: absolute;
-                    pointer-events: none;
-                }
-                  
-                .selectdiv select {
-                    font-size: 14px;
-                    -webkit-appearance: none;
-                    -moz-appearance: none;
-                    appearance: none;
-                    display: block;
                     width: 100%;
-                    height: 40px;
-                    margin: 5px 0px;
-                    padding: 0px 40px;
-                    color: #232323;
-                    background: transparent;
+                    margin-bottom: 65px;
+                }
+    
+                //SelectDiv
+                select {
+                    float: left;
+                    width: 100%;
+                    height: 30px;
+                    visibility: hidden;
+                }
+                
+                .mobile-custom-select {
+                    float: left;
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    z-index: 1050;
+                }
+                
+                .mobile-spanVal {
+                    font-size: 14px;
+                    text-align: center;
+                    color: #333;
                     border: none;
                     border-radius: 20px;
                     box-shadow: 0px 0px 6px #0000002b;
-                    -ms-word-break: normal;
-                    word-break: normal;
+                    padding: 10px;
+                    width: 100%;
+                    float: left;
+                    position: relative;
+                    cursor: pointer;
+                }
+                
+                .mobile-spanVal:after {
+                    font-family: "Font Awesome 5 Free";
+                    content: "\f078";
+                    font-weight: 600;
+                    font-size: 13px;
+                    color: #707070;
+                    position: absolute;
+                    padding-top: 5px;
+                    right: 15px;
+                }
+                
+                .mobile-custom-select ul {
+                    float: left;
+                    width: 100%;
+                    margin: -1px 0 0;
+                    padding: 0;
+                    border: 1px solid #ccc;
+                    box-shadow: 1px 2px 2px 0px #ccc;
+                    display: none;
+                    background: #ffffff;
+                }
+                
+                .mobile-custom-select li {
+                    float: left;
+                    width: 92%;
+                    text-align: center;
+                    font-size: 14px;
+                    color: #333;
+                    list-style: none;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+                
+                .mobile-custom-select li:hover,
+                .mobile-custom-select li.active {
+                    background-color: #ffd0d0;
                 }
             }
         }
