@@ -1747,7 +1747,7 @@ button:focus {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 1000;
+  z-index: 1050;
 }
 .category .items .select .spanVal {
   font-size: 18px;
@@ -1769,7 +1769,7 @@ button:focus {
   font-size: 13px;
   color: #707070;
   position: absolute;
-  padding-top: 5px;
+  padding-top: 4px;
   right: 15px;
 }
 .category .items .select .custom-select ul {
