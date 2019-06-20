@@ -1416,6 +1416,31 @@ button:focus {
     }
 }
 
+.about_desktop {
+    position: relative;
+
+    .about_desktop_img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: auto;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 28px;
+        padding: 0 50px;
+    }
+
+    p::before {
+        content: " ";
+        width: 50%;
+        height: 40vw;
+        float: left;
+    }
+}
+
 .about_mobile {
     display: none;
 }
@@ -5690,6 +5715,14 @@ button:focus {
                     display: none;
                 }
             }
+        }
+    }
+
+    .about_desktop {
+        p {
+            font-size: 14px;
+            line-height: 25px;
+            padding: 0 20px;
         }
     }
 

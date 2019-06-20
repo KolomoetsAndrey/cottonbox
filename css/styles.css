@@ -1426,6 +1426,27 @@ button:focus {
 .about_us .about_us_more p {
   padding-bottom: 20px;
 }
+.about_desktop {
+  position: relative;
+}
+.about_desktop .about_desktop_img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: auto;
+}
+.about_desktop p {
+  font-size: 20px;
+  line-height: 28px;
+  padding: 0 50px;
+}
+.about_desktop p::before {
+  content: " ";
+  width: 50%;
+  height: 40vw;
+  float: left;
+}
 .about_mobile {
   display: none;
 }
@@ -5226,6 +5247,11 @@ button:focus {
   .about_us .aboutUs_fullscreen .about_us_desc .two,
   .about_us .aboutUs_fullscreen .about_us_desc .three {
     display: none;
+  }
+  .about_desktop p {
+    font-size: 14px;
+    line-height: 25px;
+    padding: 0 20px;
   }
   .faq {
     margin-top: 150px;
