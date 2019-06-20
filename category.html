@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/rangeslider.css">
     <link rel="stylesheet" href="css/styles.css">
     <!--FontAwesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -405,16 +406,16 @@
                     </div>
                     <button class="collapsible">Цена</button>
                     <div class="content rs_content">
-                            <div class="range-slider">
-                                <span>  
-                                    <input type="number" value="1" min="1" max="9999"/> - 
-                                    <input type="number" value="9999" min="2" max="10000"/> грн.
-                                </span>
-                                <input value="1000" min="1" max="9999" step="1" type="range"/>
-                                <input value="9000" min="2" max="10000" step="1" type="range"/>
-                                <svg width="100%" height="1">
-                                </svg>
+                        <div class="range-slider">
+                            <div id="price-slider">
+                                <p>
+                                    <label for="amount"></label>
+                                    <input class="minrange" type="text" id="amount-min" readonly > <span> - </span> 
+                                    <input class="maxrange" type="text" id="amount-max" readonly > <span> грн.</span>
+                                </p>
+                                <div id="slider-range"></div>
                             </div>
+                        </div>
                         <div class="rs_btns">
                             <button class="show_price">Показать</button>
                         </div>
@@ -533,16 +534,16 @@
                             </div>
                             <button class="collapsible">Цена</button>
                             <div class="content rs_content">
-                                    <div class="range-slider">
-                                        <span>  
-                                            <input type="number" value="1" min="1" max="9999"/> - 
-                                            <input type="number" value="9999" min="2" max="10000"/> грн.
-                                        </span>
-                                        <input value="1000" min="1" max="9999" step="1" type="range"/>
-                                        <input value="9000" min="2" max="10000" step="1" type="range"/>
-                                        <svg width="100%" height="1">
-                                        </svg>
+                                <div class="range-slider">
+                                    <div id="mobile-price-slider">
+                                        <p>
+                                            <label for="amount"></label>
+                                            <input class="minrange" type="text" id="mobile-amount-min" readonly > <span> - </span> 
+                                            <input class="maxrange" type="text" id="mobile-amount-max" readonly > <span> грн.</span>
+                                        </p>
+                                        <div id="mobile-slider-range"></div>
                                     </div>
+                                </div>
                                 <div class="rs_btns">
                                     <button class="show_price">Показать</button>
                                 </div>
@@ -1045,6 +1046,7 @@
 
     <!--Scripts-->
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/rangeslider.js"></script>
     <script src="js/jquery.fancybox.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/main.js"></script>

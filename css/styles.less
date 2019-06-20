@@ -1356,7 +1356,7 @@ button:focus {
             padding-top: 155px;
             
             a {
-                display: contents;
+                display: inline;
                 font-size: 14px;
                 color: #CCCCCC;
                 transition: all 0.2s;
@@ -1549,148 +1549,68 @@ button:focus {
         }
 
         .rs_content {
-
-            input {
-                box-shadow: 0;
-                outline: 0;
-            }
-
-            .range-slider {
-                width: 100%;
-                text-align: left;
-                position: relative;
-                height: 6em;
-            }
-
-            .range-slider svg,
-            .range-slider input[type=range] {
-                position: absolute;
-                left: 0;
-                bottom: 0;
-            }
-            
-            input[type=number] {
-                border: 1px solid #BD4F50;
-                border-radius: 22px;
-                text-align: left;
-                padding: 2px 15px;
-                font-size: 16px;
-                -moz-appearance: textfield;
-            }
-
-            input[type=number]::-webkit-outer-spin-button,
-            input[type=number]::-webkit-inner-spin-button {
-                -webkit-appearance: none;
-                cursor: pointer;
-            }
-
-            input[type=number]:invalid,
-            input[type=number]:out-of-range {
-                border: 1px solid #ff6347;
-            }
-
-            input[type=range] {
-                -webkit-appearance: none;
-                width: 100%;
-            }
-
-            input[type=range]:focus {
-                outline: none;
-            }
-
-            input[type=range]:focus::-webkit-slider-runnable-track {
-                background: gray;
-            }
-
-            input[type=range]:focus::-ms-fill-lower {
-                background: gray;
-            }
-
-            input[type=range]:focus::-ms-fill-upper {
-                background: #BD4F50;
-            }
-
-            input[type=range]::-webkit-slider-runnable-track {
-                width: 100%;
-                height: 2px;
-                cursor: pointer;
-                animate: 0.2s;
-                background: gray;
-                border-radius: 1px;
-                box-shadow: none;
-                border: 0;
-            }
-
-            input[type=range]::-webkit-slider-thumb {
-                z-index: 2;
-                position: relative;
-                box-shadow: 0px 0px 0px #000;
-                border: 1px solid #BD4F50;
-                height: 22px;
-                width: 22px;
-                border-radius: 25px;
-                background: #ffffff;
-                cursor: pointer;
-                -webkit-appearance: none;
-                margin-top: -10px;
-            }
-
-            input[type=range]::-moz-range-track {
-                width: 100%;
-                height: 5px;
-                cursor: pointer;
-                animate: 0.2s;
-                background: #BD4F50;
-                border-radius: 1px;
-                box-shadow: none;
-                border: 0;
-            }
-
-            input[type=range]::-moz-range-thumb {
-                z-index: 2;
-                position: relative;
-                box-shadow: 0px 0px 0px #000;
-                border: 1px solid #2497e3;
-                height: 18px;
-                width: 18px;
-                border-radius: 25px;
-                background: #a1d0ff;
-                cursor: pointer;
-            }
-
-            input[type=range]::-ms-track {
-                width: 100%;
-                height: 5px;
-                cursor: pointer;
-                animate: 0.2s;
-                background: transparent;
-                border-color: transparent;
-                color: transparent;
-            }
-
-            input[type=range]::-ms-fill-lower,
-            input[type=range]::-ms-fill-upper {
-                background: #2497e3;
-                border-radius: 1px;
-                box-shadow: none;
-                border: 0;
-            }
-
-            input[type=range]::-ms-thumb {
-                z-index: 2;
-                position: relative;
-                box-shadow: 0px 0px 0px #000;
-                border: 1px solid #2497e3;
-                height: 18px;
-                width: 18px;
-                border-radius: 25px;
-                background: #a1d0ff;
-                cursor: pointer;
-            }
-              
             padding-left: 10px;
             padding-right: 10px;
             margin-top: 20px;
+
+            .range-slider {
+                #price-slider {
+                    margin-left: 2%;
+                    width:96%;
+                    height:80px;
+                    font-size:14px;
+
+                    .minrange, .maxrange {
+                        border: 1px solid #BD4F50; 
+                        padding: 5px 10px;
+                        border-radius: 14px;
+                        color:#232323; 
+                        font-weight:normal;
+                        font-size: 16px;
+                    }
+
+                    p {
+                        margin-bottom: 25px;
+
+                        span {
+                            font-size: 18px;
+                        }
+                    }
+                }
+                
+                #price-slider input { 
+                    width: 35%;
+                    display:inline-block;
+                }
+                
+                #slider-range {
+                    position:relative;
+                    margin:auto;
+                    width:100%;
+                    height:1px;
+                    border:1px solid #707070;
+                    background: #707070;
+                    }
+                
+                #slider-range .ui-slider-handle {
+                    position: absolute;
+                    width:25px;
+                    height:25px;
+                    margin-top:-8px;
+                    border:none;
+                    background:#fff;
+                    border: 1px solid #BD4F50;
+                    cursor: pointer;
+                    }
+                
+                #slider-range .ui-slider-range{
+                    background:#BD4F50;
+                }
+                
+                #slider-range .ui-corner-all{
+                    border-radius:100%;
+                }
+            }
 
             .rs_btns {
                 margin-top: 25px;
@@ -5530,9 +5450,27 @@ button:focus {
             }
 
             .rs_content {
-                input[type=number] {
-                    font-size: 14px;
-                    width: 35%;
+                .range-slider {
+                    #price-slider {
+                        .minrange, .maxrange {
+                            font-size: 14px;
+                            padding: 2px 10px;
+                        }
+
+                        p {
+                            span {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
+                    #slider-range {
+                        .ui-slider-handle {
+                            width: 14px;
+                            height: 14px;
+                            margin-top: -2px;
+                        }
+                    }
                 }
             }
         }
@@ -6654,12 +6592,6 @@ button:focus {
                         width: 60%;
                     }
                 }
-
-                .range-slider {
-                    input[type=range] {
-                        bottom: 25px;
-                    }
-                }
             }
         }
 
@@ -7255,147 +7187,73 @@ button:focus {
                 }
 
                 .rs_content {
-
-                    input {
-                        box-shadow: 0;
-                        outline: 0;
-                    }
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    margin-top: 20px;
         
                     .range-slider {
                         width: 100%;
                         text-align: left;
                         position: relative;
                         height: 6em;
-                    }
+
+                        #mobile-price-slider {
+                            margin-left: 2%;
+                            width:96%;
+                            height:80px;
+                            font-size:14px;
         
-                    .range-slider svg,
-                    .range-slider input[type=range] {
-                        position: absolute;
-                        left: 0;
-                        bottom: 0;
-                    }
-                    
-                    input[type=number] {
-                        border: 1px solid #BD4F50;
-                        border-radius: 22px;
-                        text-align: left;
-                        padding: 2px 15px;
-                        font-size: 16px;
-                        -moz-appearance: textfield;
-                    }
+                            .minrange, .maxrange {
+                                border: 1px solid #BD4F50; 
+                                padding: 5px 10px;
+                                border-radius: 14px;
+                                color:#232323; 
+                                font-weight:normal;
+                                font-size: 16px;
+                            }
         
-                    input[type=number]::-webkit-outer-spin-button,
-                    input[type=number]::-webkit-inner-spin-button {
-                        -webkit-appearance: none;
-                    }
+                            p {
+                                margin-bottom: 25px;
         
-                    input[type=number]:invalid,
-                    input[type=number]:out-of-range {
-                        border: 1px solid #ff6347;
+                                span {
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                        
+                        #mobile-price-slider input { 
+                            width: 35%;
+                            display:inline-block;
+                        }
+                        
+                        #mobile-slider-range {
+                            position:relative;
+                            margin:auto;
+                            width:100%;
+                            height:1px;
+                            border:1px solid #707070;
+                            background: #707070;
+                            }
+                        
+                        #mobile-slider-range .ui-slider-handle {
+                            position: absolute;
+                            width:25px;
+                            height:25px;
+                            margin-top:-8px;
+                            border:none;
+                            background:#fff;
+                            border: 1px solid #BD4F50;
+                            cursor: pointer;
+                            }
+                        
+                        #mobile-slider-range .ui-slider-range{
+                            background:#BD4F50;
+                        }
+                        
+                        #mobile-slider-range .ui-corner-all{
+                            border-radius:100%;
+                        }
                     }
-        
-                    input[type=range] {
-                        -webkit-appearance: none;
-                        width: 100%;
-                    }
-        
-                    input[type=range]:focus {
-                        outline: none;
-                    }
-        
-                    input[type=range]:focus::-webkit-slider-runnable-track {
-                        background: gray;
-                    }
-        
-                    input[type=range]:focus::-ms-fill-lower {
-                        background: gray;
-                    }
-        
-                    input[type=range]:focus::-ms-fill-upper {
-                        background: #BD4F50;
-                    }
-        
-                    input[type=range]::-webkit-slider-runnable-track {
-                        width: 100%;
-                        height: 2px;
-                        cursor: pointer;
-                        animate: 0.2s;
-                        background: gray;
-                        border-radius: 1px;
-                        box-shadow: none;
-                        border: 0;
-                    }
-        
-                    input[type=range]::-webkit-slider-thumb {
-                        z-index: 2;
-                        position: relative;
-                        box-shadow: 0px 0px 0px #000;
-                        border: 1px solid #BD4F50;
-                        height: 22px;
-                        width: 22px;
-                        border-radius: 25px;
-                        background: #ffffff;
-                        cursor: pointer;
-                        -webkit-appearance: none;
-                        margin-top: -10px;
-                    }
-        
-                    input[type=range]::-moz-range-track {
-                        width: 100%;
-                        height: 5px;
-                        cursor: pointer;
-                        animate: 0.2s;
-                        background: #BD4F50;
-                        border-radius: 1px;
-                        box-shadow: none;
-                        border: 0;
-                    }
-        
-                    input[type=range]::-moz-range-thumb {
-                        z-index: 2;
-                        position: relative;
-                        box-shadow: 0px 0px 0px #000;
-                        border: 1px solid #2497e3;
-                        height: 18px;
-                        width: 18px;
-                        border-radius: 25px;
-                        background: #a1d0ff;
-                        cursor: pointer;
-                    }
-        
-                    input[type=range]::-ms-track {
-                        width: 100%;
-                        height: 5px;
-                        cursor: pointer;
-                        animate: 0.2s;
-                        background: transparent;
-                        border-color: transparent;
-                        color: transparent;
-                    }
-        
-                    input[type=range]::-ms-fill-lower,
-                    input[type=range]::-ms-fill-upper {
-                        background: #2497e3;
-                        border-radius: 1px;
-                        box-shadow: none;
-                        border: 0;
-                    }
-        
-                    input[type=range]::-ms-thumb {
-                        z-index: 2;
-                        position: relative;
-                        box-shadow: 0px 0px 0px #000;
-                        border: 1px solid #2497e3;
-                        height: 18px;
-                        width: 18px;
-                        border-radius: 25px;
-                        background: #a1d0ff;
-                        cursor: pointer;
-                    }
-                      
-                    padding-left: 10px;
-                    padding-right: 10px;
-                    margin-top: 20px;
         
                     .rs_btns {
                         margin-top: 25px;
