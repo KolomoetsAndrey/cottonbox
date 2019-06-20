@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
-    <link rel="stylesheet" href="css/rangeslider.css">
+    <link rel="stylesheet" href="css/jqui.css">
     <link rel="stylesheet" href="css/styles.css">
     <!--FontAwesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -564,11 +564,13 @@
                     <div class="row select">
                         <h3>Сортировка</h3>
                         <div class="selectdiv">
-                            <select name="sort" id="sort">
-                                <option selected value="rating">За рейтингом</option>
-                                <option value="lowprice">По возрастанию</option>
-                                <option value="hiprice">По убыванию</option>
-                            </select>
+                            <fieldset>
+                                <select name="sorting" id="sorting">
+                                    <option selected value="rating">За рейтингом</option>
+                                    <option value="lowprice">По возрастанию</option>
+                                    <option value="hiprice">По убыванию</option>
+                                </select>
+                            </fieldset>
                         </div>
                     </div>
                     <div class="row cat_items">
@@ -1046,7 +1048,7 @@
 
     <!--Scripts-->
     <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/rangeslider.js"></script>
+    <script src="js/jqui.js"></script>
     <script src="js/jquery.fancybox.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/main.js"></script>

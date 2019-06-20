@@ -1725,47 +1725,57 @@ button:focus {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
+  /*
+            .selectdiv {
+                position: relative;
+            }
+              
+            select::-ms-expand {
+              display: none;
+            }
+              
+            .selectdiv:after {
+                font-family: "Font Awesome 5 Free";
+                content: "\f078";
+                font-weight: 600;
+                font-size: 12px;
+                color: #333;
+                right: 11px;
+                top: 13px;
+                padding: 0 0 2px;                
+                position: absolute;
+                pointer-events: none;
+            }
+              
+            .selectdiv {
+
+                select {
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    text-align-last: center;
+                    display: block;
+                    width: 100%;
+                    max-width: 320px;
+                    margin: 0;
+                    padding: 10px 40px;
+                    color: #232323;
+                    background: #ffffff;
+                    border: none;
+                    border-radius: 20px;
+                    box-shadow: 0px 0px 6px #0000002b;
+                    -ms-word-break: normal;
+                    word-break: normal;
+                }
+            } */
 }
 .category .items .select h3 {
   color: #232323;
   font-size: 18px;
   padding-left: 15px;
 }
-.category .items .select .selectdiv {
-  position: relative;
-}
-.category .items .select select::-ms-expand {
-  display: none;
-}
-.category .items .select .selectdiv:after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f078";
-  font-weight: 600;
-  font-size: 12px;
-  color: #333;
-  right: 11px;
-  top: 13px;
-  padding: 0 0 2px;
-  position: absolute;
-  pointer-events: none;
-}
-.category .items .select .selectdiv select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  text-align-last: center;
-  display: block;
-  width: 100%;
-  max-width: 320px;
-  margin: 0;
-  padding: 10px 40px;
-  color: #232323;
-  background: #ffffff;
-  border: none;
-  border-radius: 20px;
-  box-shadow: 0px 0px 6px #0000002b;
-  -ms-word-break: normal;
-  word-break: normal;
+.category .items .select fieldset {
+  border: 0;
 }
 .category .items .cat_items .item {
   box-sizing: border-box;

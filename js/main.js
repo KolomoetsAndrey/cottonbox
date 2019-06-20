@@ -413,40 +413,4 @@ $(function(){
     });
 });
 
-// Range Slider
-$(function() {
-    $( "#slider-range" ).slider({
-      range: true,
-      min: 0,
-      max: 20000,
-      values: [ 5000, 15000 ],
-      animate:true,
-      step:5,
-      slide: function( event, ui ) {
-        $( "#amount-min" ).val( ui.values[ 0 ] );
-        $( "#amount-max" ).val( ui.values[ 1 ] );
-      }
-    });
 
-    $( "#amount-min" ).val( $( "#slider-range" ).slider( "values", 0 ) );
-    $( "#amount-max" ).val( $( "#slider-range" ).slider( "values", 1 ) );
-  });
-
-$(function() {
-    $( "#mobile-slider-range" ).slider({
-      range: true,
-      min: 0,
-      max: 20000,
-      values: [ 5000, 15000 ],
-      animate:true,
-      step:5,
-      slide: function( event, ui ) {
-        $( "#mobile-amount-min" ).val( ui.values[ 0 ] );
-        $( "#mobile-amount-max" ).val( ui.values[ 1 ] );
-      }
-    });
-
-    $( "#mobile-amount-min" ).val( $( "#mobile-slider-range" ).slider( "values", 0 ) );
-    $( "#mobile-amount-max" ).val( $( "#mobile-slider-range" ).slider( "values", 1 ) );
-  });
-//End Range Slider
