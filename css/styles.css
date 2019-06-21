@@ -4776,13 +4776,13 @@ button:focus {
 }
 @media (max-width: 1400px) {
   .top .top_line {
-    font-size: 14px;
+    font-size: 13px;
   }
   .top .top_line .top_menu li {
     margin-right: 30px;
   }
   .top .top_line .top_contacts li {
-    margin-left: 15px;
+    margin-left: 8px;
   }
   .cart .items_sum .order_edit .edit {
     font-size: 13px;
