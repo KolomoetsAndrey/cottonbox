@@ -5041,6 +5041,9 @@ button:focus {
   .category .items .select {
     margin-bottom: 20px;
   }
+  .category .items .select h3 {
+    font-size: 14px;
+  }
   .category .items .select .selectdiv {
     width: 200px;
   }
