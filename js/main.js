@@ -405,7 +405,8 @@ $(function(){
 //Top-Items Sum
 $(function(){
     $(window).scroll(function() {
-        if($(this).scrollTop() >= 300) {
+        var windowPosition = $(this).scrollTop();
+        if( windowPosition >=300 && windowPosition <=1230 ) {
         $('.items_sum').addClass(' itemsSum-menu ');
         }else{
         $('.items_sum').removeClass(' itemsSum-menu ');
