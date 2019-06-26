@@ -5304,6 +5304,9 @@ strike {
     width: 60px;
     height: 60px;
   }
+  .catalogue .categories .cat_name a {
+    font-size: 21px;
+  }
   .footer {
     padding-left: 0;
     padding-right: 0;
