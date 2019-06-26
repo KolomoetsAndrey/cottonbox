@@ -450,6 +450,108 @@ $(function() {
 });
 
 $(function() {
+    $('.choose-region').each(function() {
+        var a = $(this).children('option:first-child').val();
+        $(this).after('<div class="region-custom-select"></div>');
+        $('.region-custom-select').append('<span class="region-spanVal">' + a + '</span>');
+        $('.region-custom-select').append('<ul></ul>');
+    });
+
+    $('.choose-region option').each(function() {
+        var b = $(this).val();
+        $('<li>' + b + '</li>').appendTo('.region-custom-select ul');
+    });
+
+    $('.region-spanVal').on('click', function() {
+        $('.region-custom-select ul').slideToggle('fast');
+    });
+
+    $('.region-custom-select li').on('click', function() {
+        var c = $(this).text();
+        $('.region-spanVal').html(c);
+        $('.region-custom-select ul').hide();
+    });
+
+    $('.region-custom-select li').focus(function() {
+        alert(0);
+    });
+
+    $(document).click(function(e) {
+        if (e.target.class != '.region-custom-select' && !$('.region-custom-select').find(e.target).length) {
+            $(".region-custom-select ul").hide();
+        }
+    });
+});
+
+$(function() {
+    $('.choose-city').each(function() {
+        var a = $(this).children('option:first-child').val();
+        $(this).after('<div class="city-custom-select"></div>');
+        $('.city-custom-select').append('<span class="city-spanVal">' + a + '</span>');
+        $('.city-custom-select').append('<ul></ul>');
+    });
+
+    $('.choose-city option').each(function() {
+        var b = $(this).val();
+        $('<li>' + b + '</li>').appendTo('.city-custom-select ul');
+    });
+
+    $('.city-spanVal').on('click', function() {
+        $('.city-custom-select ul').slideToggle('fast');
+    });
+
+    $('.city-custom-select li').on('click', function() {
+        var c = $(this).text();
+        $('.city-spanVal').html(c);
+        $('.city-custom-select ul').hide();
+    });
+
+    $('.city-custom-select li').focus(function() {
+        alert(0);
+    });
+
+    $(document).click(function(e) {
+        if (e.target.class != '.city-custom-select' && !$('.city-custom-select').find(e.target).length) {
+            $(".city-custom-select ul").hide();
+        }
+    });
+});
+
+$(function() {
+    $('.choose-postnumber').each(function() {
+        var a = $(this).children('option:first-child').val();
+        $(this).after('<div class="postnumber-custom-select"></div>');
+        $('.postnumber-custom-select').append('<span class="postnumber-spanVal">' + a + '</span>');
+        $('.postnumber-custom-select').append('<ul></ul>');
+    });
+
+    $('.choose-postnumber option').each(function() {
+        var b = $(this).val();
+        $('<li>' + b + '</li>').appendTo('.postnumber-custom-select ul');
+    });
+
+    $('.postnumber-spanVal').on('click', function() {
+        $('.postnumber-custom-select ul').slideToggle('fast');
+    });
+
+    $('.postnumber-custom-select li').on('click', function() {
+        var c = $(this).text();
+        $('.postnumber-spanVal').html(c);
+        $('.postnumber-custom-select ul').hide();
+    });
+
+    $('.postnumber-custom-select li').focus(function() {
+        alert(0);
+    });
+
+    $(document).click(function(e) {
+        if (e.target.class != '.postnumber-custom-select' && !$('.postnumber-custom-select').find(e.target).length) {
+            $(".postnumber-custom-select ul").hide();
+        }
+    });
+});
+
+$(function() {
     $('.choosemobile').each(function() {
         var a = $(this).children('option:first-child').val();
         $(this).after('<div class="mobile-custom-select"></div>');

@@ -3695,8 +3695,94 @@ strike {
             .region, .city, .post_num {
                 width: 50%;
                 margin-top: 40px;
+                position: relative;
 
+                select {
+                    float: left;
+                    width: 100%;
+                    height: 30px;
+                    visibility: hidden;
+                }
                 
+                .region-custom-select, .city-custom-select, .postnumber-custom-select {
+                    float: left;
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    //top: 0;
+                    //z-index: 1050;
+                }
+
+                .region-custom-select {
+                    top: 25px;
+                    z-index: 1080;
+                }
+
+                .city-custom-select {
+                    top: 100px;
+                    z-index: 1070;
+                }
+
+                .postnumber-custom-select {
+                    top: 175px;
+                    z-index: 1060;
+                }
+                
+                .region-spanVal, .city-spanVal, .postnumber-spanVal {
+                    font-size: 18px;
+                    text-align: center;
+                    color: #333;
+                    border: none;
+                    border-radius: 20px;
+                    box-shadow: 0px 0px 6px #0000002b;
+                    padding: 8px;
+                    width: 100%;
+                    float: left;
+                    position: relative;
+                    cursor: pointer;
+                }
+                
+                .region-spanVal:after, .city-spanVal:after, .postnumber-spanVal:after {
+                    font-family: "Font Awesome 5 Free";
+                    content: "\f078";
+                    font-weight: 600;
+                    font-size: 13px;
+                    color: #707070;
+                    position: absolute;
+                    padding-top: 4px;
+                    right: 15px;
+                }
+                
+                .region-custom-select ul, .city-custom-select ul, .postnumber-custom-select ul {
+                    float: left;
+                    width: 100%;
+                    margin: -1px 0 0;
+                    padding: 0;
+                    border: 1px solid #ccc;
+                    box-shadow: 1px 2px 2px 0px #ccc;
+                    display: none;
+                    background: #ffffff;
+                }
+                
+                .region-custom-select li, .city-custom-select li, .postnumber-custom-select li {
+                    float: left;
+                    width: 92%;
+                    text-align: center;
+                    font-size: 18px;
+                    color: #333;
+                    list-style: none;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+                
+                .region-custom-select li:hover,
+                .region-custom-select li.active,
+                .city-custom-select li:hover,
+                .city-custom-select li.active,
+                .postnumber-custom-select li:hover,
+                .postnumber-custom-select li.active {
+                    background-color: #ffd0d0;
+                }
             }
         }
     }

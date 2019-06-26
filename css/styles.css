@@ -3486,6 +3486,142 @@ strike {
 .cart .order_data form .post_num {
   width: 50%;
   margin-top: 40px;
+  position: relative;
+}
+.cart .order_data form .region select,
+.cart .order_data form .city select,
+.cart .order_data form .post_num select {
+  float: left;
+  width: 100%;
+  height: 30px;
+  visibility: hidden;
+}
+.cart .order_data form .region .region-custom-select,
+.cart .order_data form .city .region-custom-select,
+.cart .order_data form .post_num .region-custom-select,
+.cart .order_data form .region .city-custom-select,
+.cart .order_data form .city .city-custom-select,
+.cart .order_data form .post_num .city-custom-select,
+.cart .order_data form .region .postnumber-custom-select,
+.cart .order_data form .city .postnumber-custom-select,
+.cart .order_data form .post_num .postnumber-custom-select {
+  float: left;
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+.cart .order_data form .region .region-custom-select,
+.cart .order_data form .city .region-custom-select,
+.cart .order_data form .post_num .region-custom-select {
+  top: 25px;
+  z-index: 1080;
+}
+.cart .order_data form .region .city-custom-select,
+.cart .order_data form .city .city-custom-select,
+.cart .order_data form .post_num .city-custom-select {
+  top: 100px;
+  z-index: 1070;
+}
+.cart .order_data form .region .postnumber-custom-select,
+.cart .order_data form .city .postnumber-custom-select,
+.cart .order_data form .post_num .postnumber-custom-select {
+  top: 175px;
+  z-index: 1060;
+}
+.cart .order_data form .region .region-spanVal,
+.cart .order_data form .city .region-spanVal,
+.cart .order_data form .post_num .region-spanVal,
+.cart .order_data form .region .city-spanVal,
+.cart .order_data form .city .city-spanVal,
+.cart .order_data form .post_num .city-spanVal,
+.cart .order_data form .region .postnumber-spanVal,
+.cart .order_data form .city .postnumber-spanVal,
+.cart .order_data form .post_num .postnumber-spanVal {
+  font-size: 18px;
+  text-align: center;
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 0px 6px #0000002b;
+  padding: 8px;
+  width: 100%;
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+.cart .order_data form .region .region-spanVal:after,
+.cart .order_data form .city .region-spanVal:after,
+.cart .order_data form .post_num .region-spanVal:after,
+.cart .order_data form .region .city-spanVal:after,
+.cart .order_data form .city .city-spanVal:after,
+.cart .order_data form .post_num .city-spanVal:after,
+.cart .order_data form .region .postnumber-spanVal:after,
+.cart .order_data form .city .postnumber-spanVal:after,
+.cart .order_data form .post_num .postnumber-spanVal:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f078";
+  font-weight: 600;
+  font-size: 13px;
+  color: #707070;
+  position: absolute;
+  padding-top: 4px;
+  right: 15px;
+}
+.cart .order_data form .region .region-custom-select ul,
+.cart .order_data form .city .region-custom-select ul,
+.cart .order_data form .post_num .region-custom-select ul,
+.cart .order_data form .region .city-custom-select ul,
+.cart .order_data form .city .city-custom-select ul,
+.cart .order_data form .post_num .city-custom-select ul,
+.cart .order_data form .region .postnumber-custom-select ul,
+.cart .order_data form .city .postnumber-custom-select ul,
+.cart .order_data form .post_num .postnumber-custom-select ul {
+  float: left;
+  width: 100%;
+  margin: -1px 0 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  box-shadow: 1px 2px 2px 0px #ccc;
+  display: none;
+  background: #ffffff;
+}
+.cart .order_data form .region .region-custom-select li,
+.cart .order_data form .city .region-custom-select li,
+.cart .order_data form .post_num .region-custom-select li,
+.cart .order_data form .region .city-custom-select li,
+.cart .order_data form .city .city-custom-select li,
+.cart .order_data form .post_num .city-custom-select li,
+.cart .order_data form .region .postnumber-custom-select li,
+.cart .order_data form .city .postnumber-custom-select li,
+.cart .order_data form .post_num .postnumber-custom-select li {
+  float: left;
+  width: 92%;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.cart .order_data form .region .region-custom-select li:hover,
+.cart .order_data form .city .region-custom-select li:hover,
+.cart .order_data form .post_num .region-custom-select li:hover,
+.cart .order_data form .region .region-custom-select li.active,
+.cart .order_data form .city .region-custom-select li.active,
+.cart .order_data form .post_num .region-custom-select li.active,
+.cart .order_data form .region .city-custom-select li:hover,
+.cart .order_data form .city .city-custom-select li:hover,
+.cart .order_data form .post_num .city-custom-select li:hover,
+.cart .order_data form .region .city-custom-select li.active,
+.cart .order_data form .city .city-custom-select li.active,
+.cart .order_data form .post_num .city-custom-select li.active,
+.cart .order_data form .region .postnumber-custom-select li:hover,
+.cart .order_data form .city .postnumber-custom-select li:hover,
+.cart .order_data form .post_num .postnumber-custom-select li:hover,
+.cart .order_data form .region .postnumber-custom-select li.active,
+.cart .order_data form .city .postnumber-custom-select li.active,
+.cart .order_data form .post_num .postnumber-custom-select li.active {
+  background-color: #ffd0d0;
 }
 .cart .items_sum {
   box-sizing: border-box;
