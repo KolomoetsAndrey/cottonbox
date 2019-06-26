@@ -7012,6 +7012,27 @@ strike {
   .mainslider .mySlider_fullscreen .main_info h1 span {
     font-size: 28px;
   }
+  .cart .items_in_cart .product {
+    padding: 10px;
+  }
+  .cart .items_in_cart .product .quantity {
+    margin-top: 5px;
+  }
+  .cart .items_in_cart .product .quantity .plus-minus-input {
+    padding: 0 5px;
+  }
+  .cart .items_in_cart .product .quantity .plus-minus-input .input-group-button .circle {
+    padding-bottom: 3px;
+  }
+  .cart .items_in_cart .product .product_price {
+    margin-top: 5px;
+  }
+  .cart .items_in_cart .product .product_price .price {
+    margin-bottom: 0;
+  }
+  .cart .items_in_cart .product .product_img {
+    width: 33%;
+  }
   .cart .items_in_cart .product .product_information {
     position: relative;
   }
@@ -7020,9 +7041,10 @@ strike {
     top: 0;
     right: 0;
     cursor: pointer;
+    padding: 0;
   }
   .cart .items_in_cart .product .product_name h2 {
-    margin-top: 25px;
+    margin-top: 17px;
   }
   .cart .order_data h2 {
     font-size: 23px;
@@ -7238,6 +7260,7 @@ strike {
 @media (max-width: 499px) {
   .cart .items_in_cart .product {
     padding: 10px;
+    align-items: inherit;
   }
   .cart .items_sum_cart {
     flex-direction: column;
@@ -7749,6 +7772,36 @@ strike {
   .category .items .cat_items .item {
     height: 370px;
   }
+  .cart .items_in_cart .product {
+    height: 35vw;
+  }
+  .cart .items_in_cart .product .product_information {
+    align-items: flex-start;
+  }
+  .cart .items_in_cart .product .quantity {
+    position: absolute;
+    bottom: 0;
+    left: -20vw;
+    width: 30%;
+  }
+  .cart .items_in_cart .product .product_price {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding-left: 20px;
+    text-align: left;
+  }
+  .cart .items_in_cart .product .product_name {
+    margin-top: 15px;
+  }
+  .cart .items_in_cart .product .product_name h2 {
+    margin-top: 0;
+  }
+}
+@media (max-width: 400px) {
+  .cart .items_in_cart .product {
+    height: 40vw;
+  }
 }
 @media (max-width: 375px) {
   .middle .middle_line .sidepanel .mobile_login .heart {
@@ -7793,5 +7846,14 @@ strike {
   }
   .contact_information .favorites .favorites_items .item {
     height: 340px;
+  }
+  .cart .items_in_cart .product .product_price {
+    padding-left: 20px;
+  }
+  .cart .items_in_cart .product .quantity {
+    left: -19vw;
+  }
+  .cart .items_in_cart .product .product_name h2 {
+    font-size: 10px;
   }
 }
