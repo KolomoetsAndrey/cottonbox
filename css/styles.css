@@ -5003,6 +5003,7 @@ strike {
   }
   .contact_information .favorites .item {
     height: 360px;
+    width: 33%;
   }
   .contact_information .favorites .item .delete {
     font-size: 14px;
