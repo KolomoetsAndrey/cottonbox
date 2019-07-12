@@ -3390,6 +3390,8 @@ strike {
 }
 .cart .order_data form {
   margin-top: 35px;
+  height: 110vh;
+  position: relative;
 }
 .cart .order_data form h3 {
   font-size: 30px;
@@ -3445,6 +3447,9 @@ strike {
   margin-bottom: 20px;
 }
 .cart .order_data form .subscribe {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   font-size: 20px;
   color: #ffffff;
   border: 1px solid #BD4F50;
@@ -4857,6 +4862,9 @@ strike {
   .cart .order_data h2 {
     font-size: 25px;
   }
+  .cart .order_data form {
+    height: 105vh;
+  }
   .cart .order_data form .name,
   .cart .order_data form .lastname,
   .cart .order_data form .phone,
@@ -5589,6 +5597,9 @@ strike {
   .product_card .testimonials .testimonial .answer .answer_text {
     line-height: 20px;
   }
+  .cart .order_data form {
+    height: 108vh;
+  }
 }
 @media (max-width: 1024px) {
   .contact_information .contact_btns {
@@ -5799,6 +5810,9 @@ strike {
     display: block;
     text-align: center;
   }
+  .cart .order_data form {
+    height: 112vh;
+  }
 }
 @media (max-width: 900px) {
   .itemsSum-menu {
@@ -5871,6 +5885,9 @@ strike {
   }
   .cart .items_sum_cart .amount {
     margin: 0;
+  }
+  .cart .order_data form {
+    height: 107vh;
   }
   .top {
     padding-top: 15px;
@@ -6717,6 +6734,9 @@ strike {
   .cart .order_data h2 {
     font-size: 23px;
   }
+  .cart .order_data form {
+    height: 120vh;
+  }
   .cart .order_data form ul {
     display: inline-flex;
     flex-direction: column;
@@ -6750,7 +6770,9 @@ strike {
     margin-top: 15px;
   }
   .cart .order_data form .subscribe {
-    margin-top: 15px;
+    width: 50%;
+    margin: auto;
+    right: 0;
   }
   .catalogue .categories .cat_name a {
     font-size: 14px;
@@ -7217,6 +7239,9 @@ strike {
   .cart .order_data h2 {
     font-size: 23px;
   }
+  .cart .order_data form .subscribe {
+    width: 75%;
+  }
   .contact_information .personal_data ul {
     justify-content: left;
     flex-wrap: wrap;
@@ -7458,6 +7483,7 @@ strike {
     padding: 0;
   }
   .cart .order_data form {
+    height: 115vh;
     font-size: 13px;
   }
   .cart .order_data form ul {
