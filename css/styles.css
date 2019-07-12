@@ -7420,6 +7420,11 @@ strike {
   .cart .items_sum_cart {
     flex-direction: column;
     align-items: inherit;
+    position: relative;
+  }
+  .cart .items_sum_cart .sum_header {
+    position: absolute;
+    top: -1px;
   }
   .cart .items_sum_cart .sum_products {
     text-align: right;
