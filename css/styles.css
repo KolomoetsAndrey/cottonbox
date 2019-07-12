@@ -711,21 +711,34 @@ strike {
 .mainslider {
   height: auto;
 }
+.mainslider .submenu_container {
+  position: relative;
+}
 .mainslider .sub_menu {
   padding-top: 20px;
+  position: inherit;
 }
 .mainslider .sub_menu .categories {
-  position: relative;
   padding-top: 10px;
   z-index: 100;
 }
 .mainslider .sub_menu .categories:before {
   position: absolute;
-  top: 0;
+  top: 25px;
   left: 0;
   border-top: 3px solid #BD4F50;
   content: "";
   width: 98px;
+}
+.mainslider .sub_menu .categories:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 85px;
+  top: -2px;
+  left: 0;
+  background-color: #ffffff7d;
+  z-index: -1;
 }
 .mainslider .sub_menu ul {
   margin: 0;
