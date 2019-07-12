@@ -7709,7 +7709,7 @@ strike {
     content: "\f078";
   }
   .contact_information .personal_data .my_promocodes .promocode_mobile .content {
-    font-size: 16px;
+    font-size: 14px;
     display: block;
     overflow: hidden;
   }
@@ -7763,8 +7763,9 @@ strike {
     margin-right: 0;
   }
   .contact_information .personal_data ul {
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
+    margin-bottom: 10px;
   }
   .contact_information .personal_data ul li {
     width: 100%;
