@@ -6007,6 +6007,9 @@ strike {
   .product_card .product-price-information .quantity {
     justify-content: space-between;
   }
+  .product_card .product-price-information .quantity .plus-minus-input {
+    padding: 5px 20px;
+  }
   .product_card .product-price-information .quantity .quant_name {
     font-size: 14px;
   }
