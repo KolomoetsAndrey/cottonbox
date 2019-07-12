@@ -3830,13 +3830,17 @@ strike {
 }
 .contact_information .mobile_contact_btns,
 .contact_information .mobile_my_orders_btns,
-.contact_information .mobile_my_information_btns {
+.contact_information .mobile_my_information_btns,
+.contact_information .mobile_my_favorites_btns,
+.contact_information .my_ordersinfo_mobile_btns {
   display: none;
   width: 100%;
 }
 .contact_information .mobile_contact_btns a,
 .contact_information .mobile_my_orders_btns a,
-.contact_information .mobile_my_information_btns a {
+.contact_information .mobile_my_information_btns a,
+.contact_information .mobile_my_favorites_btns a,
+.contact_information .my_ordersinfo_mobile_btns a {
   font-family: 'Montserrat', sans-serif;
   background: transparent;
   font-size: 22px;
@@ -3852,7 +3856,9 @@ strike {
 }
 .contact_information .mobile_contact_btns .active,
 .contact_information .mobile_my_orders_btns .active,
-.contact_information .mobile_my_information_btns .active {
+.contact_information .mobile_my_information_btns .active,
+.contact_information .mobile_my_favorites_btns .active,
+.contact_information .my_ordersinfo_mobile_btns .active {
   border: 1px solid #BD4F50;
   color: #BD4F50;
 }
@@ -5627,29 +5633,24 @@ strike {
   .contact_information .favorites h2 {
     display: none;
   }
-  .my_orders_mobileinfo .contact_btns .cont_info,
-  .my_ordersinfo_mobile .contact_btns .cont_info {
+  .my_orders_mobileinfo .contact_btns .cont_info {
     display: block;
     text-align: center;
   }
-  .my_orders_mobileinfo .mobile_my_orders_btns,
-  .my_ordersinfo_mobile .mobile_my_orders_btns {
+  .my_orders_mobileinfo .mobile_my_orders_btns {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
   }
-  .my_orders_mobileinfo .mobile_my_orders_btns .cont_info,
-  .my_ordersinfo_mobile .mobile_my_orders_btns .cont_info {
+  .my_orders_mobileinfo .mobile_my_orders_btns .cont_info {
     display: none;
   }
-  .my_orders_mobileinfo .mobile_my_orders_btns a,
-  .my_ordersinfo_mobile .mobile_my_orders_btns a {
+  .my_orders_mobileinfo .mobile_my_orders_btns a {
     display: block;
     text-align: center;
     font-size: 18px;
   }
-  .my_orders_mobileinfo .mobile_my_orders_btns .active,
-  .my_ordersinfo_mobile .mobile_my_orders_btns .active {
+  .my_orders_mobileinfo .mobile_my_orders_btns .active {
     display: none;
   }
   .my_ordersinfo_mobile .contact_btns .cont_info {
@@ -5721,12 +5722,15 @@ strike {
   .my_ordersinfo_mobile .orders_data .history .delivery {
     width: 50%;
   }
-  .my_ordersinfo_mobile .mobile_my_orders_btns a {
+  .my_ordersinfo_mobile .my_ordersinfo_mobile_btns {
+    display: block;
+  }
+  .my_ordersinfo_mobile .my_ordersinfo_mobile_btns a {
     display: block;
     text-align: center;
   }
-  .my_ordersinfo_mobile .mobile_my_orders_btns .cont_info,
-  .my_ordersinfo_mobile .mobile_my_orders_btns .my_orders {
+  .my_ordersinfo_mobile .my_ordersinfo_mobile_btns .cont_info,
+  .my_ordersinfo_mobile .my_ordersinfo_mobile_btns .my_orders {
     display: none;
   }
   .favourite_mobile .contact_btns a {
@@ -5736,6 +5740,9 @@ strike {
   .favourite_mobile .contact_btns .cont_info,
   .favourite_mobile .contact_btns .my_orders,
   .favourite_mobile .contact_btns .my_favourites {
+    display: block;
+  }
+  .favourite_mobile .mobile_my_favorites_btns {
     display: block;
   }
   .favorites {
