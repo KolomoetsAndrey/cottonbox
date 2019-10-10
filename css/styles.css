@@ -2775,7 +2775,7 @@ strike {
   color: #BD4F50;
 }
 .delivery_info .delivery {
-  background-image: url(../images/del_orig.png);
+  background-image: var(--del-bg);
   background-position: right top;
   background-repeat: no-repeat;
   background-size: 70% 100%;
@@ -2797,7 +2797,7 @@ strike {
   box-shadow: 0px 3px 6px #00000029;
 }
 .delivery_info .warranty {
-  background-image: url(../images/warr_orig.png);
+  background-image: var(--war-bg);
   background-position: left top;
   background-repeat: no-repeat;
   background-size: 70% 100%;
@@ -2821,7 +2821,7 @@ strike {
   box-shadow: 0px 3px 6px #00000029;
 }
 .delivery_info .return {
-  background-image: url(../images/ret_orig.png);
+  background-image: var(--ret-bg);
   background-position: right top;
   background-repeat: no-repeat;
   background-size: 70% 100%;
@@ -2843,7 +2843,7 @@ strike {
   box-shadow: 0px 3px 6px #00000029;
 }
 .delivery_info .payment {
-  background-image: url(../images/pay_orig.png);
+  background-image: var(--pay-bg);
   background-position: left top;
   background-repeat: no-repeat;
   background-size: 70% 100%;
@@ -2887,7 +2887,7 @@ strike {
   color: #BD4F50;
 }
 .warranty_info .warranty {
-  background-image: url(../images/warr_orig.png);
+  background-image: var(--war-bg);
   background-position: right top;
   background-repeat: no-repeat;
   background-size: 70% 100%;
@@ -2909,7 +2909,7 @@ strike {
   box-shadow: 0px 3px 6px #00000029;
 }
 .warranty_info .delivery {
-  background-image: url(../images/del_orig.png);
+  background-image: var(--del-bg);
   background-position: left top;
   background-repeat: no-repeat;
   background-size: 70% 100%;
@@ -2933,7 +2933,7 @@ strike {
   box-shadow: 0px 3px 6px #00000029;
 }
 .warranty_info .return {
-  background-image: url(../images/ret_orig.png);
+  background-image: var(--ret-bg);
   background-position: right top;
   background-repeat: no-repeat;
   background-size: 70% 100%;
@@ -2955,7 +2955,7 @@ strike {
   box-shadow: 0px 3px 6px #00000029;
 }
 .warranty_info .payment {
-  background-image: url(../images/pay_orig.png);
+  background-image: var(--pay-bg);
   background-position: left top;
   background-repeat: no-repeat;
   background-size: 70% 100%;
@@ -2999,7 +2999,7 @@ strike {
   color: #BD4F50;
 }
 .return_info .delivery {
-  background-image: url(../images/del_orig.png);
+  background-image: var(--del-bg);
   background-position: right top;
   background-repeat: no-repeat;
   background-size: 70% 100%;
@@ -3021,7 +3021,7 @@ strike {
   box-shadow: 0px 3px 6px #00000029;
 }
 .return_info .warranty {
-  background-image: url(../images/warr_orig.png);
+  background-image: var(--war-bg);
   background-position: left top;
   background-repeat: no-repeat;
   background-size: 70% 100%;
@@ -3045,7 +3045,7 @@ strike {
   box-shadow: 0px 3px 6px #00000029;
 }
 .return_info .return {
-  background-image: url(../images/ret_orig.png);
+  background-image: var(--ret-bg);
   background-position: right top;
   background-repeat: no-repeat;
   background-size: 70% 100%;
@@ -3067,7 +3067,7 @@ strike {
   box-shadow: 0px 3px 6px #00000029;
 }
 .return_info .payment {
-  background-image: url(../images/pay_orig.png);
+  background-image: var(--pay-bg);
   background-position: left top;
   background-repeat: no-repeat;
   background-size: 70% 100%;
@@ -3111,7 +3111,7 @@ strike {
   color: #BD4F50;
 }
 .payment_info .payment {
-  background-image: url(../images/pay_orig.png);
+  background-image: var(--pay-bg);
   background-position: right top;
   background-repeat: no-repeat;
   background-size: 70% 100%;
@@ -3133,7 +3133,7 @@ strike {
   box-shadow: 0px 3px 6px #00000029;
 }
 .payment_info .delivery {
-  background-image: url(../images/del_orig.png);
+  background-image: var(--del-bg);
   background-position: left top;
   background-repeat: no-repeat;
   background-size: 70% 100%;
@@ -3157,7 +3157,7 @@ strike {
   box-shadow: 0px 3px 6px #00000029;
 }
 .payment_info .return {
-  background-image: url(../images/ret_orig.png);
+  background-image: var(--ret-bg);
   background-position: right top;
   background-repeat: no-repeat;
   background-size: 70% 100%;
@@ -3179,7 +3179,7 @@ strike {
   box-shadow: 0px 3px 6px #00000029;
 }
 .payment_info .warranty {
-  background-image: url(../images/warr_orig.png);
+  background-image: var(--war-bg);
   background-position: left top;
   background-repeat: no-repeat;
   background-size: 70% 100%;
@@ -3223,7 +3223,7 @@ strike {
   color: #BD4F50;
 }
 .partnership_info .partnership {
-  background-image: url(../images/part_orig.png);
+  background-image: var(--part-bg);
   background-position: right top;
   background-repeat: no-repeat;
   background-size: 70% 100%;
