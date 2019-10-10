@@ -145,6 +145,96 @@ strike {
     }
 }
 
+.loginpage {
+
+    .modal_form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 40px;
+
+        label {
+            font-size: 16px;
+            padding-left: 25px;
+        }
+
+        input {
+            margin-bottom: 25px;
+            margin-top: 20px;
+            border: 1px solid #707070;
+            border-radius: 22px;
+            width: 600px;
+            height: 50px;
+            padding-left: 15px;
+        }
+
+        .modal_error {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            display: flex;
+            
+            .success {
+                margin-bottom: 0;
+                margin-right: 10px;
+                color: #155724;
+            }
+
+            .error {
+                margin-bottom: 0;
+                margin-right: 10px;
+                color: #721c24;
+            }
+
+            .alert {
+                margin-bottom: 0;
+                margin-right: 10px;
+                color: #856404;
+            }
+        }
+
+        .passremind {
+            color: #BD4F50;
+            font-size: 14px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            text-decoration: underline;
+        }
+
+        .parag {
+            color: #232323;
+            font-size: 14px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+
+        .registration_link {
+            color: #BD4F50;
+            font-size: 14px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            text-decoration: underline;
+        }
+
+        .login {
+            font-family: @montserrat;
+            color: #ffffff;
+            font-size: 20px;
+            border: 1px solid #BD4F50;
+            border-radius: 30px;
+            padding: 15px;
+            cursor: pointer;
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 40px;
+            height: auto;
+            background: #BD4F50;
+            box-shadow: 0px 5px 20px #CCCCCC;
+        }
+    }
+}
+
 /* Logo, Search, Cart, Menu Header */
 .middle {
     padding-top: 25px;
@@ -8001,6 +8091,31 @@ strike {
 }
 
 @media (max-width: 768px) {
+
+    .loginpage {
+
+        .modal_form {
+            width: 90%;
+
+            label {
+                font-size: 16px;
+            }
+    
+            input {
+                width: 100%;
+            }
+
+            .parag {
+                text-align: center;
+            }
+            
+            .login {
+                font-size: 16px;
+                width: 100%;
+            }
+        }
+    }
+
     .product_card {
         .product-price-information {
             .quantity {

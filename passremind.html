@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+    <!--ToTop-->
+    <button class="toTop" onclick="topFunction()" id="toTop"><i class="fas fa-chevron-up"></i></button>
+    <!--End ToTop-->
+
+    <!--Header-->
+    <header class="top">
+        <div class="container">
+            <div class="row top_line">
+                <ul class="top_menu">
+                    <li>
+                        <a href="delivery.html">Доставка</a>
+                    </li>
+                    <li>
+                        <a href="warranty.html">Гарантии</a>
+                    </li>
+                    <li>
+                        <a href="return.html">Возврат</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="top_contacts">
+                    <li>
+                        Пн - Пт с 10.00-19.00
+                    </li>
+                    <li>
+                        +38 012 345 67 89
+                    </li>
+                    <li>
+                        +38 012 345 67 89
+                    </li>
+                    <li class="language">
+                        <a href="#" class="ua active">UA </a> <span>|</span> <a href="#" class="ru"> RU</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header> 
+    <header class=" middle">
+        <div class="container">
+            <div class="row middle_line">
+                <a href="#">
+                    <img class="logo" src="images/logo.png" alt="">
+                </a>
+                <form class="search justify-content-center">
+                    <input class="top_search" type="text" placeholder="Поиск">
+                    <button class="top_search_confirm" type="submit">
+                        <img src="images/search_btn.png" alt="" class="search_btn">
+                    </button>
+                    <button class="search_btn_mobile" data-fancybox data-src="#hidden-content" href="javascript:;">
+                        <img src="images/search_btn.png" alt="" class="btn_mobile">
+                    </button>
+                </form>
+                <ul class="my_cart">
+                    <li class="heart_block">
+                        <a href="#">
+                            <img class="heart" src="images/heart.png" alt="">
+                            <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li class="cart_block">
+                        <a href="#">
+                            <img class="cart" src="images/cart.png" alt="">
+                            <span class="badge">5</span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="my_cabinet trigger">
+                    Личный кабинет
+                </button>
+
+                <div class="phone_rec">
+                    <button class="phone_btn" onclick="openPhone()">
+                        <img src="images/phone-receiver.png" alt="">
+                    </button>
+                </div>
+                <div id="myOpenphone" class="sidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closePhone()">&times;</a>
+                    <div class="language">
+                        <a href="#" class="ua active">UA </a> <span>|</span> <a href="#" class="ru"> RU</a>
+                    </div>
+                    <a class="the_menu cont">Контакты</a>
+                    <a class="the_menu" href="tel:+380123456789">+38 123 456 67 89</a>
+                    <a class="the_menu" href="tel:+380123456789">+38 123 456 67 89</a>
+                    <a class="the_menu work">График работы</a>
+                    <a class="the_menu">Пн - Пт с 10:00 - 19:00</a>
+                </div>
+
+                <div class="hamburger">
+                    <button class="openbtn" onclick="openNav()">
+                        <img src="images/hamburger.png" alt="">
+                    </button> 
+                </div>
+                <div id="mySidepanel" class="sidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="mobile_login">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img class="heart" src="images/heart-white.png" alt="">
+                                    <span class="badge">3</span>
+                                </a>
+                            </li>
+                            <li>
+                                <button class="my_cabinet_mobile trigger-mobile">
+                                    Личный кабинет
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="msp_menu">
+                        <p>Меню</p>
+                    </div>
+                    <a class="the_menu" href="index.html">Главная</a>
+                    <a class="the_menu" href="about-us.html">О Нас</a>
+                    <a class="the_menu collapsible" href="">Каталог</a>
+                    <div class="content">
+                        <a class="the_menu" href="#">Постели</a>
+                        <a class="the_menu" href="#">Одеяла</a>
+                        <a class="the_menu" href="#">Подушки</a>
+                    </div>
+                    <a class="the_menu" href="return.html">Возврат товара</a>
+                    <a class="the_menu" href="payment.html">Оплата</a>
+                    <a class="the_menu" href="delivery.html">Доставка</a>
+                    <a class="the_menu" href="warranty.html">Гарантии</a>
+                    <a class="the_menu" href="partnership.html">Сотрудничество</a>
+                    <a class="the_menu" href="contacts.html">Контакты</a>
+                </div>
+
+                <!--MODAL MY CABINET-->
+                <div class="modal">
+                    <div class="modal-content">
+                        <div class="tabs-container">
+                            <ul class="tabs">
+                                <li class="taba active">
+                                    <a href="">Вход в аккаунт</a>
+                                </li>
+                                <li class="taba">
+                                    <a href="">Регистрация</a>
+                                </li>
+                            </ul>
+                            <div class="tabs-content">
+                                <div class="tabs-panel active" data-index="0">
+                                    <form class="modal_form">
+                                        <label class="modalemail" for="modalemail" >Ваш e-mail</label>
+                                        <input type="email" id="modalemail" class="email form-control">
+                                        <label for="modalpass" >Ваш пароль</label>
+                                        <input type="pass" id="modalpass" class="pass form-control">
+                                        <a href="#" class="passremind">Напомнить пароль</a>
+                                        <ul class="modal_btns">
+                                            <li>
+                                                <button class="login">Войти</button>
+                                            </li>
+                                            <li>
+                                                <span class="close-button">Отмена</span>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                </div>
+                                <div class="tabs-panel" data-index="1">
+                                    <form class="modal_form_registration">
+                                        <div class="row">
+                                            <div class="block">
+                                                <label class="modalname" for="modalname">Ваше имя</label>
+                                                <input type="name" id="modalname" class="name form-control">
+                                            </div>
+                                            <div class="block">
+                                                <label class="modallastname" for="modallastname">Ваша фамилия</label>
+                                                <input type="lastname" id="modallastname" class="lastname form-control">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="block">
+                                                <label class="modalphone" for="modalphone">Ваш телефон</label>
+                                                <input type="phone" id="modalphone" class="phone form-control">
+                                            </div>
+                                            <div class="block">
+                                                <label class="modalemail" for="modalemail">Ваш e-mail</label>
+                                                <input type="email" id="modalemail" class="email form-control">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="block">
+                                                <label class="modapass" for="modalpass">Придумайте пароль</label>
+                                                <input type="pass" id="modalpass" class="pass form-control">
+                                            </div>
+                                            <div class="block">
+                                                <label class="modapassconfirm" for="modalpassconfirm">Повторите пароль</label>
+                                                <input type="passconfirm" id="modalpassconfirm" class="passconfirm form-control">
+                                            </div>
+                                        </div>
+                                        <div class="block_btns">
+                                            <p class="therms">Регистрируясь, Вы соглашаетесь с <a href="#" class="rules">пользовательским соглашением</a></p>
+                                            <ul class="modal_btns">
+                                                <li>
+                                                    <button class="login">Зарегистрироваться</button>
+                                                </li>
+                                                <li>
+                                                    <span class="close-button2">Отмена</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END MODAL MY CABINET-->
+
+            </div>
+        </div>
+    </header>
+    <!--End Header-->
+
+    <!--SubMenu & MainSlider-->
+    <section class="mainslider">
+        <div class="container submenu_container">
+            <div class="row sub_menu">
+                <ul class="categories">
+                    <li>
+                        <a href="#">Постели</a>
+                    </li>
+                    <li>
+                        <a href="#">Одеяла</a>
+                    </li>
+                    <li>
+                        <a href="#">Подушки</a>
+                    </li>
+                    <li>
+                        <a href="#">Покрывала</a>
+                    </li>
+                    <li>
+                        <a href="#">Скатерти</a>
+                    </li>
+                    <li>
+                        <a href="#">Коврики</a>
+                    </li>
+                    <li>
+                        <a href="#">Халаты</a>
+                    </li>
+                    <li>
+                        <a href="#">Полотенца</a>
+                    </li>
+                    <li>
+                        <a href="#">Наматрасники</a>
+                    </li>
+                    <li>
+                        <a href="#">Сотрудничество</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--End SubMenu & MainSlider-->
+
+    <!--Breadcrumbs-->
+    <section class="breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <ul>
+                    <li>
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li><i class="fas fa-chevron-right"></i></li>
+                    <li class="last">
+                        Напомнить пароль
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>    
+    <!--End Breadcrumbs-->
+
+    <!-- Login -->
+    <section class="loginpage">
+        <div class="container">
+            <div class="row">
+                <form class="modal_form">
+                    <label class="modalemail" for="modalemail" >Ваш e-mail</label>
+                    <input type="email" id="modalemail" class="email form-control">
+                    <button class="login">Напомнить пароль</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+<!--Footer-->
+<footer class="footer">
+        <div class="container">
+            <div class="row between">
+                <div class="column f_logo">
+                    <img src="images/logo.png" alt="" class="footer_logo">
+                    <form>
+                        <input type="email" class="email" minlength="2" maxlength="50" required="required" placeholder="Введите Ваш e-mail">
+                        <input type="button" class="button subscribe" value="Подпишитесь на наши обновления">
+                    </form>
+                </div>
+                <div class="column f_works">
+                    <h3>
+                        График работы
+                    </h3>
+                    <ul class="works">
+                        <li class="daus">
+                            Понедельник - пятница
+                        </li>
+                        <li class="time">
+                            с 10:00 до 19:00
+                        </li>
+                        <li>
+                            <ul class="socials">
+                                <li>
+                                    <a href="#">Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="#">Instagram</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column f_menu">
+                    <ul class="footer_menu">
+                        <li>
+                            <a href="#">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="#">Личный кабинет</a>
+                        </li>
+                        <li>
+                            <a href="#">Сотрудничество</a>
+                        </li>
+                        <li>
+                            <a href="#">Политика конфиденциальности</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column f_contacts">
+                    <h3>Свяжитесь с нами</h3>
+                    <ul class="footer_contacts">
+                        <li>+38 (098) 065 18 36</li>
+                        <li>+38 (066) 837 50 36</li>
+                        <li>cottonboxua@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+
+    <!--Modal-->
+        <!--Fancybox Search-->
+        <div class="mobile-search-content fancybox-content" style="display: none;" id="hidden-content">
+            <h3>Поиск</h3>
+            <input type="text" class="ms-input">
+            <ul class="ms_btns">
+                <li>
+                    <button class="find">Поиск</button>
+                </li>
+                <li>
+                    <span data-fancybox-close class="ms_cancel">Отмена</span>
+                </li>
+            </ul>
+        </div>
+        <!--End Fancybox Search-->
+    <!--End Modal-->
+
+
+
+    <!--Scripts-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
