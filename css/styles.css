@@ -1576,7 +1576,7 @@ strike {
   padding: 0 50px;
 }
 .about_desktop p::before {
-  content: " ";
+  content: "";
   width: 50%;
   height: 40vw;
   float: left;
@@ -4153,10 +4153,21 @@ strike {
   border-radius: 30px;
   box-shadow: 0px 5px 20px #CCCCCC;
 }
+.contact_information .personal_data form ::-webkit-input-placeholder {
+  /* Edge */
+  color: #cccccc;
+}
+.contact_information .personal_data form :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #cccccc;
+}
+.contact_information .personal_data form ::placeholder {
+  color: #cccccc;
+}
 .contact_information .personal_data input {
   width: 49%;
   border: 1px solid #707070;
-  color: #CCCCCC;
+  color: #000000;
   font-size: 18px;
   padding: 20px;
   border-radius: 46px;
@@ -4375,6 +4386,7 @@ strike {
 }
 .contact_information .favorites .favorites_items {
   display: flex;
+  flex-wrap: wrap;
   justify-content: left;
   margin-top: 40px;
 }
@@ -4533,7 +4545,7 @@ strike {
   font-size: 30px;
   font-weight: 500;
 }
-.faq .faq_form p {
+.faq .faq_form .ff_text {
   font-size: 16px;
   padding-top: 25px;
 }
@@ -4601,7 +4613,7 @@ strike {
 .faq .faq_form .modal_error {
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 100%;
+  width: 90%;
   display: flex;
 }
 .faq .faq_form .modal_error .success {
@@ -4785,6 +4797,27 @@ strike {
 }
 .footer .column form .subscribe:hover {
   color: #BD4F50;
+}
+.footer .column form .modal_error {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 210px;
+  flex-wrap: wrap;
+}
+.footer .column form .modal_error .success {
+  margin-bottom: 0;
+  margin-right: 10px;
+  color: #155724;
+}
+.footer .column form .modal_error .error {
+  margin-bottom: 0;
+  margin-right: 10px;
+  color: #721c24;
+}
+.footer .column form .modal_error .alert {
+  margin-bottom: 0;
+  margin-right: 10px;
+  color: #856404;
 }
 .footer .column .works .socials {
   font-size: 14px;
@@ -5700,7 +5733,7 @@ strike {
     padding-top: 110px;
   }
   .about_us .aboutUs_fullscreen img {
-    width: calc(54%);
+    width: calc(70% - 16px);
   }
   .about_us .aboutUs_fullscreen .about_us_desc {
     font-size: 16px;
@@ -5724,7 +5757,7 @@ strike {
   .faq .faq_form h2 {
     font-size: 18px;
   }
-  .faq .faq_form p {
+  .faq .faq_form .ff_text {
     font-size: 14px;
     padding-top: 10px;
   }
@@ -6623,7 +6656,7 @@ strike {
   .faq .faq_form h2 {
     font-size: 16px;
   }
-  .faq .faq_form p {
+  .faq .faq_form .ff_text {
     padding-top: 0;
   }
   .faq .faq_form form .question,
@@ -6655,6 +6688,9 @@ strike {
   }
   .footer .column form .subscribe {
     font-size: 8px;
+  }
+  .footer .column form .modal_error {
+    width: 160px;
   }
   .footer .column h3 {
     font-size: 14px;
@@ -7244,6 +7280,9 @@ strike {
   .footer .column form .email {
     width: 135px;
   }
+  .footer .column form .modal_error {
+    width: 135px;
+  }
 }
 @media (max-width: 720px) {
   .middle .middle_line .logo {
@@ -7565,7 +7604,7 @@ strike {
     font-weight: 500;
     margin-bottom: 23px;
   }
-  .faq_mobile .faq_form p {
+  .faq_mobile .faq_form .ff_text {
     font-size: 14px;
     margin-bottom: 15px;
   }
@@ -8342,6 +8381,9 @@ strike {
     align-items: center;
   }
   .footer .column form .email {
+    width: 70%;
+  }
+  .footer .column form .modal_error {
     width: 70%;
   }
   .footer .f_menu {
