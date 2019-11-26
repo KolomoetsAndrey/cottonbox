@@ -317,7 +317,7 @@
     <!--End Breadcrumbs-->
 
     <!--About Us-->
-    <section class="about_us about_desktop">
+    <section class="about_us about_desktop" id="about_desktop">
         <div class="container">
             <div class="row">
                 <img src="images/index-aboutus.png" alt="" class="about_desktop_img">
@@ -332,8 +332,9 @@
             </div>
         </div>
     </section>
+
     <section class="about_mobile">
-        <div class="container aboutUs_fullscreen">
+        <div class="container aboutUs_fullscreen" style="--aboutUs_fullscreen_img: url(../images/aboutus-bg.png);">
             <div class="row fs_row">
                 <img src="images/index-aboutus.png" alt="" class="about_us_img">
             </div>
@@ -591,5 +592,16 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/main.js"></script>
+
+    <!--Если нет картинки будет только текст-->
+    <script>
+        $(function() {
+            if ($('img').is('.about_desktop_img')) {
+                return $('.about_text p');
+            } else {
+                $('.about_text p').addClass('new_p');
+            }
+        });
+    </script>
 </body>
 </html>

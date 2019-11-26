@@ -1581,6 +1581,9 @@ strike {
   height: 40vw;
   float: left;
 }
+.about_desktop .new_p::before {
+  float: none;
+}
 .about_mobile {
   display: none;
 }
@@ -7560,7 +7563,7 @@ strike {
     padding-top: 40px;
   }
   .about_us .aboutUs_fullscreen {
-    background-image: url(../images/aboutus-bg.png);
+    background-image: var(--aboutUs_fullscreen_img);
     background-size: 100%;
     background-repeat: no-repeat;
   }
@@ -8067,7 +8070,7 @@ strike {
     height: auto;
   }
   .mainslider .mySlider_fullscreen {
-    background-image: url(../images/main-bg.png);
+    background-image: var(--mySlider_fs_img);
     background-size: 100%;
     background-repeat: no-repeat;
     height: 55vw;

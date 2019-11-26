@@ -1592,6 +1592,10 @@ strike {
             float: left;
         }
     }
+
+    .new_p::before {
+        float: none;       
+    }
 }
 
 .about_mobile {
@@ -8755,7 +8759,7 @@ strike {
         }
 
         .aboutUs_fullscreen {
-            background-image: url(../images/aboutus-bg.png);
+            background-image: var(--aboutUs_fullscreen_img);
             background-size: 100%;
             background-repeat: no-repeat;
 
@@ -9440,7 +9444,7 @@ strike {
 
     .mainslider {
         .mySlider_fullscreen {
-            background-image: url(../images/main-bg.png);
+            background-image: var(--mySlider_fs_img);
             background-size: 100%;
             background-repeat: no-repeat;
             height: 55vw;
