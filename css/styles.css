@@ -1773,13 +1773,13 @@ strike {
 .category .filter .rs_content .range-slider #slider-range .ui-corner-all {
   border-radius: 100%;
 }
-.category .filter .rs_content .rs_btns {
+.category .filter .rs_btns {
   margin-top: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.category .filter .rs_content .rs_btns .show_price {
+.category .filter .rs_btns .show_price {
   border: 1px solid #BD4F50;
   text-align: center;
   padding: 5px 15px;
@@ -1787,7 +1787,7 @@ strike {
   cursor: pointer;
   transition: all 0.2s;
 }
-.category .filter .rs_content .rs_btns .show_price:hover {
+.category .filter .rs_btns .show_price:hover {
   color: #ffffff;
   background: #BD4F50;
 }
@@ -7033,21 +7033,20 @@ strike {
   .category .filter_mobile .variants .rs_content .range-slider #mobile-slider-range .ui-corner-all {
     border-radius: 100%;
   }
-  .category .filter_mobile .variants .rs_content .rs_btns {
-    margin-top: 25px;
+  .category .filter_mobile .variants .rs_btns {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .category .filter_mobile .variants .rs_content .rs_btns .show_price {
+  .category .filter_mobile .variants .rs_btns .show_price {
     border: 1px solid #BD4F50;
     text-align: center;
-    padding: 5px 15px;
-    width: 50%;
+    padding: 10px 15px;
+    width: 100%;
     cursor: pointer;
     transition: all 0.2s;
   }
-  .category .filter_mobile .variants .rs_content .rs_btns .show_price:hover {
+  .category .filter_mobile .variants .rs_btns .show_price:hover {
     color: #ffffff;
     background: #BD4F50;
   }
