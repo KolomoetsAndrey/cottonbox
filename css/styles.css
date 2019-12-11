@@ -195,6 +195,9 @@ strike {
 .justify-content-center {
   justify-content: center;
 }
+.fancybox-content {
+  max-width: 860px;
+}
 /* Top-Line Header */
 .top {
   padding-top: 17px;
@@ -1891,7 +1894,7 @@ strike {
 }
 .category .items .select .selectdiv {
   position: relative;
-  width: 250px;
+  width: 350px;
 }
 .category .items .select select {
   float: left;
@@ -2491,10 +2494,28 @@ strike {
 .product_card .product-price-information .buy_buttons .ask_about:hover {
   color: #BD4F50;
 }
+.product_card .testimonial_titles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.product_card .get_testimonial {
+  background: transparent;
+  border: 1px solid #BD4F50;
+  padding: 5px 15px;
+  cursor: pointer;
+  color: #666666;
+  border-radius: 25px;
+  transition: all 0.5s;
+}
+.product_card .get_testimonial:hover {
+  color: #ffffff;
+  background: #BD4F50;
+}
 .product_card .desc_title {
   font-size: 20px;
   color: #BD4F50;
-  margin-bottom: 40px;
   position: relative;
 }
 .product_card .desc_title::before {
@@ -2689,6 +2710,7 @@ strike {
   align-items: center;
   justify-content: space-between;
   margin-top: 25px;
+  margin-bottom: 35px;
 }
 .product_card .testimonials .testimonial .likes .answer_btn {
   background: transparent;
@@ -2728,7 +2750,7 @@ strike {
   font-weight: bold;
 }
 .product_card .testimonials .testimonial .answer {
-  margin-top: 60px;
+  margin-top: 30px;
   margin-bottom: 60px;
   padding-left: 100px;
 }
@@ -2756,6 +2778,9 @@ strike {
   text-decoration: underline;
   border: none;
   background: transparent;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Delivery Page */
 .delivery_info h2 {
