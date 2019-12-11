@@ -4234,19 +4234,22 @@ strike {
 .contact_information .personal_data .my_promocodes .promocode .title,
 .contact_information .personal_data .my_promocodes .promocode .promoinfo {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 25px;
 }
 .contact_information .personal_data .my_promocodes .promocode .title h3,
 .contact_information .personal_data .my_promocodes .promocode .promoinfo h3 {
+  text-align: center;
   font-size: 24px;
   color: #BD4F50;
   text-decoration: underline;
-  width: 25%;
+  width: 20%;
 }
 .contact_information .personal_data .my_promocodes .promocode .title p,
 .contact_information .personal_data .my_promocodes .promocode .promoinfo p {
-  font-size: 24px;
-  width: 25%;
+  text-align: center;
+  font-size: 22px;
+  width: 20%;
 }
 .contact_information .personal_data .my_promocodes .promocode_mobile {
   display: none;
