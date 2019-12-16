@@ -3490,10 +3490,18 @@ strike {
   padding-left: 20px;
   width: 40%;
 }
+.cart .items_in_cart .product .product_name .product_name_link {
+  color: black;
+  text-decoration: none;
+}
 .cart .items_in_cart .product .product_name h2 {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 70px;
+  transition: all 0.5s;
+}
+.cart .items_in_cart .product .product_name h2:hover {
+  color: #BD4F50;
 }
 .cart .items_in_cart .product .product_name .sku {
   font-size: 14px;
