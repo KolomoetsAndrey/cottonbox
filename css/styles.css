@@ -273,6 +273,53 @@ strike {
 .top .top_line .top_contacts .language span {
   color: #CCCCCC;
 }
+.optovikam .opt_form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 25px;
+}
+.optovikam .opt_form .name,
+.optovikam .opt_form .email,
+.optovikam .opt_form .phone,
+.optovikam .opt_form .site {
+  border: 1px solid #707070;
+  border-radius: 22px;
+  padding-left: 15px;
+  height: 50px;
+  width: 70%;
+  margin: 10px auto 10px auto;
+}
+.optovikam .opt_form .information {
+  width: 70%;
+  padding-left: 15px;
+  padding-top: 15px;
+  margin: 10px auto 10px auto;
+  border: 1px solid #707070;
+  border-radius: 22px;
+}
+.optovikam .opt_form .button {
+  width: 250px;
+  display: block;
+  margin: 10px auto;
+  color: #232323;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #232323;
+  border-radius: 20px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s;
+  font-family: 'Montserrat', sans-serif;
+}
+.optovikam .opt_form .button:hover {
+  color: #ffffff;
+  border: 1px solid #BD4F50;
+  background: #BD4F50;
+  cursor: pointer;
+}
 .loginpage .modal_form {
   display: flex;
   flex-direction: column;
@@ -865,7 +912,7 @@ strike {
   margin: 0;
 }
 .mainslider .sub_menu ul li {
-  display: inline;
+  display: inline-block;
 }
 .mainslider .sub_menu a {
   text-decoration: none;
@@ -877,6 +924,29 @@ strike {
 }
 .mainslider .sub_menu a:hover {
   color: #BD4F50;
+}
+.mainslider .sub_menu .opt {
+  padding: 5px 10px;
+  border: 1px solid #BD4F50;
+  background: #ffffff;
+  color: #BD4F50;
+  width: max-content;
+  border-radius: 15px;
+  transition: all 0.5s;
+  text-align: center;
+}
+.mainslider .sub_menu .opt:hover {
+  color: #ffffff;
+  border-color: #BD4F50;
+  background: #BD4F50;
+}
+.mainslider .sub_menu .opt .opt_link {
+  color: #BD4F50;
+  transition: 0.5s;
+  margin: 0;
+}
+.mainslider .sub_menu .opt .opt_link:hover {
+  color: #ffffff;
 }
 .mainslider .mySlider_fullscreen {
   max-width: 1920px;
@@ -1711,18 +1781,16 @@ strike {
   margin-bottom: 15px;
   box-shadow: 0px 0px 6px #0000002b;
 }
-.category .filter h3::after {
-  content: "Очистить";
+.category .filter h3 .clear_filter {
   font-size: 12px;
   color: #FE3152;
   text-decoration: underline;
   position: relative;
   display: block;
-  width: max-content;
   padding: 0;
   top: 3px;
 }
-.category .filter h3:hover::after {
+.category .filter h3 .clear_filter:hover {
   cursor: pointer;
 }
 .category .filter button {
@@ -6769,7 +6837,7 @@ strike {
     font-size: 8px;
   }
   .footer .column form .modal_error {
-    width: 160px;
+    width: 297px;
   }
   .footer .column h3 {
     font-size: 14px;
@@ -6976,6 +7044,11 @@ strike {
     margin-bottom: 15px;
     margin-top: 5px;
     box-shadow: 0px 0px 6px #0000002b;
+  }
+  .category .filter_mobile .mobi_filter_btn {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
   }
   .category .filter_mobile .variants {
     margin-bottom: 25px;
