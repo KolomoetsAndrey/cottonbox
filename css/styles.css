@@ -2254,10 +2254,13 @@ strike {
   padding-right: 5px;
 }
 .product_card .product-image-gallery .main_image {
+  text-align: center;
+}
+.product_card .product-image-gallery .main_image .main_img {
   padding: 15px;
   border: 1px solid #BD4F50;
   margin-bottom: 20px;
-  text-align: center;
+  width: 95%;
 }
 .product_card .product-image-gallery .product-thumbs a {
   padding: 0 !important;
@@ -2273,6 +2276,12 @@ strike {
 }
 .product_card .product-image-gallery-mobile {
   display: none;
+}
+.product_card .product-image-gallery-mobile .owl-carousel .owl-item img {
+  padding: 15px;
+  border: 1px solid #BD4F50;
+  margin-bottom: 20px;
+  width: 94%;
 }
 .product_card .product-price-information {
   box-sizing: border-box;
