@@ -2594,6 +2594,18 @@ strike {
 .product_card .product-price-information .buy_buttons .ask_about:hover {
   color: #BD4F50;
 }
+.product_card .no_available .quantity .ask_about_mobile {
+  display: inline;
+  color: #666666;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  margin-left: 30px;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.2s;
+  cursor: pointer;
+  text-decoration: underline;
+}
 .product_card .testimonial_titles {
   display: flex;
   align-items: center;
