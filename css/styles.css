@@ -896,14 +896,6 @@ strike {
   padding-top: 10px;
   z-index: 100;
 }
-.mainslider .sub_menu .categories:before {
-  position: absolute;
-  top: 25px;
-  left: 0;
-  border-top: 3px solid #BD4F50;
-  content: "";
-  width: 98px;
-}
 .mainslider .sub_menu .categories:after {
   position: absolute;
   content: "";
@@ -920,6 +912,7 @@ strike {
 .mainslider .sub_menu ul li {
   display: inline-block;
   margin-bottom: 10px;
+  position: relative;
 }
 .mainslider .sub_menu a {
   text-decoration: none;
@@ -933,6 +926,11 @@ strike {
   border-radius: 15px;
 }
 .mainslider .sub_menu a:hover {
+  color: #BD4F50;
+}
+.mainslider .sub_menu a.active {
+  border-top: 2px solid #BD4F50;
+  box-shadow: 0px -6px 6px -4px #BD4F50;
   color: #BD4F50;
 }
 .mainslider .sub_menu .dropdown {
@@ -4342,7 +4340,6 @@ strike {
   flex-direction: column;
   width: 49%;
   text-align: center;
-  font-weight: bold;
 }
 .contact_information .personal_data form .form_row label input {
   width: 100%;
