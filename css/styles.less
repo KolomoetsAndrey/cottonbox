@@ -905,6 +905,7 @@ strike {
 
             li {
                 display: inline-block;
+                margin-bottom: 10px;
             }
         }
 
@@ -915,18 +916,92 @@ strike {
             color: #232323;
             margin-right: 25px;
             transition: all 0.2s;
+
+            border: 1px solid #a7a7a752;
+            padding: 5px 10px;
+            border-radius: 15px;
     
             &:hover {
                 color: #BD4F50;
             }
         }
 
+        .dropdown {
+            display: inline;
+            overflow: hidden;
+            position: relative;
+
+            a {
+                float: left;
+                color: #000000;
+                text-align: center;
+                padding: 10px;
+                text-decoration: none;
+            }
+
+            .dropbtn {
+                padding: 5px 10px;
+                border: 1px solid #BD4F50;
+                background: #ffffff;
+                color: #232323;
+                border-radius: 15px;
+                transition: all 0.5s;
+                font-size: 18px;
+
+                &:hover {
+                    cursor: pointer;
+                    color: #BD4F50;
+                }
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                width: max-content;
+                max-width: 260px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                right: 0;
+                top: 24px;
+                border-radius: 15px;
+                padding: 10px;
+
+                .all_products {
+                    font-weight: bold;
+                }
+            }
+            
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 5px 15px;
+                text-decoration: none;
+                display: block;
+                text-align: right;
+                border: none;
+            }
+            
+            .dropdown-content a:hover {
+                color: #BD4F50;
+                cursor: pointer;
+            }
+            
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+
         .opt {
             padding: 10px 0;
             text-align: center;
+            margin-left: 10px;
 
             .opt_link {
-                padding: 5px 10px;
+                padding: 4px 10px;
                 border: 1px solid #BD4F50;
                 background: #ffffff;
                 color: #BD4F50;
@@ -5800,6 +5875,10 @@ strike {
             }
         }
     }
+
+    .mainslider .sub_menu .dropdown .dropbtn {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 1400px) {
@@ -6546,6 +6625,10 @@ strike {
                 font-size: 14px;
             }
         }
+    }
+
+    .mainslider .sub_menu .dropdown .dropbtn {
+        font-size: 14px ;
     }
 }
 
