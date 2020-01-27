@@ -164,10 +164,17 @@ strike {
         width: 100%;
         margin-top: 25px;
 
+        label {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
         .name, .email, .phone, .site {
             border: 1px solid #707070;
             border-radius: 22px;
-            padding-left: 15px;
+            text-align: center;
             height: 50px;
             width: 70%;
             margin: 10px auto 10px auto;
@@ -175,7 +182,7 @@ strike {
 
         .information {
             width: 70%;
-            padding-left: 15px;
+            text-align: center;
             padding-top: 15px;
             margin: 10px auto 10px auto;
             border: 1px solid #707070;
@@ -186,11 +193,11 @@ strike {
             width: 250px;
             display: block;
             margin: 10px auto;
-            color: #232323;
+            color: #BD4F50;
             background: transparent;
             font-size: 16px;
             font-weight: 400;
-            border: 1px solid #232323;
+            border: 1px solid #BD4F50;
             border-radius: 20px;
             padding: 10px 30px;
             text-align: center;
@@ -4581,6 +4588,25 @@ strike {
             margin: 0 auto;
             margin-bottom: 40px;
 
+            .form_row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                label {
+                    display: flex;
+                    flex-direction: column;
+                    width: 49%;
+                    text-align: center;
+                    font-weight: bold;
+
+                    input {
+                        width: 100%;
+                        font-weight: normal;
+                    }
+                }
+            }
+
             .modal_error {
                 margin-top: 10px;
                 margin-bottom: 20px;
@@ -7170,6 +7196,21 @@ strike {
 }
 
 @media (max-width: 900px) {
+    .contact_information {
+        .personal_data {
+            form {
+                .form_row {
+                    flex-direction: column;
+
+                    label {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+
     .itemsSum-menu {
         position: inherit;
         width: 100% !important;
