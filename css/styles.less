@@ -151,11 +151,14 @@ strike {
 
 .optovikam {
     .opt_title {
-
+        font-size: 30px;
+        font-weight: 500;
+        color: #666666;
+        margin-bottom: 10px;
     }
 
     .opt_text {
-
+        font-size: 18px;
     }
 
     .opt_form {
@@ -168,7 +171,6 @@ strike {
             text-align: center;
             margin-top: 15px;
             font-size: 16px;
-            font-weight: bold;
         }
 
         .name, .email, .phone, .site {
@@ -3745,54 +3747,76 @@ strike {
         form {
             margin-top: 35px;
 
+            .form_row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                label {
+                    display: flex;
+                    flex-direction: column;
+                    width: 49%;
+                    text-align: center;
+
+                    input {
+                        width: 100%;
+                        font-weight: normal;
+                    }
+                }
+            }
+
             ul {
                 li {
                     margin-bottom: 10px;
                 }
             }
 
+            .message_row {
+                width: 100% !important;
+            }
+
             .name {
-                width: 47%;
                 border: 1px solid #707070;
                 border-radius: 46px;
                 padding: 15px;
                 margin-bottom: 20px;
                 margin-right: 15px;
+                text-align: center;
             }
 
             .lastname {
-                width: 47%;
                 border: 1px solid #707070;
                 border-radius: 46px;
                 padding: 15px;
                 margin-bottom: 20px;
                 margin-right: 15px;
+                text-align: center;
             }
 
             .phone {
-                width: 47%;
                 border: 1px solid #707070;
                 border-radius: 46px;
                 padding: 15px;
                 margin-bottom: 20px;
                 margin-right: 15px;
+                text-align: center;
             }
 
             .email {
-                width: 47%;
                 border: 1px solid #707070;
                 border-radius: 46px;
                 padding: 15px;
                 margin-bottom: 20px;
                 margin-right: 15px;
+                text-align: center;
             }
 
             .message {
-                width: 93%;
                 border: 1px solid #707070;
                 border-radius: 34px;
                 padding: 15px;
                 margin-bottom: 20px;
+                text-align: center;
             }
 
             .subscribe {
@@ -4039,13 +4063,31 @@ strike {
 
         form {
             margin-top: 35px;
-            // height: 110vh;
             position: relative;
 
             h3 {
                 font-size: 30px;
                 font-weight: 500;
                 margin-top: 70px;
+            }
+
+            .form_row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                label {
+                    display: flex;
+                    flex-direction: column;
+                    width: 49%;
+                    text-align: center;
+
+                    input {
+                        width: 100%;
+                        font-weight: normal;
+                        text-align: center;
+                    }
+                }
             }
 
             ul {
@@ -4060,7 +4102,6 @@ strike {
             }
 
             .name {
-                width: 47%;
                 border: 1px solid #707070;
                 border-radius: 46px;
                 padding: 15px;
@@ -4069,7 +4110,6 @@ strike {
             }
 
             .lastname {
-                width: 47%;
                 border: 1px solid #707070;
                 border-radius: 46px;
                 padding: 15px;
@@ -4078,7 +4118,6 @@ strike {
             }
 
             .phone {
-                width: 47%;
                 border: 1px solid #707070;
                 border-radius: 46px;
                 padding: 15px;
@@ -4087,7 +4126,6 @@ strike {
             }
 
             .email {
-                width: 47%;
                 border: 1px solid #707070;
                 border-radius: 46px;
                 padding: 15px;
@@ -4096,11 +4134,15 @@ strike {
             }
 
             .message {
-                width: 93%;
                 border: 1px solid #707070;
                 border-radius: 34px;
                 padding: 15px;
                 margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .message_row {
+                width: 100% !important;
             }
 
             .subscribe {
@@ -8568,7 +8610,6 @@ strike {
                 }
 
                 .message {
-                    width: 93%;
                     border-radius: 21px;
                     margin-bottom: 0;
                 }
@@ -8837,6 +8878,34 @@ strike {
 
                 .message {
                     border-radius: 21px;    
+                }
+            }
+        }
+    }
+
+    .contacts {
+        .contact_form {
+            form {
+                .form_row {
+                    flex-direction: column;
+                    width: 100%;
+
+                    label {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .cart .order_data {
+        form {
+            .form_row {
+                flex-direction: column;
+                width: 100%;
+
+                label {
+                    width: 100%;
                 }
             }
         }

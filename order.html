@@ -303,11 +303,27 @@
                 <div class="order_data">
                     <h2>Контактные данные</h2>
                     <form>
-                        <input type="name" class="name" placeholder="Ваше имя"></input>
-                        <input type="lastname" class="lastname" placeholder="Ваша фамилия">
-                        <input type="phone" class="phone" placeholder="Ваш телефон">
-                        <input type="email" class="email" placeholder="Ваш e-mail">
-                        <textarea type="text" class="message" placeholder="Ваше сообщение" rows="5"></textarea>
+                        <div class="form_row">
+                            <label for="name">Имя
+                                <input type="name" id="name" class="name" placeholder="Ваше имя">
+                            </label>
+                            <label for="lastname">Фамилия
+                                <input type="lastname" id="lastname" class="lastname" placeholder="Ваша фамилия">
+                            </label>
+                        </div>
+                        <div class="form_row">
+                            <label for="phone">Телефон
+                                <input type="phone" id="phone" class="phone" placeholder="Ваш телефон">
+                            </label>
+                            <label for="email">Email
+                                <input type="email" id="email" class="email" placeholder="Ваш e-mail">
+                            </label>
+                        </div>
+                        <div class="form_row">
+                            <label for="message" class="message_row">Ваше сообщение
+                                <textarea type="message" id="message" class="message" placeholder="Ваше сообщение" rows="5"></textarea>
+                            </label>
+                        </div>
                         <h3>Способ оплаты</h3>
                         <ul>
                             <li class="checkbox">

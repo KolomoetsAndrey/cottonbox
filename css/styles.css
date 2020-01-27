@@ -273,6 +273,15 @@ strike {
 .top .top_line .top_contacts .language span {
   color: #CCCCCC;
 }
+.optovikam .opt_title {
+  font-size: 30px;
+  font-weight: 500;
+  color: #666666;
+  margin-bottom: 10px;
+}
+.optovikam .opt_text {
+  font-size: 18px;
+}
 .optovikam .opt_form {
   display: flex;
   flex-direction: column;
@@ -283,7 +292,6 @@ strike {
   text-align: center;
   margin-top: 15px;
   font-size: 16px;
-  font-weight: bold;
 }
 .optovikam .opt_form .name,
 .optovikam .opt_form .email,
@@ -3507,47 +3515,65 @@ strike {
 .contacts .contact_form form {
   margin-top: 35px;
 }
+.contacts .contact_form form .form_row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contacts .contact_form form .form_row label {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  text-align: center;
+}
+.contacts .contact_form form .form_row label input {
+  width: 100%;
+  font-weight: normal;
+}
 .contacts .contact_form form ul li {
   margin-bottom: 10px;
 }
+.contacts .contact_form form .message_row {
+  width: 100% !important;
+}
 .contacts .contact_form form .name {
-  width: 47%;
   border: 1px solid #707070;
   border-radius: 46px;
   padding: 15px;
   margin-bottom: 20px;
   margin-right: 15px;
+  text-align: center;
 }
 .contacts .contact_form form .lastname {
-  width: 47%;
   border: 1px solid #707070;
   border-radius: 46px;
   padding: 15px;
   margin-bottom: 20px;
   margin-right: 15px;
+  text-align: center;
 }
 .contacts .contact_form form .phone {
-  width: 47%;
   border: 1px solid #707070;
   border-radius: 46px;
   padding: 15px;
   margin-bottom: 20px;
   margin-right: 15px;
+  text-align: center;
 }
 .contacts .contact_form form .email {
-  width: 47%;
   border: 1px solid #707070;
   border-radius: 46px;
   padding: 15px;
   margin-bottom: 20px;
   margin-right: 15px;
+  text-align: center;
 }
 .contacts .contact_form form .message {
-  width: 93%;
   border: 1px solid #707070;
   border-radius: 34px;
   padding: 15px;
   margin-bottom: 20px;
+  text-align: center;
 }
 .contacts .contact_form form .subscribe {
   font-size: 20px;
@@ -3772,6 +3798,22 @@ strike {
   font-weight: 500;
   margin-top: 70px;
 }
+.cart .order_data form .form_row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cart .order_data form .form_row label {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  text-align: center;
+}
+.cart .order_data form .form_row label input {
+  width: 100%;
+  font-weight: normal;
+  text-align: center;
+}
 .cart .order_data form ul {
   margin-top: 30px;
   font-size: 22px;
@@ -3782,7 +3824,6 @@ strike {
   width: 32%;
 }
 .cart .order_data form .name {
-  width: 47%;
   border: 1px solid #707070;
   border-radius: 46px;
   padding: 15px;
@@ -3790,7 +3831,6 @@ strike {
   margin-right: 15px;
 }
 .cart .order_data form .lastname {
-  width: 47%;
   border: 1px solid #707070;
   border-radius: 46px;
   padding: 15px;
@@ -3798,7 +3838,6 @@ strike {
   margin-right: 15px;
 }
 .cart .order_data form .phone {
-  width: 47%;
   border: 1px solid #707070;
   border-radius: 46px;
   padding: 15px;
@@ -3806,7 +3845,6 @@ strike {
   margin-right: 15px;
 }
 .cart .order_data form .email {
-  width: 47%;
   border: 1px solid #707070;
   border-radius: 46px;
   padding: 15px;
@@ -3814,11 +3852,14 @@ strike {
   margin-right: 15px;
 }
 .cart .order_data form .message {
-  width: 93%;
   border: 1px solid #707070;
   border-radius: 34px;
   padding: 15px;
   margin-bottom: 20px;
+  text-align: center;
+}
+.cart .order_data form .message_row {
+  width: 100% !important;
 }
 .cart .order_data form .subscribe {
   bottom: 0;
@@ -7457,7 +7498,6 @@ strike {
     margin-bottom: 25px;
   }
   .cart .order_data form .message {
-    width: 93%;
     border-radius: 21px;
     margin-bottom: 0;
   }
@@ -7653,6 +7693,20 @@ strike {
   }
   .contacts .contact_form form .message {
     border-radius: 21px;
+  }
+  .contacts .contact_form form .form_row {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contacts .contact_form form .form_row label {
+    width: 100%;
+  }
+  .cart .order_data form .form_row {
+    flex-direction: column;
+    width: 100%;
+  }
+  .cart .order_data form .form_row label {
+    width: 100%;
   }
 }
 @media (max-width: 670px) {
