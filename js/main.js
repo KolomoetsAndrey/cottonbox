@@ -584,3 +584,32 @@ $(function() {
         }
     });
 });
+
+$(window).resize(function(){
+    var getModuleClass = $('.mainslider .mySlider_fullscreen h1 span');
+    var getModule = getModuleClass.is('.fstword');
+    var getModuleText = getModuleClass.text();
+
+    if ((getModule == true) && (getModuleText == 'Постачальник')) {
+        function getFontResize() {
+            if ($(window).width() > '1542') {
+                getModuleClass.css('font-size', '72px');
+            } else if ( ($(window).width() > '1410') && ($(window).width() < '1542') ) {
+                getModuleClass.css('font-size', '64px');
+            } else if ( ($(window).width() > '1187') && ($(window).width() < '1410') ) {
+                getModuleClass.css('font-size', '55px');
+            } else if ( ($(window).width() > '901') && ($(window).width() < '1187') ) {
+                getModuleClass.css('font-size', '40px');
+            } else if ( ($(window).width() > '700') && ($(window).width() < '901') ) {
+                getModuleClass.css('font-size', '30px');
+            } else if ( ($(window).width() > '501') && ($(window).width() < '700') ) {
+                getModuleClass.css('font-size', '19px');
+            } else {
+                getModuleClass.css('font-size', '32px');
+            }
+        };
+        getFontResize();
+    } else {
+        return getModule;
+    }
+});
