@@ -870,14 +870,18 @@ strike {
     //justify-content: space-between;
     flex-wrap: inherit;
     width: 100%;
+    margin: 0;
 }
 
 /* SubMenu & MainSlider */
 .mainslider {
     height: auto;
+    position: relative;
 
     .submenu_container {
-        position: relative;
+        position: absolute;
+        width: 90%;
+        top: -50px;
     }
 
     .sub_menu {
@@ -1032,6 +1036,7 @@ strike {
         width: 100%;
         padding-right: 0;
         padding-bottom: 20px;
+        margin-top: 50px;
 
         .main_info {
             .col();
@@ -1110,6 +1115,7 @@ strike {
             width: 50%;
             margin-top: -51px;
             margin-left: auto;
+            margin-right: 0;
     
             .item {
                 img {

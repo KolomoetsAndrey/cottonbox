@@ -888,13 +888,17 @@ strike {
 .fs_row {
   flex-wrap: inherit;
   width: 100%;
+  margin: 0;
 }
 /* SubMenu & MainSlider */
 .mainslider {
   height: auto;
+  position: relative;
 }
 .mainslider .submenu_container {
-  position: relative;
+  position: absolute;
+  width: 90%;
+  top: -50px;
 }
 .mainslider .sub_menu {
   padding-top: 20px;
@@ -1014,6 +1018,7 @@ strike {
   width: 100%;
   padding-right: 0;
   padding-bottom: 20px;
+  margin-top: 50px;
 }
 .mainslider .mySlider_fullscreen .main_info {
   box-sizing: border-box;
@@ -1117,6 +1122,7 @@ strike {
   width: 50%;
   margin-top: -51px;
   margin-left: auto;
+  margin-right: 0;
 }
 @media screen and (max-width: 1600px) {
   .mainslider .mySlider_fullscreen .main_slider {
