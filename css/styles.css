@@ -6631,6 +6631,9 @@ strike {
     align-items: center;
     margin-bottom: 20px;
   }
+  .mainslider {
+    display: none;
+  }
   .mainslider .sub_menu {
     display: none;
   }
