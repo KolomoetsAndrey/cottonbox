@@ -903,6 +903,7 @@ strike {
 .mainslider .sub_menu {
   padding-top: 20px;
   position: inherit;
+  margin-left: var(--haf-mainmenu);
 }
 .mainslider .sub_menu .categories {
   padding-top: 10px;

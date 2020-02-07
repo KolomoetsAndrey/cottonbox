@@ -613,3 +613,14 @@ $(window).resize(function(){
         return getModule;
     }
 });
+
+$(document).ready(function(){
+    var windowWidth = $(window).width();
+    var menuwidth = $("#container").outerWidth();
+    var minusPadding = $("#container").width();
+    var hafmenuwidth = windowWidth - menuwidth;
+    var hafWidth = hafmenuwidth / 2;
+    var mainmenu = $(".mainslider .sub_menu");
+    mainmenu.css('--haf-mainmenu', + hafWidth + 'px');
+    mainmenu.css('width', + minusPadding + 'px');
+});
