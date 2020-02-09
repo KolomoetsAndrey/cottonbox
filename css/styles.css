@@ -6635,7 +6635,7 @@ strike {
     margin-bottom: 20px;
   }
   .mainslider {
-    display: none;
+    min-height: 0;
   }
   .mainslider .sub_menu {
     display: none;
