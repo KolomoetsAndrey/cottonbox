@@ -1975,12 +1975,14 @@ strike {
 }
 .category .filter .content .checkbox input[type="checkbox"] {
   opacity: 0;
+  position: absolute;
 }
 .category .filter .content .checkbox label {
   position: relative;
   display: inline-block;
   padding-left: 22px;
   padding-top: 2px;
+  margin-left: 15px;
   width: 82%;
 }
 .category .filter .content .checkbox label::before,
@@ -1988,6 +1990,7 @@ strike {
   position: absolute;
   content: "";
   display: inline-block;
+  cursor: pointer;
 }
 .category .filter .content .checkbox label::before {
   height: 16px;
