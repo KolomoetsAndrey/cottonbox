@@ -1712,12 +1712,12 @@ strike {
   width: 50%;
   height: auto;
 }
-.about_desktop p {
+.about_desktop .custom_text {
   font-size: 20px;
   line-height: 28px;
   padding: 0 50px;
 }
-.about_desktop p::before {
+.about_desktop .custom_text::before {
   content: "";
   width: 50%;
   height: 40vw;
